@@ -1,6 +1,6 @@
 {
   "name": "Romario – Bootstrap 5 Angular Personal Portfolio",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,10 +21,10 @@
     "angular-scroll": "^1.0.2",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.3.0",
-    "jquery": "^3.7.0",
     "lightbox2": "^2.11.4",
     "ng-click-outside2": "^11.2.0",
     "ng-spy": "^4.0.2",
+    "jquery": "^3.7.0",
     "ngx-owl-carousel-o": "^16.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

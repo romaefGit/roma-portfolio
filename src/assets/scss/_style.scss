@@ -244,7 +244,8 @@ a {
         line-height: 1;
         letter-spacing: -0.05em;
         text-transform: uppercase;
-        background: linear-gradient(270.16deg, var(--px-theme-2) 5.74%, var(--px-theme) 92.05%);
+        background: linear-gradient(270.16deg, var(--px-theme-p-2) 5.74%, var(--px-theme-p) 92.05%);
+        // background: rgba(var(--px-white-rgb), .9);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -304,7 +305,7 @@ a {
             line-height: 1;
             letter-spacing: -0.05em;
             text-transform: uppercase;
-            background: linear-gradient(270.16deg, var(--px-theme-2) 5.74%, var(--px-theme) 92.05%);
+            background: linear-gradient(270.16deg, var(--px-theme-p-2) 5.74%, var(--px-theme-p) 92.05%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -320,7 +321,8 @@ a {
     .lead {
         font-size: 18px;
         span {
-            color: var(--px-theme);
+            font-weight: bold;
+            color: var(--px-white-rgb);
         }
     }
 
