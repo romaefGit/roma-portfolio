@@ -1,0 +1,128 @@
+@import "../../../assets/scss/variable";
+@import "../../../assets/scss/mixin";
+
+/* ----------------------
+*   Home Banner
+---------------------------*/
+.hb-me{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100vw;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    pointer-events: none;
+
+    @include up-md {
+        width: 60vw;
+        opacity: 1;
+    }
+
+    @include up-lg {
+        width: 50vw;
+    }   
+}
+.hb-text {
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+    h1 {
+        font-size: 90px;
+        font-weight: 800;
+        color: var(--px-white);
+        line-height: 0.9;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        @media(max-width: 1440px){
+            font-size: 80px;
+        }
+        @include down-sm {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        b {
+            font-weight: 800;
+        }
+        span {
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: var(--px-theme);
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+    }
+    .lead {
+        font-size: 32px;
+        color: var(--px-white);
+        margin-bottom: 40px;
+        @include down-sm {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        span {
+            font-weight: 800;
+        }
+    }
+    .info-bar {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        p {
+            margin: 0 40px 0 0;
+            font-weight: 600;
+            color: var(--px-white);
+            font-size: 18px;
+            // @include down-sm {
+            //     font-size: 16px;
+            // }
+            span {
+                padding-left: 8px;
+            }
+        }
+    }
+}
+.social-fix {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    z-index: 1;
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            right: 0;
+            width: 1px;
+            height: 60px;
+            background: rgba(var(--px-white-rgb), .2);
+            margin: auto;
+        }
+        a {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(var(--px-white-rgb), .2);
+            color: var(--px-white);
+            border-radius: 50%;
+            margin: 5px 0;
+            transition: ease all 0.35s;
+            &:hover {
+                background: var(--px-white);
+                color: var(--px-dark);
+            }
+        }
+    }
+}

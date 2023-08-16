@@ -1,0 +1,69 @@
+@import "../../../assets/scss/variable";
+@import "../../../assets/scss/mixin";
+/* ----------------------
+* Work Section
+---------------------------*/
+.work-box {
+  display: flex;
+  flex-wrap: wrap;
+  .work-img {
+      flex: 0 0 40%;
+      width: 40%;
+      overflow: hidden;
+      @include down-sm {
+          flex: 0 0 100%;
+          width: 100%;
+      }
+      img{
+          transition: ease all 0.34s;
+          transform: scale(1);
+      }
+  }
+  .work-text {
+      flex: 0 0 60%;
+      width: 60%;
+      padding-left: 20px;
+      padding-right: 8%;
+      display: flex;
+      flex-direction: column;
+      @include down-sm {
+          flex: 0 0 100%;
+          width: 100%;
+          padding: 20px 0 0;
+      }
+      h4 {
+          font-size: 30px;
+          font-weight: 700;
+          @include down-sm {
+              font-size: 24px;
+          }
+          a {
+              color: var(--px-white);
+          }
+      }
+      .btn-bar {
+          margin-top: auto;
+          a {
+              width: 35px;
+              height: 35px;
+              color: var(--px-white);
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 27px;
+              line-height: 1;
+              cursor: pointer;
+              &:hover{
+                  color: var(--px-theme);
+              }
+          }
+      }
+  }
+  &:hover {
+      .work-img {
+          img {
+              transform: scale(1.2);
+          }
+      }
+  }
+}
