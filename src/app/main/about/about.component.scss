@@ -50,7 +50,11 @@
 
 .about-bio {
   max-width: 600px;
-  margin-bottom: 25px;;
+  margin-bottom: 25px;
+
+  p {
+    font-size: 24px;
+  }
 }
 
 .about-contact {
@@ -102,7 +106,8 @@
   }
 
   blockquote {
-      background: rgba(var(--px-white-rgb), 0.05);
+      // background: rgba(var(--px-white-rgb), 0.05);
+      background: rgba(var(--px-white-rgb), 0.3);
       padding: 30px;
       border-radius: 10px;
       position: relative;

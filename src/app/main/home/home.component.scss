@@ -14,7 +14,7 @@
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 1;
     pointer-events: none;
 
     @include up-md {
@@ -27,9 +27,18 @@
     }   
 }
 .hb-text {
-    padding: 100px 0;
+    padding: 32px;
     position: relative;
     z-index: 1;
+
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    @include up-md {
+        position: inherit;
+    }
+
     h1 {
         font-size: 90px;
         font-weight: 800;
