@@ -18,27 +18,13 @@
             </div>
         </div>
         <div class="col-lg-7 ps-xl-5">
-            <ul class="resume-box">
-                <li>
+            <ul class="resume-box" *ngIf="experienceList">
+                <li *ngFor="let item of experienceList">
                     <div class="r-meta">
-                        <span>-2023 - Present</span>
-                        <label>-Front End developer</label>
+                        <span>- {{item.date}}</span>
+                        <label>{{item.company}} - {{item.position}}</label>
                     </div>
-                    <h5>Consultant</h5>
-                </li>
-                <li>
-                    <div class="r-meta">
-                        <span>-2017 - 2018</span>
-                        <label>-UI/UX Designer</label>
-                    </div>
-                    <h5>Senior UI/UX Designer</h5>
-                </li>
-                <li>
-                    <div class="r-meta">
-                        <span>-2015 - 2017</span>
-                        <label>-Jr. UI/UX Designer</label>
-                    </div>
-                    <h5>Web Design and Developer</h5>
+                    <h5>{{item.description}}</h5>
                 </li>
             </ul>
         </div>
