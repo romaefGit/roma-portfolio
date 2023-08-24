@@ -16,6 +16,7 @@ import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
 import {NgClickOutsideDirective} from 'ng-click-outside2';
 import { ScrollSpyModule } from 'ng-spy';
+import { PipeModule } from 'src/core/pipes/pipe.module';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ScrollSpyModule } from 'ng-spy';
     BrowserAnimationsModule,
     CarouselModule,
     ScrollSpyModule,
-    NgClickOutsideDirective
+    NgClickOutsideDirective,
+    PipeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

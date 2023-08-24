@@ -22,39 +22,16 @@
             <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg"> -->
         </a>
     </div>
-    <!-- / -->
-    <ul class="main-menu">
-        <li>
-            <a class="menu-item"  spyOn="home" activeClass="active"  href="#home" (click)="fullPageScroll('home')">
-                Home
+
+    <!-- menu options -->
+    <ul class="main-menu" *ngIf="sections">
+        <li *ngFor="let section of sections; let f = first">
+            <a class="menu-item"  [spyOn]="section.id" [activeClass]="'active'"  [href]="'#'+section.id" (click)="fullPageScroll(section.id)">
+                {{section.name}}
             </a>
         </li>
-        <li>
-            <a class="menu-item" spyOn="about" activeClass="active"  href="#about" (click)="fullPageScroll('about')"> 
-                About
-            </a>
-        </li>
-        <li>
-            <a class="menu-item"  spyOn="services" activeClass="active" href="#services" (click)="fullPageScroll('services')">
-                Services
-            </a>
-        </li>
-        <li>
-            <a class="menu-item" spyOn="work" activeClass="active"  href="#work" (click)="fullPageScroll('work')">
-                Portfolio
-            </a>
-        </li>
-        <li>
-            <a class="menu-item"  spyOn="blog" activeClass="active" href="#blog" (click)="fullPageScroll('blog')">
-                Blog
-            </a>
-        </li>
-        <!-- <li>
-            <a class="menu-item"  spyOn="contact" activeClass="active"  href="#contact" (click)="fullPageScroll('contact')">
-                Contact
-            </a>
-        </li> -->
     </ul>
+
     <ul class="nav social-link">
         <li>
             <a href="javascript:"><i class="fab fa-twitter"></i></a>

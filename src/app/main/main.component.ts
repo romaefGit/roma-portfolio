@@ -6,5 +6,5 @@ import { Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent{
- 
+  
 }

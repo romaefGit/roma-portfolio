@@ -86,6 +86,7 @@ img {
 
 
 .section-heading {
+    max-height: 100px;
     margin-bottom: 65px;
     position: relative;
     @include down-md {
@@ -100,6 +101,7 @@ img {
         font-weight: 600;
         font-style: italic;
         @include down-sm {
+            margin-top: 16px;
             font-size: 16px;
         }
     }
@@ -109,6 +111,7 @@ img {
         font-size: 48px;
         font-weight: 700;
         @include down-sm {
+            margin-top: 16px;
             font-size: 35px;
         }
     }

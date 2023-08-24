@@ -3,16 +3,24 @@
         <h6>My Service</h6>
         <h2>My Specialties</h2>
     </div>
+    
     <div class="accordion accordion-flush" id="accordion_services">
-        <div class="accordion-item">
+        <div class="accordion-item" *ngFor="let item of services; let i = index; let f = first">
             <div class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
-                    <span class="services-title">Web Design</span>
-                    <span class="services-small-desc">You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a</span>
-                    <span class="accordion-icon"></span>
-                </button>
+                <div id="accordion">
+                    <button class="accordion-button" type="button"
+                            [attr.data-bs-toggle]="'collapse'"
+                            [attr.data-bs-target]="'#flush-collapse-' + i"
+                            [attr.aria-expanded]="f"
+                            [attr.aria-controls]="'flush-collapse-' + i">
+                        <span class="services-title">{{item.title}}</span>
+                        <span class="services-small-desc">{{item.description | truncate: 100 : '...'}}</span>
+                        <span class="accordion-icon"></span>
+                    </button>
+                </div>
+                
             </div>
-            <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion_services">
+            <div id="{{'flush-collapse-'+i}}" class="accordion-collapse collapse {{f ? 'show': ''}}" data-bs-parent="#accordion_services">
                 <div class="accordion-body">
                     <div class="row gy-4">
                         <div class="col-sm-6 col-md-4">
@@ -21,84 +29,15 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-8">
-                            <h3>Web Design</h3>
-                            <div class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <span class="services-title">UI/UX Design</span>
-                    <span class="services-small-desc">You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a</span>
-                    <span class="accordion-icon"></span>
-                </button>
-            </div>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion_services">
-                <div class="accordion-body">
-                    <div class="row gy-4">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="s-img">
-                                <img src="assets/img/project-2.jpg" title="" alt="">
+                            <h3>{{item.title}}</h3>
+                            <div class="white-text">
+                                {{item.description}}
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-8">
-                            <h3>UI/UX Design</h3>
-                            <div class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="accordion-item">
-            <div class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    <span class="services-title">Mobile Application</span>
-                    <span class="services-small-desc">You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a</span>
-                    <span class="accordion-icon"></span>
-                </button>
-            </div>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion_services">
-                <div class="accordion-body">
-                    <div class="row gy-4">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="s-img">
-                                <img src="assets/img/project-3.jpg" title="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-8">
-                            <h3>Mobile Application</h3>
-                            <div class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="accordion-item">
-            <div class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefour" aria-expanded="false" aria-controls="flush-collapsefour">
-                    <span class="services-title">User research</span>
-                    <span class="services-small-desc">You can customize a template or make your own from scratch, with an immersive library at your disposal. You can customize a</span>
-                    <span class="accordion-icon"></span>
-                </button>
-            </div>
-            <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordion_services">
-                <div class="accordion-body">
-                    <div class="row gy-4">
-                        <div class="col-sm-6 col-md-4">
-                            <div class="s-img">
-                                <img src="assets/img/project-4.jpg" title="" alt="">
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-8">
-                            <h3>User research</h3>
-                            <div class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
