@@ -38,7 +38,7 @@
               font-size: 24px;
           }
           a {
-              color: var(--px-white);
+              color: var(--g-white);
           }
       }
       .btn-bar {
@@ -46,7 +46,7 @@
           a {
               width: 35px;
               height: 35px;
-              color: var(--px-white);
+              color: var(--g-white);
               display: inline-flex;
               align-items: center;
               justify-content: center;
@@ -54,7 +54,7 @@
               line-height: 1;
               cursor: pointer;
               &:hover{
-                  color: var(--px-theme);
+                  color: var(--g-primary);
               }
           }
       }

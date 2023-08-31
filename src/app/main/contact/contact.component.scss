@@ -27,14 +27,14 @@
       font-size: 12px;
   }
   .form-control {
-      background: rgba(var(--px-white-rgb),.05);
+      background: rgba(var(--g-white-rgb),.05);
       border-radius: 0;
       padding: 0.675rem 0.75rem;
-      border: 1px solid rgba(var(--px-white-rgb),.3);
-      color: var(--px-white);
+      border: 1px solid rgba(var(--g-white-rgb),.3);
+      color: var(--g-white);
       box-shadow: none;
       @include placeholder {
-          color: rgba(var(--px-white-rgb), .5);
+          color: rgba(var(--g-white-rgb), .5);
       }
   }
 }
@@ -47,17 +47,17 @@
   }
   li {
       display: flex;
-      border: 1px solid rgba(var(--px-white-rgb), .1);
+      border: 1px solid rgba(var(--g-white-rgb), .1);
       padding: 20px;
-      background: var(--px-bg);
+      background: var(--g-bg);
       .icon {
           width: 60px;
           height: 60px;
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(270.16deg, var(--px-theme-2) 5.74%, var(--px-theme) 92.05%);
-          color: var(--px-white);
+          background: linear-gradient(270.16deg, var(--g-primary-dark) 5.74%, var(--g-primary) 92.05%);
+          color: var(--g-white);
           font-size: 20px;
       }
       .text {

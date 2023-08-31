@@ -1,26 +1,27 @@
 :root {
-	--bs-heading-color: var(--px-heading);
+	--bs-heading-color: var(--g-heading);
 }
 
 :root, 
 [data-bs-theme=light] {
-	--px-theme:	#{$px-theme};
-	--px-theme-2:	#{$px-theme-2};
-
-	--px-theme-rgb: 254,178,178;
-
-	--px-theme-p:	#{$px-theme-p};
-	--px-theme-p-2:	#{$px-theme-p-2};
 	
-	--px-white:	#{$px-white};
-	--px-white-rgb:	255,255,255;
+	--g-primary:	#{$g-primary};
+	--g-primary-dark:	#{$g-primary-dark};
+
+	--g-primary-rgb: 254,178,178;
+
+	--g-secondary:	#{$g-secondary};
+	--g-secondary-dark:	#{$g-secondary-dark};
+	
+	--g-white:	#{$g-white};
+	--g-white-rgb:	255,255,255;
 	
 
-	--px-text:	#{$px-text};
-	--px-heading:	#{$px-heading};
+	--g-text:	#{$g-text};
+	--g-heading:	#{$g-heading};
 	
-	--px-bg:	#{$px-bg};
-	--px-dark:	#{$px-dark};
+	--g-bg:	#{$g-bg};
+	--g-dark:	#{$g-dark};
 }
 
 [data-bs-theme=dark] {

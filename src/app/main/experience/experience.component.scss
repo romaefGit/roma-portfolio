@@ -32,7 +32,7 @@
         + li {
             padding-top: 35px;
             margin-top: 35px;
-            border-top: 1px solid rgba(var(--px-white-rgb), 0.1);
+            border-top: 1px solid rgba(var(--g-white-rgb), 0.1);
             @include down-sm {
                 padding-top: 20px;
                 margin-top: 20px;
@@ -52,7 +52,7 @@
     h5 {
         margin: 0;
         font-size: 32px;
-        color: var(--px-white);
+        color: var(--g-white);
         font-weight: 700;
         text-transform: uppercase;
         @include down-sm {

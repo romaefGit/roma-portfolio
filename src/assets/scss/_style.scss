@@ -1,8 +1,8 @@
 /* Background
 -------------------------------*/
 body {
-    background-color: var(--px-bg);
-    color: var(--px-text);
+    background-color: var(--g-bg);
+    color: var(--g-text);
     font-family: $px-font;
     --bs-body-font-weight: 400;
     --bs-body-font-size: 1rem;
@@ -27,13 +27,13 @@ a {
         width: 10px;
         height: 10px;
         background: transparent;
-        border: 1px solid var(--px-text);
+        border: 1px solid var(--g-text);
         transition: ease all 0.55s;
         border-radius: 8px;
         margin: 0 4px;
 
         &.active {
-            background: var(--px-theme);
+            background: var(--g-primary);
             width: 20px;
         }
     }
@@ -58,8 +58,8 @@ a {
         margin: auto;
         width: 35px;
         height: 35px;
-        background: var(--px-theme);
-        color: var(--px-theme-text);
+        background: var(--g-primary);
+        color: var(--g-primary-text);
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -68,8 +68,8 @@ a {
         transition: ease all 0.35s;
 
         &:hover {
-            background: var(--px-theme-text);
-            color: var(--px-theme);
+            background: var(--g-primary-text);
+            color: var(--g-primary);
         }
     }
 
@@ -131,7 +131,7 @@ a {
     display: none;
     z-index: 9;
     i{
-        color: var(--px-theme);
+        color: var(--g-primary);
         font-size: 40px;
     }
 }

@@ -42,7 +42,7 @@
     h1 {
         font-size: 90px;
         font-weight: 800;
-        color: var(--px-white);
+        color: var(--g-white);
         line-height: 0.9;
         text-transform: uppercase;
         margin-bottom: 15px;
@@ -58,14 +58,14 @@
         }
         span {
             -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: var(--px-theme);
+            -webkit-text-stroke-color: var(--g-primary);
             -webkit-text-fill-color: transparent;
             font-weight: 800;
         }
     }
     .lead {
         font-size: 32px;
-        color: var(--px-white);
+        color: var(--g-white);
         margin-bottom: 40px;
         @include down-sm {
             font-size: 20px;
@@ -82,7 +82,7 @@
         p {
             margin: 0 40px 0 0;
             font-weight: 600;
-            color: var(--px-white);
+            color: var(--g-white);
             font-size: 18px;
             // @include down-sm {
             //     font-size: 16px;
@@ -114,7 +114,7 @@
             right: 0;
             width: 1px;
             height: 60px;
-            background: rgba(var(--px-white-rgb), .2);
+            background: rgba(var(--g-white-rgb), .2);
             margin: auto;
         }
         a {
@@ -123,14 +123,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border: 1px solid rgba(var(--px-white-rgb), .2);
-            color: var(--px-white);
+            border: 1px solid rgba(var(--g-white-rgb), .2);
+            color: var(--g-white);
             border-radius: 50%;
             margin: 5px 0;
             transition: ease all 0.35s;
             &:hover {
-                background: var(--px-white);
-                color: var(--px-dark);
+                background: var(--g-white);
+                color: var(--g-dark);
             }
         }
     }

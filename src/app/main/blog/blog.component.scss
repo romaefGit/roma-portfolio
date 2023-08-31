@@ -17,7 +17,7 @@
   .blog-post-info {
       padding-top: 25px;
       padding-bottom: 25px;
-      border-bottom: 1px solid rgba(var(--px-white-rgb), .1);
+      border-bottom: 1px solid rgba(var(--g-white-rgb), .1);
       h6 {
           font-weight: 15px;
           margin: 0 0 10px;
@@ -40,7 +40,7 @@
       .blog-post-info{
           h2 {
               a {
-                  color:var(--px-theme);
+                  color:var(--g-primary);
               }
           }
       }

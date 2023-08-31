@@ -14,10 +14,10 @@
 
 
 .toggler-menu {
-    background-color: var(--px-bg);
-    color: var(--px-heading);
-    border: 1px solid var(--px-gray) !important;
-    border-radius: var(--px-rounded);
+    background-color: var(--g-bg);
+    color: var(--g-heading);
+    border: 1px solid var(--g-gray) !important;
+    border-radius: var(--g-rounded);
     padding: 10px 25px;
     line-height: 1;
     position: relative;
@@ -50,7 +50,7 @@
 	z-index: 111;
 	transition: all 0s ease;
 	.fixed-header & {
-		background: var(--px-dark);
+		background: var(--g-dark);
 		transition: all 0s ease;
 	}
 	@include up-lg {
@@ -66,7 +66,7 @@
 	left: 0;
 	bottom: 0;
 	width: 285px;
-	background-color: var(--px-dark);
+	background-color: var(--g-dark);
 	z-index: 11;
 	display: flex;
 	flex-direction: column;
@@ -95,7 +95,7 @@
 			font-size: 18px;
 			text-transform: uppercase;
 			font-weight: 600;
-			color: var(--px-white);
+			color: var(--g-white);
 			opacity: .85;
 			@include down-lg {
 				padding: 10px 20px;
@@ -109,7 +109,7 @@
 				width: 0;
 				right: 0;
 				height: 3px;
-				background: linear-gradient(270.16deg, var(--px-theme) 33.61%, rgba(175, 38, 118, 0) 92.05%);
+				background: linear-gradient(270.16deg, var(--g-primary) 33.61%, rgba(175, 38, 118, 0) 92.05%);
 				transition: ease all 0.35s;
 			}
 			&.active {
@@ -131,14 +131,14 @@
 			display: inline-flex;
 			align-items: center;
 			justify-content: center;
-		    color: var(--px-dark);
-		   	background-color: var(--px-white);
+		    color: var(--g-dark);
+		   	background-color: var(--g-white);
 		    border-radius: 50%;
 		    transition: ease all 0.35s;
 		    border: none;
 		    &:hover {
-				color: var(--px-white);
-		   		background-color: var(--px-theme);
+				color: var(--g-white);
+		   		background-color: var(--g-primary);
 		    }
 		}
 	}
