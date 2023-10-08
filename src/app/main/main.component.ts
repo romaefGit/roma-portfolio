@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output} from '@angular/core';
+import { FeatureFlagService } from 'src/core/services/feature-flag/feature-flag.service';
 
 @Component({
   selector: 'app-main',
@@ -6,5 +7,9 @@ import { Component, EventEmitter, Output} from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent{
-  
+  constructor(
+    public flagService: FeatureFlagService
+  ) {
+
+  }
 }

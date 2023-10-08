@@ -98,9 +98,6 @@
 	}
 
 	&--exp {
-		border-top: 1px solid rgba(var(--g-white-rgb), .1);
-		margin-top: 30px;
-		padding-top: 45px;
 
 		& .a-number {
 			display: flex;
@@ -167,6 +164,12 @@
 				}
 			}
 		}
+	}
+
+	& .separator {
+		border-top: 1px solid rgba(var(--g-white-rgb), .1);
+		margin-top: 30px;
+		padding-top: 16px;
 	}
 
 }

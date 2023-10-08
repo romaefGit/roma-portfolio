@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FeatureFlagService } from 'src/core/services/feature-flag/feature-flag.service';
 
 @Component({
   selector: 'app-header',
@@ -13,36 +14,47 @@ export class HeaderComponent {
   public sections: any = [
     { 
       id:"home",
-      name: "Home"
+      name: "Home",
+      show: this.flagService.hasFlag('Home'),
     },
     { 
       id:"about",
-      name: "About"
+      name: "About",
+      show: this.flagService.hasFlag('About'),
     },
     { 
       id:"experience",
-      name: "Experience"
+      name: "Experience",
+      show: this.flagService.hasFlag('Experience'),
     },
     { 
       id:"services",
-      name: "Services"
+      name: "Services",
+      show: this.flagService.hasFlag('Services'),
     },
     { 
       id:"work",
-      name: "Work"
+      name: "Work",
+      show: this.flagService.hasFlag('Work'),
     },
-    // { 
-    //   id:"testimonials",
-    //   name: "Testimonials"
-    // },
-    // { 
-    //   id:"blog",
-    //   name: "Blog"
-    // }
+    { 
+      id:"testimonials",
+      name: "Testimonials",
+      show: this.flagService.hasFlag('Testimonials')
+    },
+    { 
+      id:"blog",
+      name: "Blog",
+      show: this.flagService.hasFlag('Blog')
+    }
   ]
 
   constructor(
-  ) {}
+    public flagService: FeatureFlagService
+  ) {
+    console.log("this.flagService.hasFlag('Services'), > ",this.flagService.hasFlag('Services'));
+    
+  }
 
   fullPageScroll(i:any) {
     if(this.sidebarOpen) this.sidebarOpen = false;

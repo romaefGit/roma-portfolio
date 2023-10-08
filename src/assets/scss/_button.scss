@@ -6,7 +6,7 @@
 	background-color: var(--g-primary);
 	color: var(--g-primary-text);
 	text-decoration: none;
-	border-radius: 0;
+	border-radius: 10px;
 	transition: ease all 0.35s;
 	font-weight: 500;
 	outline: none;
@@ -16,9 +16,11 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	color: var(--g-white);
+
 	i {
 		margin-left: 10px;
 	}
+	
 	&:hover {
 		color: var(--g-white);
 		background-size: 200% 100%;

@@ -26,7 +26,7 @@
     <!-- menu options -->
     <ul class="main-menu" *ngIf="sections">
         <li *ngFor="let section of sections; let f = first">
-            <a class="menu-item"  [spyOn]="section.id" [activeClass]="'active'"  [href]="'#'+section.id" (click)="fullPageScroll(section.id)">
+            <a *ngIf="section.show" class="menu-item" [spyOn]="section.id" [activeClass]="'active'"  [href]="'#'+section.id" (click)="fullPageScroll(section.id)">
                 {{section.name}}
             </a>
         </li>

@@ -12,7 +12,7 @@ export class ExperienceComponent {
       date: 'May 2023 - Present',
       company: "Endless Adventures",
       position: "Front End Developer",
-      description: "Senior consultant web developer",
+      description: "Senior | Front End Developer",
       details: "Creating with Angular the web page of their tool that create video games without code."
     },
     {

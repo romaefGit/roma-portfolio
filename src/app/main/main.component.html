@@ -1,30 +1,30 @@
 <main class="wrapper" id="scroll-container">
 
-    <section id="home" spyTarget="home"  class="spy-section home-section bg-dark">
+    <section *ngIf="flagService.hasFlag('Home')" id="home" spyTarget="home"  class="spy-section home-section bg-dark">
       <app-home/>
     </section>
 
-    <section id="about" spyTarget="about" class="spy-section section about-section">
+    <section *ngIf="flagService.hasFlag('About')" id="about" spyTarget="about" class="spy-section section about-section">
       <app-about/>
     </section>
 
-    <section id="experience" spyTarget="experience"  class="section experience-section bg-dark-blue">
+    <section *ngIf="flagService.hasFlag('Experience')" id="experience" spyTarget="experience"  class="section experience-section bg-dark-blue">
       <app-experience/>
     </section>
 
-    <section id="services" spyTarget="services"  class="spy-section section services-section bg-dark">
+    <section *ngIf="flagService.hasFlag('Services')" id="services" spyTarget="services"  class="spy-section section services-section bg-dark">
       <app-services/>
     </section>
   
-    <section id="work" spyTarget="work" class="spy-section section work-section">
+    <section *ngIf="flagService.hasFlag('Work')" id="work" spyTarget="work" class="spy-section section work-section">
       <app-work/>
     </section>
   
-    <section id="testimonials" spyTarget="testimonials"  class="section testimonials-section bg-dark-blue">
+    <section *ngIf="flagService.hasFlag('Testimonials')" id="testimonials" spyTarget="testimonials"  class="section testimonials-section bg-dark-blue">
       <app-testimonials/>
     </section>
 
-    <section id="blog" spyTarget="blog"  class="spy-section section blog-section bg-dark">
+    <section *ngIf="flagService.hasFlag('Blog')" id="blog" spyTarget="blog"  class="spy-section section blog-section bg-dark">
       <app-blog/>
     </section>
 
