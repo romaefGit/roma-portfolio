@@ -6,32 +6,37 @@
 .work-box {
   display: flex;
   flex-wrap: wrap;
-  .work-img {
-      flex: 0 0 40%;
-      width: 40%;
-      overflow: hidden;
-      @include down-sm {
-          flex: 0 0 100%;
-          width: 100%;
-      }
-      img{
-          transition: ease all 0.34s;
-          transform: scale(1);
-      }
+
+  & .work-img {
+    cursor: pointer;
+    flex: 0 0 50%;
+    width: 50%;
+    overflow: hidden;
+    @include down-sm {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    img {
+        transition: ease all 0.34s;
+        transform: scale(1);
+    }
   }
-  .work-text {
-      flex: 0 0 60%;
-      width: 60%;
+  & .work-text {
+      flex: 0 0 50%;  
+      width: 50%;
       padding-left: 20px;
       padding-right: 8%;
       display: flex;
       flex-direction: column;
+
       @include down-sm {
           flex: 0 0 100%;
           width: 100%;
           padding: 20px 0 0;
       }
-      h4 {
+      
+      & h4 {
           font-size: 30px;
           font-weight: 700;
           @include down-sm {
@@ -41,7 +46,7 @@
               color: var(--g-white);
           }
       }
-      .btn-bar {
+      & .btn-bar {
           margin-top: auto;
           a {
               width: 35px;
@@ -60,7 +65,7 @@
       }
   }
   &:hover {
-      .work-img {
+      & .work-img {
           img {
               transform: scale(1.2);
           }

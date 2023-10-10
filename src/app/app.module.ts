@@ -14,8 +14,7 @@ import { WorkComponent } from './main/work/work.component';
 import { TestimonialsComponent } from './main/testimonials/testimonials.component';
 import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
-import {NgClickOutsideDirective} from 'ng-click-outside2';
-import { ScrollSpyModule } from 'ng-spy';
+import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { PipeModule } from 'src/core/pipes/pipe.module';
 
 @NgModule({
@@ -37,7 +36,6 @@ import { PipeModule } from 'src/core/pipes/pipe.module';
     RouterModule,
     BrowserAnimationsModule,
     CarouselModule,
-    ScrollSpyModule,
     NgClickOutsideDirective,
     PipeModule
   ],

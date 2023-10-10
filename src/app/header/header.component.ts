@@ -18,9 +18,9 @@ export class HeaderComponent {
       show: this.flagService.hasFlag('Home'),
     },
     { 
-      id:"about",
-      name: "About",
-      show: this.flagService.hasFlag('About'),
+      id:"work",
+      name: "Work",
+      show: this.flagService.hasFlag('Work'),
     },
     { 
       id:"experience",
@@ -28,14 +28,14 @@ export class HeaderComponent {
       show: this.flagService.hasFlag('Experience'),
     },
     { 
+      id:"about",
+      name: "About",
+      show: this.flagService.hasFlag('About'),
+    },
+    { 
       id:"services",
       name: "Services",
       show: this.flagService.hasFlag('Services'),
-    },
-    { 
-      id:"work",
-      name: "Work",
-      show: this.flagService.hasFlag('Work'),
     },
     { 
       id:"testimonials",
