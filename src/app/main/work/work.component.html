@@ -5,16 +5,19 @@
             <h2>Recent project</h2>
         </div>
         <div class="row gy-5 lightbox-gallery">
-            <div class="col-lg-6" *ngFor="let project of projects">
-                <div class="work-box">
+            <div class="col-lg-6" *ngFor="let project of projects; let i = index">
+                <div class="work-box" (mouseenter)="showGif(i)" (mouseleave)="hideGif(i)">
                     <div class="work-img">
                         <a title="Read More" data-bs-toggle="modal" [attr.data-bs-target]="'#'+project.modal_info.id">
-                            <img [src]="project.img" [alt]="project.name" >
+                            <img [src]="!project.toShow ? project.img : project.toShow" [alt]="project.name" >
                         </a>
                     </div>
                     <div class="work-text">
                         <h6>{{project.type}}</h6>
                         <h4>{{project.name}}</h4>
+                        <p>
+                            {{project.description}}
+                        </p>
                         <!-- <div class="btn-bar">
                             <a class="gallery-link"><i class="bi-arrow-up-right"></i></a>
                         </div> -->
@@ -35,7 +38,7 @@
             <div class="modal-body">
                 <div class="single-blog-box">
                     <div class="single-blog-img">
-                        <img [src]="project.modal_info.img" title="" alt="">
+                        <img [src]="project.gif" title="" alt="">
                     </div>
                     <div class="single-blog-content">
                         <h6>{{project.modal_info.subtitle}}</h6>
