@@ -1,22 +1,9 @@
 {
   "hosting": [
-    
     {
-      "target": "my-first-project",
+      "target": "client",
       "source": ".",
-      "frameworksBackend": {},
-      "public": "dist/client",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
+      "frameworksBackend": {}
     }
   ]
 }

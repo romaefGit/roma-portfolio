@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-first-project": {
+    "client": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-first-project",
+            "outputPath": "dist/client",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -36,8 +36,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/canvas-confetti/dist/confetti.browser.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           },
           "configurations": {
@@ -46,10 +45,6 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.qa.ts"
-                },
-                {
-                  "replace": "src/features/feature-flags.ts",
-                  "with": "src/features/feature-flags.qa.ts"
                 }
               ]
             },
@@ -58,22 +53,18 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
-                },
-                {
-                  "replace": "src/features/feature-flags.ts",
-                  "with": "src/features/feature-flags.prod.ts"
                 }
               ],
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "2mb"
+                  "maximumWarning": "10000kb",
+                  "maximumError": "6mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "7kb"
+                  "maximumWarning": "100kb",
+                  "maximumError": "700kb"
                 }
               ],
               "outputHashing": "all"
@@ -93,10 +84,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "my-first-project:build:production"
+              "browserTarget": "client:build:production"
             },
             "development": {
-              "browserTarget": "my-first-project:build:development"
+              "browserTarget": "client:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,7 +95,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-first-project:build"
+            "browserTarget": "client:build"
           }
         },
         "test": {
@@ -124,8 +115,7 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
-              "node_modules/canvas-confetti/dist/confetti.browser.js"
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ]
           }
         },
@@ -133,7 +123,7 @@
           "builder": "@angular/fire:deploy",
           "options": {
             "version": 2,
-            "browserTarget": "my-first-project:build:production"
+            "browserTarget": "client:build:production"
           }
         }
       }

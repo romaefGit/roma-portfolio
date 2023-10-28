@@ -1,14 +1,16 @@
 {
+  "projects": {
+    "default": "romaefportfolio",
+    "production": "romaefportfolio"
+  },
   "targets": {
     "romaefportfolio": {
       "hosting": {
-        "my-first-project": [
+        "client": [
           "romaefportfolio"
         ]
       }
     }
   },
-  "projects": {
-    "default": "romaefportfolio"
-  }
+  "etags": {}
 }
