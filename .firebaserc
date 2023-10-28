@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "romaefportfolio": {
+      "hosting": {
+        "my-first-project": [
+          "romaefportfolio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "romaefportfolio"
+  }
+}

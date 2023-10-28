@@ -16,6 +16,7 @@ import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { PipeModule } from 'src/core/pipes/pipe.module';
+// import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PipeModule } from 'src/core/pipes/pipe.module';
     BrowserAnimationsModule,
     CarouselModule,
     NgClickOutsideDirective,
-    PipeModule
+    PipeModule,
+    // AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]

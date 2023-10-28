@@ -19,14 +19,19 @@ export class WorkComponent implements OnInit {
         id:"ufos_fall",
         title: "Platform 2D game",
         subtitle: "Unity",
-        description: "<p>Lorem imp sum</p>",
+        description: 
+        `<p>"UFO Fall" is a 2D adventure game that delves into the enigmatic Roswell case, offering a fresh perspective on what happened to the mysterious creatures that crashed in the desert.`+
+        `<br> As the player, you'll step into the shoes of one of these extraterrestrial beings, on a quest to find their ship and rescue their crew. However, there's a twist—the alien protagonist has lost its memory, save for a deep love for plants and hazy recollections of the crash.`+
+        `<br> Explore a captivating 2D world filled with intriguing challenges and puzzles as you uncover the secrets behind the Roswell incident. Traverse the desert landscapes, infiltrate the infamous Area 51, and interact with a variety of unique characters and creatures.`+
+        `<br>"UFO Fall" blends captivating storytelling with creative gameplay, allowing players to utilize the alien plant-loving abilities to navigate the obstacles they encounter on their journey. Discover the truth behind the crash, the alien's mission, and the mysteries of Area 51 as you progress through this work in progress game.`+
+        `<br>Embark on a unique adventure and prepare to unravel the secrets of "UFO Fall" as you guide the amnesiac alien in their quest to recover their memories and rescue their lost crew.</p>`,
         img: "assets/gifs/ufos_fall.png",
         "social": [
-          {
-            type: 'youtube',
-            url: 'javascript:',
-            icon: 'fa-youtube'
-          }
+          // {
+          //   type: 'youtube',
+          //   url: 'javascript:',
+          //   icon: 'fa-youtube'
+          // }
         ]
       }
     },
@@ -47,11 +52,11 @@ export class WorkComponent implements OnInit {
         "It have a parallax effect in the background.</p>",
         img: "assets/gifs/hypercasual.png",
         "social": [
-          {
-            type: 'youtube',
-            url: 'javascript:',
-            icon: 'fa-youtube'
-          }
+          // {
+          //   type: 'youtube',
+          //   url: 'javascript:',
+          //   icon: 'fa-youtube'
+          // }
         ]
       }
     },
@@ -69,11 +74,11 @@ export class WorkComponent implements OnInit {
         description: "<p>I did a 2D platform video game, using some aseets by Platzi, that they shared in the course that I follow. It have 2 levels, the main character have some enemys and coins to collect, so I had to develop the behaviour of every element in the game, also the portal animation, I use a particle system and other things to let pass the main character to the next level.</p>",
         img: "assets/gifs/ovni.png",
         "social": [
-          {
-            type: 'youtube',
-            url: 'javascript:',
-            icon: 'fa-youtube'
-          }
+          // {
+          //   type: 'youtube',
+          //   url: 'javascript:',
+          //   icon: 'fa-youtube'
+          // }
         ]
       }
     },
@@ -91,11 +96,11 @@ export class WorkComponent implements OnInit {
         description: "<p>I did a 2D videogame like the original PONG using Unity 2019.3.0a4 and the good feature is that I used a global variable to let the user choose the side to play. I know, it is not a big deal, but for me was good to learn.</p>",
         img: "assets/gifs/roma_pong.png",
         "social": [
-          {
-            type: 'youtube',
-            url: 'javascript:',
-            icon: 'fa-youtube'
-          }
+          // {
+          //   type: 'youtube',
+          //   url: 'javascript:',
+          //   icon: 'fa-youtube'
+          // }
         ]
       }
     },
@@ -106,6 +111,7 @@ export class WorkComponent implements OnInit {
   }
 
   ngOnInit() {
+    // Create a configuration for the confetti animation
 
   }
 
