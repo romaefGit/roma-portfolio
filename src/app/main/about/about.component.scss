@@ -98,10 +98,17 @@
 	}
 
 	&--exp {
-
+		.years {
+			margin: inherit;
+			@include down-sm {
+					margin: 0 auto;
+			}
+		}
+	
 		& .a-number {
 			display: flex;
 			padding-bottom: 16px;
+	
 			h6 {
 					font-weight: 800;
 					font-size: 48px;
@@ -113,18 +120,19 @@
 					-webkit-text-fill-color: transparent;
 					background-clip: text;
 			}
+	
 			span {
-				flex: 1;
-				font-size: 18px;
-				font-weight: 700;
-				line-height: 1.2;
-				padding-left: 15px;
+					flex: 1;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 1.2;
+					padding-left: 15px;
 			}
-
+	
 			@include down-md() {
-				text-align: center;
+					text-align: center; // Center content on screens below medium breakpoint
 			}
-		}
+		}	
 		
 		& .lead {
 			font-size: 18px;
