@@ -88,7 +88,7 @@ export class WorkComponent implements OnInit {
       gif: "assets/gifs/roma_pong.gif",
       img: "assets/gifs/roma_pong.png",
       toShow: "",
-      description: "Using my own assets on a siple but cool copy of pong.",
+      description: "Using my own assets on a simple but cool copy of pong.",
       modal_info: {
         id:"roma_pong",
         title: "Platform 2D game",
