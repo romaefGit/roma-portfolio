@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output} from '@angular/core';
-import { FeatureFlagService } from 'src/core/services/feature-flag/feature-flag.service';
+import { FeatureFlagService } from 'src/app/core/services/feature-flag/feature-flag.service';
 
 @Component({
   selector: 'app-main',
