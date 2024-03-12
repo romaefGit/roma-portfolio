@@ -16,6 +16,7 @@ import { BlogComponent } from './main/blog/blog.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { PipeModule } from 'src/core/pipes/pipe.module';
+import { ParallaxMouseOverDirective } from './core/directives/parallax/parallax-mouse-over/parallax-mouse-over.directive';
 // import { AngularFireModule } from '@angular/fire';
 
 @NgModule({
@@ -30,7 +31,8 @@ import { PipeModule } from 'src/core/pipes/pipe.module';
     WorkComponent,
     TestimonialsComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    ParallaxMouseOverDirective
   ],
   imports: [
     BrowserModule,

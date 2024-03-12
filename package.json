@@ -4,9 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 8000",
-    "start:dev": "ng serve --configuration=development",
-    "start:qa": "ng serve --configuration=qa",
-    "start:prod": "ng serve --configuration=production",
+    "start:dev": "ng serve --port 8000 --configuration=development",
+    "start:qa": "ng serve --port 8000 --configuration=qa",
+    "start:prod": "ng serve --port 8000 --configuration=production",
     "build": "ng build --configuration=development",
     "build:production": "ng build --configuration=production",
     "build:qa": "ng build --configuration=qa",
