@@ -9,7 +9,7 @@ import { Experience } from 'src/app/core/models/experience/experience.model';
 export class ExperienceComponent {
   experienceList: Experience[] = [
     {
-      date: 'May 2023 - Present',
+      date: 'May 2023 - July 2024',
       company: "Endless Adventures",
       position: "Front End Developer",
       description: "Senior | Front End Developer",
