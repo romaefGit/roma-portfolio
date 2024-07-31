@@ -46,6 +46,17 @@
               color: var(--g-white);
           }
       }
+
+      & h5 {
+        font-size: 24px;
+        font-weight: 500;
+        @include down-sm {
+            font-size: 24px;
+        }
+        a {
+            color: var(--g-white);
+        }
+    }
       & .btn-bar {
           margin-top: auto;
           a {
@@ -71,4 +82,11 @@
           }
       }
   }
+}
+
+.mt-4 {
+    margin-top: 32px;
+}
+.mt-8 {
+    margin-top: 64px;
 }
