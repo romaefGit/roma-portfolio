@@ -1,17 +1,23 @@
 export const featureFlags: any = {
   "Home": {
-    active: true,
-  },
-  "About": {
-    active: true,
-  },
-  "Experience": {
-    active: true,
-  },
-  "Services": {
-    active: false,
+    active: true
   },
   "Work": {
-    active: true,
+    active: true
+  },
+  "Experience": {
+    active: true
+  },
+  "About": {
+    active: true
+  },
+  "Services": {
+    active: true
+  },
+  "Testimonials": {
+    active: true
+  },
+  "Blog": {
+    active: true
   },
 }

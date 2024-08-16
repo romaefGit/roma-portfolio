@@ -28,4 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Deploy
 
-Firebase deployment with `firebase deploy` if you are not loggued in `firebase login` first and if you don't have installed firebase, use this  `npm install -g firebase-tools` first.
+Firebase deployment with `firebase deploy` if you are not loggued in `firebase login` first and if you don't have installed firebase, use this `npm install -g firebase-tools` first.
+
+## ESlint
+
+I install this [Installing ESLINT](https://stackademic.com/blog/how-to-setup-eslint-and-prettier-in-an-angular-project-82065799bc00)
