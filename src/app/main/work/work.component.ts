@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { options, options2 } from '../constant';
 
@@ -185,21 +185,328 @@ export class WorkComponent implements OnInit {
     },
     {
       name: 'Anatomy draws',
-      type: 'Grafito',
+      type: 'By Hand',
       contentType: 'slider',
-      gif: 'assets/gifs/maya/ufo_fall_1.gif',
-      img: 'assets/gifs/maya/ufo_fall_1.avif',
+      gif: 'assets/gifs/anatomy/draws.gif',
+      img: 'assets/img/anatomy/01.jpg',
       toShow: '',
-      description: '2D character concept to 3D model.',
+      description: 'Anatomy draws',
       modal_info: {
-        id: 'neil_3d_slider',
-        title: 'Neil 3D model',
-        slides: [],
-        subtitle: 'Maya',
-        description:
-          `<p>The 3D model character for "Neil" was meticulously crafted using Maya, a leading 3D modeling software. This alien character features a sleek, otherworldly design that reflects its extraterrestrial origins. The model showcases a unique blend of organic and futuristic elements, with a slender build and elongated limbs, giving it an agile and graceful appearance.` +
-          `</p>`,
-        img: 'assets/gifs/maya/ufo_fall_1.avif',
+        id: 'anatomy_slider',
+        title: 'Anatomy',
+        slides: [
+          {
+            img: 'assets/img/anatomy/01.jpg',
+            title: '',
+            description: '',
+          },
+          // {
+          //   img: 'assets/img/anatomy/02.jpg',
+          //   title: '',
+          //   description: '',
+          // },
+          {
+            img: 'assets/img/anatomy/03.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/11.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/12.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/13.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/14.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/21.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/22.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/23.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/24.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/31.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/32.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/33.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/34.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/35.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/41.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/43.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/43-1.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/44.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/45.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/46.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/47.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/48.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/49.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/51.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/52.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/53.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/61.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/62.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/63.jpeg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/64.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/65.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/71-2.png',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/71.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/anatomy/72.jpg',
+            title: '',
+            description: '',
+          },
+        ],
+        subtitle: 'Draws',
+        img: 'assets/gifs/anatomy/01.jpg',
+        social: [
+          // {
+          //   type: 'youtube',
+          //   url: 'javascript:',
+          //   icon: 'fa-youtube'
+          // }
+        ],
+      },
+    },
+    {
+      name: 'Artistic draws',
+      type: 'By Hand',
+      contentType: 'slider',
+      gif: 'assets/gifs/artistic_draws/draws.gif',
+      img: 'assets/img/artistic_draws/01.jpg',
+      toShow: '',
+      description: 'Artistic draws',
+      modal_info: {
+        id: 'artistic_slider',
+        title: 'artistic',
+        slides: [
+          {
+            img: 'assets/img/artistic_draws/01.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/02-0.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/02-1.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/02-3.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/3.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/11.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/12.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/21.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/22.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/31.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/32.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/33.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/41.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/42.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/43.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/44.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/45.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/51.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/52.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/53.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/artistic_draws/54.jpg',
+            title: '',
+            description: '',
+          },
+        ],
+        subtitle: 'Draws',
+        img: 'assets/img/artistic_draws/01.jpg',
         social: [
           // {
           //   type: 'youtube',
@@ -211,6 +518,23 @@ export class WorkComponent implements OnInit {
     },
   ];
 
+  // Carousel slides
+  slideIndexActive = 0;
+  slidesLengthActiveSlider = 0;
+  // @HostListener('document:keypress', ['$event'])
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(e: KeyboardEvent) {
+    console.log('e > ', e);
+
+    switch (e.key) {
+      case 'ArrowRight':
+        this.next(this.slideIndexActive--);
+        break;
+      case 'ArrowLeft':
+        this.prev(this.slideIndexActive--);
+        break;
+    }
+  }
   constructor() {}
 
   ngOnInit() {
@@ -237,6 +561,45 @@ export class WorkComponent implements OnInit {
     if (type == 'art_part' && indexChild >= 0) {
       this.artProjects[index].modal_info.parts[indexChild].toShow =
         this.artProjects[index].modal_info.parts[indexChild].img;
+    }
+  }
+
+  next(slidesLength: number) {
+    if (this.slideIndexActive < slidesLength - 1) {
+      this.setActiveSlider(this.slideIndexActive + 1);
+    } else {
+      this.setActiveSlider(0);
+    }
+  }
+
+  prev(slidesLength: number) {
+    if (this.slideIndexActive > 0) {
+      this.setActiveSlider(this.slideIndexActive - 1);
+    } else {
+      this.setActiveSlider(slidesLength - 1);
+    }
+  }
+
+  setActiveSlider(num: number) {
+    this.slideIndexActive = num;
+  }
+
+  detectKey(e: any) {
+    switch (e.keyCode) {
+      case 37:
+        this.prev(this.slideIndexActive--);
+        // str = 'Left Key pressed!';
+        break;
+      // case 38:
+      //     str = 'Up Key pressed!';
+      //     break;
+      case 39:
+        this.next(this.slideIndexActive--);
+        // str = 'Right Key pressed!';
+        break;
+      // case 40:
+      //     str = 'Down Key pressed!';
+      //     break;
     }
   }
 }

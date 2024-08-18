@@ -251,67 +251,58 @@
               aria-label="Close"
             ></button>
           </div>
-          <div id="carouselExampleCaptions" class="carousel slide">
+          <div [id]="project.modal_info.id" class="carousel slide">
             <div class="carousel-indicators">
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
+                *ngFor="
+                  let slide of project.modal_info.slides;
+                  let i = index;
+                  let isFirst = first
+                "
+                [ngClass]="{ active: i == slideIndexActive }"
+                [attr.data-bs-target]="'#' + project.modal_info.id"
+                [attr.data-bs-slide-to]="i"
+                [attr.aria-label]="'Slide ' + (i + 1)"
                 aria-current="true"
-                aria-label="Slide 1"
+                (click)="setActiveSlider(i)"
               ></button>
-              <button
+              <!-- <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#{{project.modal_info.id}}"
                 data-bs-slide-to="1"
                 aria-label="Slide 2"
               ></button>
               <button
                 type="button"
-                data-bs-target="#carouselExampleCaptions"
+                data-bs-target="#{{project.modal_info.id}}"
                 data-bs-slide-to="2"
                 aria-label="Slide 3"
-              ></button>
+              ></button> -->
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
+              <div
+                *ngFor="
+                  let slide of project.modal_info.slides;
+                  let i = index;
+                  let isFirst = first
+                "
+                [ngClass]="{ active: i == slideIndexActive }"
+                class="carousel-item"
+              >
+                <img [src]="slide.img" class="d-block w-100" alt="..." />
+                <div
+                  *ngIf="
+                    slide.title &&
+                    slide.description &&
+                    slide.title != '' &&
+                    slide.description != ''
+                  "
+                  class="carousel-caption d-none d-md-block"
+                >
+                  <h5>{{ slide.title }}</h5>
                   <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://images.pexels.com/photos/785293/pexels-photo-785293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="https://images.pexels.com/photos/969295/pexels-photo-969295.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  class="d-block w-100"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
+                    {{ slide.description }}
                   </p>
                 </div>
               </div>
@@ -319,8 +310,9 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              [attr.data-bs-target]="'#' + project.modal_info.id"
               data-bs-slide="prev"
+              (click)="prev(project.modal_info.slides.length)"
             >
               <span
                 class="carousel-control-prev-icon"
@@ -331,8 +323,9 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselExampleCaptions"
+              [attr.data-bs-target]="'#' + project.modal_info.id"
               data-bs-slide="next"
+              (click)="next(project.modal_info.slides.length)"
             >
               <span
                 class="carousel-control-next-icon"
