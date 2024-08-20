@@ -185,12 +185,13 @@ export class WorkComponent implements OnInit {
     },
     {
       name: 'Anatomy draws',
-      type: 'By Hand',
+      type: 'Analog',
       contentType: 'slider',
       gif: 'assets/gifs/anatomy/draws.gif',
       img: 'assets/img/anatomy/01.jpg',
       toShow: '',
-      description: 'Anatomy draws',
+      description:
+        'Using graphite pencils, rapidographer, watercolor and real human nude model.',
       modal_info: {
         id: 'anatomy_slider',
         title: 'Anatomy',
@@ -389,12 +390,13 @@ export class WorkComponent implements OnInit {
     },
     {
       name: 'Artistic draws',
-      type: 'By Hand',
+      type: 'Analog',
       contentType: 'slider',
       gif: 'assets/gifs/artistic_draws/draws.gif',
       img: 'assets/img/artistic_draws/01.jpg',
       toShow: '',
-      description: 'Artistic draws',
+      description:
+        'Using different technics to know contrast, saturation, volume, perspective, sketching, textures, deepness, leak points, etc.',
       modal_info: {
         id: 'artistic_slider',
         title: 'artistic',
@@ -435,7 +437,7 @@ export class WorkComponent implements OnInit {
             description: '',
           },
           {
-            img: 'assets/img/artistic_draws/21.jpg',
+            img: 'assets/img/artistic_draws/21.png',
             title: '',
             description: '',
           },
@@ -475,12 +477,12 @@ export class WorkComponent implements OnInit {
             description: '',
           },
           {
-            img: 'assets/img/artistic_draws/44.jpg',
+            img: 'assets/img/artistic_draws/44.jpeg',
             title: '',
             description: '',
           },
           {
-            img: 'assets/img/artistic_draws/45.jpg',
+            img: 'assets/img/artistic_draws/45.jpeg',
             title: '',
             description: '',
           },
@@ -524,14 +526,14 @@ export class WorkComponent implements OnInit {
   // @HostListener('document:keypress', ['$event'])
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(e: KeyboardEvent) {
-    console.log('e > ', e);
+    // console.log('e > ', e);
 
     switch (e.key) {
       case 'ArrowRight':
-        this.next(this.slideIndexActive--);
+        this.next(this.slidesLengthActiveSlider);
         break;
       case 'ArrowLeft':
-        this.prev(this.slideIndexActive--);
+        this.prev(this.slidesLengthActiveSlider);
         break;
     }
   }
@@ -566,40 +568,29 @@ export class WorkComponent implements OnInit {
 
   next(slidesLength: number) {
     if (this.slideIndexActive < slidesLength - 1) {
-      this.setActiveSlider(this.slideIndexActive + 1);
+      this.setActiveSlide(this.slideIndexActive + 1);
     } else {
-      this.setActiveSlider(0);
+      this.setActiveSlide(0);
     }
   }
 
   prev(slidesLength: number) {
     if (this.slideIndexActive > 0) {
-      this.setActiveSlider(this.slideIndexActive - 1);
+      this.setActiveSlide(this.slideIndexActive - 1);
     } else {
-      this.setActiveSlider(slidesLength - 1);
+      this.setActiveSlide(slidesLength - 1);
     }
   }
 
-  setActiveSlider(num: number) {
+  setActiveSlide(num: number) {
     this.slideIndexActive = num;
   }
 
-  detectKey(e: any) {
-    switch (e.keyCode) {
-      case 37:
-        this.prev(this.slideIndexActive--);
-        // str = 'Left Key pressed!';
-        break;
-      // case 38:
-      //     str = 'Up Key pressed!';
-      //     break;
-      case 39:
-        this.next(this.slideIndexActive--);
-        // str = 'Right Key pressed!';
-        break;
-      // case 40:
-      //     str = 'Down Key pressed!';
-      //     break;
-    }
+  sliderClosed() {
+    this.slideIndexActive = 0;
+  }
+
+  setSliderLength(num: number) {
+    this.slidesLengthActiveSlider = num;
   }
 }
