@@ -195,6 +195,8 @@ export class WorkComponent implements OnInit {
       modal_info: {
         id: 'anatomy_slider',
         title: 'Anatomy',
+        subtitle: 'Draws',
+        img: 'assets/img/anatomy/01.jpg',
         slides: [
           {
             img: 'assets/img/anatomy/01.jpg',
@@ -377,8 +379,6 @@ export class WorkComponent implements OnInit {
             description: '',
           },
         ],
-        subtitle: 'Draws',
-        img: 'assets/gifs/anatomy/01.jpg',
         social: [
           // {
           //   type: 'youtube',
@@ -400,6 +400,8 @@ export class WorkComponent implements OnInit {
       modal_info: {
         id: 'artistic_slider',
         title: 'artistic',
+        subtitle: 'Draws',
+        img: 'assets/img/artistic_draws/01.jpg',
         slides: [
           {
             img: 'assets/img/artistic_draws/01.jpg',
@@ -507,8 +509,200 @@ export class WorkComponent implements OnInit {
             description: '',
           },
         ],
-        subtitle: 'Draws',
-        img: 'assets/img/artistic_draws/01.jpg',
+        social: [
+          // {
+          //   type: 'youtube',
+          //   url: 'javascript:',
+          //   icon: 'fa-youtube'
+          // }
+        ],
+      },
+    },
+    {
+      name: 'Digital illustrations',
+      type: 'Illustrator - Photoshop',
+      contentType: 'slider',
+      gif: 'assets/gifs/digital/illustrations.gif',
+      img: 'assets/img/digital/0.jpg',
+      toShow: '',
+      description: 'Sketching first and digitalized at the end.',
+      modal_info: {
+        id: 'digital_slider',
+        title: 'Digital illustrations',
+        subtitle: 'illustrations',
+        img: 'assets/img/digital/00.jpg',
+        slides: [
+          {
+            img: 'assets/img/digital/0.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/00.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/01.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/02.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/02-1.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/03.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/04.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/11.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/12.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/21.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/22.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/23.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/24.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/31.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/32.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/33.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/41.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/42.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/43.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/51.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/52.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/61.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/62.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/63.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/64.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/71.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/81.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/91.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/92.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/93.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/94.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/96.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/97.jpg',
+            title: '',
+            description: '',
+          },
+          {
+            img: 'assets/img/digital/98.jpg',
+            title: '',
+            description: '',
+          },
+        ],
         social: [
           // {
           //   type: 'youtube',
