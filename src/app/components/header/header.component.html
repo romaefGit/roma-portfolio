@@ -1,54 +1,76 @@
 <!-- Mob header -->
 <div class="mob-header">
-    <div class="mob-h-left">
-        <a class="navbar-brand" href="javascript:">
-            <!-- <img class="logo-dark" title="" alt="" src="assets/img/logo.svg">
+  <div class="mob-h-left">
+    <a class="navbar-brand" href="javascript:">
+      <!-- <img class="logo-dark" title="" alt="" src="assets/img/logo.svg">
             <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg"> -->
-        </a>
-    </div>
-    <div class="mob-h-right" (clickOutside)="onClickedOutside($event)">
-        <button class="toggler-menu" [ngClass]="{'open': sidebarOpen}" (click)="toggleMenu()">
-            <span></span>
-        </button>
-    </div>
+    </a>
+  </div>
+  <div class="mob-h-right" (clickOutside)="onClickedOutside($event)">
+    <button
+      class="toggler-menu"
+      [ngClass]="{ open: sidebarOpen }"
+      (click)="toggleMenu()"
+    >
+      <span></span>
+    </button>
+  </div>
 </div>
 <!-- End -->
 <!-- Header Top -->
-<div class="header-left-fixed one-page-nav" [ngClass]="{'menu-open menu-open-desk' : sidebarOpen}">
-    <!-- Brand -->
-    <div class="logo">
-        <a class="navbar-brand" href="javascript:">
-            <!-- <img class="logo-dark" title="" alt="" src="assets/img/logo.svg">
+<div
+  class="header-left-fixed one-page-nav"
+  [ngClass]="{ 'menu-open menu-open-desk': sidebarOpen }"
+>
+  <!-- Brand -->
+  <div class="logo">
+    <a class="navbar-brand" href="javascript:">
+      <!-- <img class="logo-dark" title="" alt="" src="assets/img/logo.svg">
             <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg"> -->
-        </a>
-    </div>
+    </a>
+  </div>
 
-    <!-- menu options -->
-    <ul class="main-menu" *ngIf="sections">
-        <li *ngFor="let section of sections; let f = first">
-            <a *ngIf="section.show" class="menu-item" [href]="'#'+section.id" (click)="fullPageScroll(section.id)">
-                {{section.name}}
-            </a>
-        </li>
-    </ul>
+  <!-- menu options -->
+  <ul class="main-menu" *ngIf="sections">
+    <li *ngFor="let section of sections; let f = first">
+      <a
+        *ngIf="section.show"
+        class="menu-item"
+        [href]="'#' + section.id"
+        (click)="fullPageScroll(section.id)"
+      >
+        {{ section.name }}
+      </a>
+    </li>
+  </ul>
 
-    <ul class="nav social-link">
-        <li>
-            <a href="https://github.com/romaefGit?tab=repositories&q=unity&type=&language=&sort=" target="_blank"><i class="fab fa-github"></i></a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/romario.dev.art/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </li>
+  <ul class="nav social-link">
+    <li>
+      <a
+        href="https://github.com/romaefGit?tab=repositories&q=unity&type=&language=&sort="
+        target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/romario.concept/" target="_blank"
+        ><i class="fab fa-instagram"></i
+      ></a>
+    </li>
 
-        <li>
-            <a href="https://www.artstation.com/romaef" target="_blank"><i class="fab fa-artstation"></i></a>
-        </li>
-        <!-- <li>
+    <li>
+      <a href="https://www.artstation.com/romaef" target="_blank"
+        ><i class="fab fa-artstation"></i
+      ></a>
+    </li>
+    <!-- <li>
             <a href="https://www.artstation.com/romaef"><i class="fab fa-artstation"></i></a>
         </li> -->
-        <li>
-            <a href="https://co.pinterest.com/romarioDevArt/" target="_blank"><i class="fab fa-pinterest"></i></a>
-        </li>
-    </ul>
+    <li>
+      <a href="https://co.pinterest.com/romarioDevArt/" target="_blank"
+        ><i class="fab fa-pinterest"></i
+      ></a>
+    </li>
+  </ul>
 </div>
 <!-- End Header Top -->

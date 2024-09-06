@@ -1,88 +1,118 @@
-<div class="bubbles" style="z-index: 0;">
-    <!-- <div class="bubble" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"></div> -->
-    <div class="bubble-no-bg" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]"></div>
+<div class="bubbles" style="z-index: 0">
+  <!-- <div class="bubble" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"></div> -->
+  <div
+    class="bubble-no-bg"
+    *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]"
+  ></div>
 </div>
-<div class="container" style="z-index: 1; position: relative;">
-    <div class="row  min-vh-100 align-items-center">
-        <div class="col-lg-7 col-xl-7 col-xxl-6">
-            <div class="hb-text">
-                <h1>Hi! I'm <b></b> <span> Romario...</span></h1>
-                <p class="lead"><span>I work as a Front End developer <br> and I want to build games <span class="hearth">❤</span> <br><br></span> Based at <span>Colombia</span></p>
-                <div class="btn-bar">
-                    <a class="px-btn"  href="#about">
-                        Work with me <i class="bi-arrow-down-right"></i>
-                    </a>
-                </div>
-            </div>
+<div class="container" style="z-index: 1; position: relative">
+  <div class="row min-vh-100 align-items-center">
+    <div class="col-lg-7 col-xl-7 col-xxl-6">
+      <div class="hb-text">
+        <h1>Hi! I'm <b></b> <span> Romario...</span></h1>
+        <p class="lead">
+          <span
+            >I work as a Front End developer <br />
+            and I build games too <span class="hearth">❤</span> <br /><br
+          /></span>
+          Based at <span>Colombia</span>
+        </p>
+        <div class="btn-bar">
+          <a class="px-btn" href="#about">
+            Work with me <i class="bi-arrow-down-right"></i>
+          </a>
         </div>
+      </div>
     </div>
-
+  </div>
 </div>
 
 <div class="me">
-    
-    <!-- cool pink bubbles  -->
-    <div class="hb-me">
-        <div class="pink-bubbles">
-            <svg viewBox="0 0 120 200">
-                <defs> 
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="
+  <!-- cool pink bubbles  -->
+  <div class="hb-me">
+    <div class="pink-bubbles">
+      <svg viewBox="0 0 120 200">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="
                             1 0 0 0 0  
                             0 1 0 0 0  
                             0 0 1 0 0  
-                            0 0 0 13 -9" result="goo" />
-                        <!-- <xfeBlend in="SourceGraphic" in2="goo" /> -->
-                    </filter>
-                    <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-                </defs> 
-            
-                <!-- <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+                            0 0 0 13 -9"
+              result="goo"
+            />
+            <!-- <xfeBlend in="SourceGraphic" in2="goo" /> -->
+          </filter>
+          <path
+            id="wave"
+            d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z"
+          />
+        </defs>
+
+        <!-- <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
                 <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use> -->
-                            
-                <g class="gooeff" filter="url(#goo)">
-                    <circle class="drop drop1" cx="20" cy="2" r="8.8"  />
-                    <circle class="drop drop2" cx="25" cy="2.5" r="7.5"  />
-                    <circle class="drop drop3" cx="16" cy="2.8" r="9.2"  />
-                    <circle class="drop drop4" cx="18" cy="2" r="8.8"  />
-                    <circle class="drop drop5" cx="22" cy="2.5" r="7.5"  />
-                    <circle class="drop drop6" cx="26" cy="9.8" r="9.2" />
-                    <circle class="drop drop1" cx="5" cy="4.4" r="8.8"  />
-                    <circle class="drop drop2" cx="5" cy="4.1" r="7.5"  />
-                    <circle class="drop drop3" cx="8" cy="3.8" r="9.2"  />
-                    <circle class="drop drop4" cx="3" cy="4.4" r="8.8"  />
-                    <circle class="drop drop5" cx="7" cy="4.1" r="7.5"  />
-                    <circle class="drop drop6" cx="10" cy="4.3" r="9.2"  />
-                    
-                    <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8"  />
-                    <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5"  />
-                    <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2"  />
-                    <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8"  />
-                    <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5"  />
-                    <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2"  />
-                    <!-- <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" /> -->
-                </g>  
-                <!-- <g mask="url(#xxx)">
+
+        <g class="gooeff" filter="url(#goo)">
+          <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+          <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+          <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+          <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+          <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+          <circle class="drop drop6" cx="26" cy="9.8" r="9.2" />
+          <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+          <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+          <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+          <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+          <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+          <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+
+          <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+          <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+          <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+          <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+          <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+          <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+          <!-- <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" /> -->
+        </g>
+        <!-- <g mask="url(#xxx)">
                     <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
                 </g> -->
-            
-            </svg>
-        </div>
+      </svg>
     </div>
-    
-    <!-- Pink circle -->
-    <div class="hb-me" style="background-image: url(assets/img/me/bg-pink.png);"></div>
-    
-    <!-- Portrait -->
-    <div class="hb-me" style="background-image: url(assets/img/me/me.avif);"></div>
-    
-    <!-- Social buttons -->
-    <div class="social-fix">
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/raef26/"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.behance.net/romarioestrada" target="_blank"><i class="fab fa-behance"></i></a>
-            <a href="https://www.youtube.com/channel/UCHZnhIW2maKXc84VxQRH4PA" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
+  </div>
+
+  <!-- Pink circle -->
+  <div
+    class="hb-me"
+    style="background-image: url(assets/img/me/bg-pink.png)"
+  ></div>
+
+  <!-- Portrait -->
+  <div class="hb-me" style="background-image: url(assets/img/me/me.avif)"></div>
+
+  <!-- Social buttons -->
+  <div class="social-fix">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/raef26/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://www.behance.net/romarioestrada" target="_blank"
+        ><i class="fab fa-behance"></i
+      ></a>
+      <a
+        href="https://github.com/romaefGit?tab=repositories&q=unity&type=&language=&sort="
+        target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/channel/UCHZnhIW2maKXc84VxQRH4PA"
+        target="_blank"
+        ><i class="fab fa-youtube"></i
+      ></a>
     </div>
+  </div>
 </div>
