@@ -1,32 +1,27 @@
 <div class="container">
-    <div class="row min-vh-100">
-        <div class="row gy-5">
-            <div class="col-lg-5">
-                <div class="section-heading">
-                    <h6>Experience</h6>
-                    <h2>Work experience</h2>
-                </div>
-                <!-- Description -->
-                <p class="description">
-                    Hello there! My name is Romario. Passionate about creating visually appealing and intuitive
-                    user interfaces, I am a skilled front-end developer with a
-                    dedication to staying up-to-date with the latest industry
-                    trends and technologies. With expertise in crafting responsive designs and optimizing website performance, I am
-                    committed to making a positive impact on the digital
-                    landscape.
-                </p>
-            </div>
-            <div class="col-lg-7 ps-xl-5">
-                <ul class="resume-box" *ngIf="experienceList">
-                    <li *ngFor="let item of experienceList">
-                        <div class="r-meta">
-                            <span>- {{item.date}}</span>
-                            <label>{{item.company}} - {{item.position}}</label>
-                        </div>
-                        <h5>{{item.description}}</h5>
-                    </li>
-                </ul>
-            </div>
+  <div class="row min-vh-100">
+    <div class="row gy-5">
+      <div class="col-lg-5">
+        <div class="section-heading">
+          <h6>{{ "Experience.title" | translate }}</h6>
+          <h2>{{ "Experience.subtitle" | translate }}</h2>
         </div>
+        <!-- Description -->
+        <p class="description">
+          {{ "Experience.description" | translate }}
+        </p>
+      </div>
+      <div class="col-lg-7 ps-xl-5">
+        <ul class="resume-box" *ngIf="experienceList">
+          <li *ngFor="let item of experienceList">
+            <div class="r-meta">
+              <span>- {{ item.date }}</span>
+              <label>{{ item.company }} - {{ item.position }}</label>
+            </div>
+            <h5>{{ item.description }}</h5>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>

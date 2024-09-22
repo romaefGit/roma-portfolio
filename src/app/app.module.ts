@@ -10,12 +10,21 @@ import { PipeModule } from 'src/app/core/pipes/pipe.module';
 import { DirectivesModule } from './core/directives/directives.module';
 import { SharedModule } from './components/shared.module';
 import { MainModule } from './main/main.module';
-// import { AngularFireModule } from '@angular/fire';
+
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import {
+  TranslateLoader,
+  TranslateModule,
+  TranslateService,
+} from '@ngx-translate/core';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/lang/', '.json');
+}
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     RouterModule,
@@ -26,9 +35,16 @@ import { MainModule } from './main/main.module';
     NgClickOutsideDirective,
     PipeModule,
     DirectivesModule,
-    // AngularFireModule.initializeApp(environment.firebase)
+    HttpClientModule, // the change from http module
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [TranslateService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

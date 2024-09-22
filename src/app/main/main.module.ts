@@ -16,6 +16,9 @@ import { MainComponent } from './main.component';
 import { PipeModule } from '../core/pipes/pipe.module';
 import { NgClickOutsideDirective } from 'ng-click-outside2';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { HttpLoaderFactory } from '../app.module';
+import { HttpClient } from '@angular/common/http';
 
 const SectionsMain = [
   MainComponent,
@@ -39,7 +42,14 @@ const SectionsMain = [
     PipeModule,
     CarouselModule,
     NgClickOutsideDirective,
+    TranslateModule.forChild({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
   ],
   exports: SectionsMain,
 })
-export class MainModule { }
+export class MainModule {}
