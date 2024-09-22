@@ -17,7 +17,7 @@ export class ExperienceComponent implements OnInit {
   }
 
   /**
-   * Get projects from the json translation
+   * Get experiences from the json translation
    */
   loadExperiences(): void {
     this.translateService

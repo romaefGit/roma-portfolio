@@ -1,12 +1,12 @@
 {
-  "Home.title": "Hi! I'm",
-  "Home.work": "I work as a Front End developer",
-  "Home.work2": "and I build games too",
-  "Home.work3": "Based at",
-  "Home.work4": "Work with me",
+  "Home.title": "Hola! soy",
+  "Home.work": "Trabajo como desarrollador Front End",
+  "Home.work2": "y también creo juegos",
+  "Home.work3": "Vivo en",
+  "Home.work4": "Trabajemos juntos",
 
-  "Work.title": "My Work",
-  "Work.gamesTitle": "Video game projects",
+  "Work.title": "Mi trabajo",
+  "Work.gamesTitle": "Videojuegos propios",
   "Work.games": [
     {
       "name": "Ufo fall",
@@ -14,7 +14,7 @@
       "gif": "assets/gifs/ufos_fall.gif",
       "img": "assets/gifs/ufos_fall.avif",
       "toShow": "",
-      "description": "2D platformer DEMO inspired on INSIDE.",
+      "description": "2D platformer DEMO inspirado en INSIDE.",
       "modal_info": {
         "id": "ufos_fall",
         "title": "Platform 2D game",
@@ -686,6 +686,56 @@
       "position": "Front End | Back End | Developer",
       "description": "Web developer",
       "details": "Manage multiple projects of innovation, supporting web pages and web apps with IONIC."
+    }
+  ],
+
+  "About.title": "Nice to meet you!",
+  "About.subTitle": "Welcome to...",
+  "About.roles": ["Developer", "Artist"],
+  "About.button": "Download CV",
+  "About.experience1": "10+",
+  "About.experience2": "Years",
+  "About.experience3": "of experience...",
+  "About.quote": "“The video game industry is notoriously difficult to break into, but my passion for it has driven me to develop my own games using C#, Unity, and Photoshop. I thrive on overcoming challenges and am constantly looking for new opportunities to enhance my skills. I'm eager to take my expertise to the next level and make a meaningful impact in the gaming and web world.”",
+  "About.bio": "I have a proven track record of delivering high-quality web applications across various industries, including technology, agriculture, editorial, finance, and gaming. My passion for the gaming industry has inspired me to create personal games using C#, Unity, and Photoshop. I thrive on challenges and am actively seeking opportunities to further enhance my skills and contribute my expertise to the gaming world.",
+  "About.email": "romaef23@gmail.com",
+  "About.location": "Colombia, Bogotá",
+
+  "Menu.options": [
+    {
+      "id": "home",
+      "name": "Inicio",
+      "show": false
+    },
+    {
+      "id": "work",
+      "name": "Trabajo",
+      "show": false
+    },
+    {
+      "id": "experience",
+      "name": "Experiencia",
+      "show": false
+    },
+    {
+      "id": "about",
+      "name": "Sobre mi",
+      "show": false
+    },
+    {
+      "id": "services",
+      "name": "Servicios",
+      "show": false
+    },
+    {
+      "id": "testimonials",
+      "name": "Testimonios",
+      "show": false
+    },
+    {
+      "id": "blog",
+      "name": "Blog",
+      "show": false
     }
   ]
 }
