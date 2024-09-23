@@ -8,7 +8,10 @@ import {
 import { fromEvent, Subscription } from 'rxjs';
 
 import { throttleTime } from 'rxjs/operators';
-import { LanguageService } from './core/services/language/language.service';
+import {
+  LanguageService,
+  LanguagesTypes,
+} from './core/services/language/language.service';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +34,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     // this.spyService.spy({ thresholdBottom: 50 });
+    // this.toggleSwitch(this.languageService.getUserLanguage());
   }
 
   ngOnDestroy() {
@@ -46,6 +50,28 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.fixedHeader = true;
     } else {
       this.fixedHeader = false;
+    }
+  }
+
+  toggleSwitch(language: any = null): void {
+    const toggle = document.getElementById(
+      'language-toggle',
+    ) as HTMLInputElement;
+
+    if (toggle) {
+      // Toggle the checked state
+      if (language) toggle.checked = !toggle.checked;
+
+      // Optionally, do something based on the state
+      if (!toggle.checked) {
+        // EN
+        console.log('Switch is ON (EN)');
+        this.languageService.changeLanguage('en');
+      } else {
+        // ES
+        console.log('Switch is on (ES)');
+        this.languageService.changeLanguage('es');
+      }
     }
   }
 }

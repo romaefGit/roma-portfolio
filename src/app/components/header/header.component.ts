@@ -1,7 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 import { MenuOptions } from 'src/app/core/models/menu-options.model';
 import { FeatureFlagService } from 'src/app/core/services/feature-flag/feature-flag.service';
+import {
+  LanguageService,
+  LanguagesTypes,
+} from 'src/app/core/services/language/language.service';
 
 @Component({
   selector: 'app-header',
@@ -13,11 +18,11 @@ export class HeaderComponent implements OnInit {
   public currentSection = 'home';
 
   public sections: MenuOptions[] = [];
+  private translateService = inject(TranslateService);
+  private languageService = inject(LanguageService);
+  private languageSubscription!: Subscription; // To store the subscription
 
-  constructor(
-    public flagService: FeatureFlagService,
-    private translateService: TranslateService,
-  ) {
+  constructor(public flagService: FeatureFlagService) {
     // console.log(
     //   "this.flagService.hasFlag('Services'), > ",
     //   this.flagService.hasFlag('Services'),
@@ -26,19 +31,26 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadOptions();
+    this.languageSubscription = this.languageSubscription =
+      this.languageService.language$.subscribe((language: LanguagesTypes) => {
+        // this.currentLanguage = language;
+        // console.log('Language changed to:', language);
+        this.loadOptions();
+      });
+  }
+
+  loadOptions() {
     this.translateService
       .get('Menu.options')
       .subscribe((options: MenuOptions[]) => {
         this.sections = options.map((option) => {
           return {
             ...option,
-            show: this.flagService.hasFlag(option.name),
+            show: this.flagService.hasFlag(option.id),
           };
         });
       });
   }
-
-  loadOptions() {}
 
   fullPageScroll(i: any) {
     if (this.sidebarOpen) this.sidebarOpen = false;
@@ -50,5 +62,14 @@ export class HeaderComponent implements OnInit {
 
   onClickedOutside(e: Event) {
     if (this.sidebarOpen) this.sidebarOpen = false;
+  }
+
+  ngOnDestroy(): void {
+    //Called once, before the instance is destroyed.
+    //Add 'implements OnDestroy' to the class.
+    if (this.languageSubscription) {
+      this.languageSubscription.unsubscribe();
+      // console.log('Unsubscribed from language observable');
+    }
   }
 }

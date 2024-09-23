@@ -3,7 +3,7 @@
   "Home.work": "Trabajo como desarrollador Front End",
   "Home.work2": "y también creo juegos",
   "Home.work3": "Vivo en",
-  "Home.work4": "Trabajemos juntos",
+  "Home.work4": "Trabaja conmigo",
 
   "Work.title": "Mi trabajo",
   "Work.gamesTitle": "Videojuegos propios",
@@ -649,7 +649,7 @@
       "date": "May 2023 - July 2024",
       "company": "Endless Adventures",
       "position": "Desarrollador Front End",
-      "description": "Senior | Desarrollador Front End",
+      "description": "Desarrollador Front End Senior",
       "details": "Creando con Angular la página web de su herramienta que crea videojuegos."
     },
     {
@@ -693,47 +693,47 @@
   "About.subTitle": "Bienvenido a...",
   "About.roles": ["Desarrollador", "Artista"],
   "About.button": "Descargar CV",
-  "About.experience1": "10+",
-  "About.experience2": "Años",
-  "About.experience3": "de experiencia...",
-  "About.quote": "“Es muy difícil entrar en la industria de los videojuegos, pero mi pasión por ella me ha llevado a desarrollar mis propios juegos usando C#, Unity y Photoshop. Disfruto superando desafíos y busco constantemente nuevas oportunidades para mejorar mis habilidades. Estoy ansioso por llevar mi experiencia al siguiente nivel y generar un impacto significativo en el mundo de los juegos y la web.”",
-  "About.bio": "Tengo una trayectoria comprobada en la entrega de aplicaciones web de alta calidad en diversas industrias, incluidas la tecnología, la agricultura, la editorial, las finanzas y los juegos. Mi pasión por la industria del juego me ha inspirado a crear juegos personales usando C#, Unity y Photoshop. Disfruto de los desafíos y busco activamente oportunidades para mejorar aún más mis habilidades y contribuir con mi experiencia al mundo de la web y los videojuegos.",
+  "About.experience1": "10",
+  "About.experience2": "Años de",
+  "About.experience3": "experiencia...",
+  "About.quote": "“Es muy difícil entrar en la industria de los videojuegos, pero mi pasión por ella me ha llevado a desarrollar mis propios juegos usando C#, Unity y Photoshop. Disfruto superando desafíos y busco constantemente nuevas oportunidades para mejorar mis habilidades. Estoy emocionado por llevar mi experiencia al siguiente nivel y generar un impacto significativo en el mundo de los juegos y la web.”",
+  "About.bio": "Tengo una trayectoria comprobada en la entrega de aplicaciones web de alta calidad en diversas industrias, incluidas la tecnología, la agricultura, la editorial, las finanzas y los juegos. Mi pasión por la industria de los juegos me ha inspirado a crear juegos personales usando C#, Unity y Photoshop. Disfruto de los desafíos y busco activamente oportunidades para mejorar aún más mis habilidades y contribuir con mi experiencia al mundo de la web y los videojuegos.",
   "About.email": "romaef23@gmail.com",
   "About.location": "Colombia, Bogotá",
 
   "Menu.options": [
     {
-      "id": "home",
+      "id": "Home",
       "name": "Inicio",
       "show": false
     },
     {
-      "id": "work",
+      "id": "Work",
       "name": "Trabajo",
       "show": false
     },
     {
-      "id": "experience",
+      "id": "Experience",
       "name": "Experiencia",
       "show": false
     },
     {
-      "id": "about",
+      "id": "About",
       "name": "Sobre mi",
       "show": false
     },
     {
-      "id": "services",
+      "id": "Services",
       "name": "Servicios",
       "show": false
     },
     {
-      "id": "testimonials",
+      "id": "Testimonials",
       "name": "Testimonios",
       "show": false
     },
     {
-      "id": "blog",
+      "id": "Blog",
       "name": "Blog",
       "show": false
     }

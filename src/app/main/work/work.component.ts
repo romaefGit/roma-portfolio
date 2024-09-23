@@ -3,6 +3,11 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { options, options2 } from '../constant';
 import { inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import {
+  LanguageService,
+  LanguagesTypes,
+} from 'src/app/core/services/language/language.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-work',
@@ -14,6 +19,8 @@ export class WorkComponent implements OnInit {
   public customOptions2: OwlOptions = options2;
 
   private translateService = inject(TranslateService);
+
+  private languageSubscription!: Subscription; // To store the subscription
 
   gameProjects: any[] = [];
 
@@ -36,10 +43,17 @@ export class WorkComponent implements OnInit {
         break;
     }
   }
-  constructor() {}
+  constructor(private languageService: LanguageService) {}
 
   ngOnInit() {
     this.loadProjects();
+    this.languageSubscription = this.languageService.language$.subscribe(
+      (language: LanguagesTypes) => {
+        // this.currentLanguage = language;
+        // console.log('Language changed to:', language);
+        this.loadProjects();
+      },
+    );
   }
 
   /**
@@ -105,5 +119,13 @@ export class WorkComponent implements OnInit {
 
   setSliderLength(num: number) {
     this.slidesLengthActiveSlider = num;
+  }
+
+  // Unsubscribe when the component is destroyed
+  ngOnDestroy(): void {
+    if (this.languageSubscription) {
+      this.languageSubscription.unsubscribe();
+      // console.log('Unsubscribed from language observable');
+    }
   }
 }

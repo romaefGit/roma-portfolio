@@ -36,7 +36,7 @@
       <a
         *ngIf="section.show"
         class="menu-item"
-        [href]="'#' + section.id"
+        [href]="'#' + section.id.toLowerCase()"
         (click)="fullPageScroll(section.id)"
       >
         {{ section.name }}

@@ -694,7 +694,7 @@
   "About.roles": ["Developer", "Artist"],
   "About.button": "Download CV",
   "About.experience1": "10",
-  "About.experience2": "Years",
+  "About.experience2": "Years of",
   "About.experience3": "experience...",
   "About.quote": "“The video game industry is notoriously difficult to break into, but my passion for it has driven me to develop my own games using C#, Unity, and Photoshop. I thrive on overcoming challenges and am constantly looking for new opportunities to enhance my skills. I'm eager to take my expertise to the next level and make a meaningful impact in the gaming and web world.”",
   "About.bio": "I have a proven track record of delivering high-quality web applications across various industries, including technology, agriculture, editorial, finance, and gaming. My passion for the gaming industry has inspired me to create personal games using C#, Unity, and Photoshop. I thrive on challenges and am actively seeking opportunities to further enhance my skills and contribute my expertise to the gaming world.",
@@ -703,37 +703,37 @@
 
   "Menu.options": [
     {
-      "id": "home",
+      "id": "Home",
       "name": "Home",
       "show": false
     },
     {
-      "id": "work",
+      "id": "Work",
       "name": "Work",
       "show": false
     },
     {
-      "id": "experience",
+      "id": "Experience",
       "name": "Experience",
       "show": false
     },
     {
-      "id": "about",
+      "id": "About",
       "name": "About",
       "show": false
     },
     {
-      "id": "services",
+      "id": "Services",
       "name": "Services",
       "show": false
     },
     {
-      "id": "testimonials",
+      "id": "Testimonials",
       "name": "Testimonials",
       "show": false
     },
     {
-      "id": "blog",
+      "id": "Blog",
       "name": "Blog",
       "show": false
     }
