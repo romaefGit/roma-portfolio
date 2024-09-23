@@ -1,7 +1,8 @@
 {
+  "Main.copyright": "© 2023 copyright todos los derechos reservados",
   "Home.title": "Hola! soy",
   "Home.work": "Trabajo como desarrollador Front End",
-  "Home.work2": "y también creo juegos",
+  "Home.work2": "ilustro y también creo juegos",
   "Home.work3": "Vivo en",
   "Home.work4": "Trabaja conmigo",
 
@@ -51,7 +52,7 @@
         "id": "ovni",
         "title": "Platform 2D game",
         "subtitle": "Unity",
-        "description": "<p>Hice un videojuego de plataforma en 2D, utilizando unos aseets de Platzi, que me compartieron en el curso que seguí. Tiene 2 niveles, el personaje principal tiene algunos enemigos y monedas para recolectar, así que tuve que desarrollar el comportamiento de cada elemento en el juego, también la animación del portal, uso un sistema de partículas y otras cosas para dejar pasar al personaje principal al siguiente nivel.</p>",
+        "description": "<p>Hice un videojuego de plataforma en 2D, utilizando unos arhivos de imagenes de Platzi, que me compartieron en el curso que seguí. Tiene 2 niveles, el personaje principal tiene algunos enemigos y monedas para recolectar, así que tuve que desarrollar el comportamiento de cada elemento en el juego, también la animación del portal, uso un sistema de partículas y otras cosas para dejar pasar al personaje principal al siguiente nivel.</p>",
         "img": "assets/gifs/ovni.avif",
         "social": []
       }
@@ -62,7 +63,7 @@
       "gif": "assets/gifs/roma_pong.gif",
       "img": "assets/gifs/roma_pong.avif",
       "toShow": "",
-      "description": "Usando mis propios assets cree una copia de PONG.",
+      "description": "Usando mis propios archivos de imagenes, cree una copia de PONG.",
       "modal_info": {
         "id": "roma_pong",
         "title": "Platform 2D game",

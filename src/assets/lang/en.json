@@ -1,7 +1,8 @@
 {
+  "Main.copyright": "© 2023 copyright all right reserved",
   "Home.title": "Hi! I'm",
-  "Home.work": "I work as a Front End developer",
-  "Home.work2": "and I build games too",
+  "Home.work": "I work as a Front End developer,",
+  "Home.work2": "I Illustrate and I build games",
   "Home.work3": "Based at",
   "Home.work4": "Work with me",
 
@@ -51,7 +52,7 @@
         "id": "ovni",
         "title": "Platform 2D game",
         "subtitle": "Unity",
-        "description": "<p>I did a 2D platform video game, using some aseets by Platzi, that they shared in the course that I follow. It have 2 levels, the main character have some enemys and coins to collect, so I had to develop the behaviour of every element in the game, also the portal animation, I use a particle system and other things to let pass the main character to the next level.</p>",
+        "description": "<p>I did a 2D platform video game, using some assets by Platzi, that they shared in the course that I follow. It have 2 levels, the main character have some enemys and coins to collect, so I had to develop the behaviour of every element in the game, also the portal animation, I use a particle system and other things to let pass the main character to the next level.</p>",
         "img": "assets/gifs/ovni.avif",
         "social": []
       }
