@@ -1,82 +1,91 @@
+@import "../../assets/scss/variable";
 // Media Responsive
 @mixin up-xsm {
-	@media(min-width: $px-media-xsm + 1 ){
-		@content;
-	}
+  @media (min-width: $px-media-xsm + 1) {
+    @content;
+  }
 }
 
 @mixin down-xsm {
-	@media(max-width: $px-media-xsm){
-		@content;
-	}
+  @media (max-width: $px-media-xsm) {
+    @content;
+  }
 }
 
 @mixin up-sm {
-	@media(min-width: $px-media-sm + 1 ){
-		@content;
-	}
+  @media (min-width: $px-media-sm + 1) {
+    @content;
+  }
 }
 
 @mixin down-sm {
-	@media(max-width: $px-media-sm){
-		@content;
-	}
+  @media (max-width: $px-media-sm) {
+    @content;
+  }
 }
 
 @mixin up-md {
-	@media(min-width: $px-media-md + 1 ){
-		@content;
-	}
+  @media (min-width: $px-media-md + 1) {
+    @content;
+  }
 }
 
 @mixin down-md {
-	@media(max-width: $px-media-md){
-		@content;
-	}
+  @media (max-width: $px-media-md) {
+    @content;
+  }
 }
 
 @mixin up-lg {
-	@media(min-width: $px-media-lg + 1 ){
-		@content;
-	}
+  @media (min-width: $px-media-lg + 1) {
+    @content;
+  }
 }
 
 @mixin down-lg {
-	@media(max-width: $px-media-lg){
-		@content;
-	}
+  @media (max-width: $px-media-lg) {
+    @content;
+  }
 }
 
 // hiddens
 .hidden-xs {
-	@media(max-width: $px-media-xsm){
-		display: none !important;
-	}
+  @media (max-width: $px-media-xsm) {
+    display: none !important;
+  }
 }
 .hidden-sm {
-	@media(max-width: $px-media-sm){
-		display: none !important;
-	}
+  @media (max-width: $px-media-sm) {
+    display: none !important;
+  }
 }
 .hidden-sm-up {
-	@media(min-width: $px-media-sm + 1 ){
-		display: none !important;
-	}
-} 
+  @media (min-width: $px-media-sm + 1) {
+    display: none !important;
+  }
+}
 .hidden-md {
-	@media(max-width: $px-media-md){
-		display: none !important;
-	}
+  @media (max-width: $px-media-md) {
+    display: none !important;
+  }
 }
 .hidden-lg {
-	@media(min-width: $px-media-lg + 1 ){
-		display: none !important;
-	}
+  @media (min-width: $px-media-lg + 1) {
+    display: none !important;
+  }
 }
 
 @mixin placeholder {
-	&::-webkit-input-placeholder {@content}
-	&:-moz-placeholder           {@content}
-	&::-moz-placeholder          {@content}
-	&:-ms-input-placeholder      {@content}  
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
 }

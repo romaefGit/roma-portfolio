@@ -5,324 +5,328 @@
 *   Home Banner
 ---------------------------*/
 .hb-me {
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    height: 100%;
-    width: 100vw;
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100vw;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  opacity: 1;
+  pointer-events: none;
+
+  @include up-md {
+    width: 60vw;
     opacity: 1;
-    pointer-events: none;
+  }
 
-    @include up-md {
-        width: 60vw;
-        opacity: 1;
-    }
-
-    @include up-lg {
-        width: 50vw;
-    }   
+  @include up-lg {
+    width: 50vw;
+  }
 }
 
 .hb-text {
-    padding: 32px;
-    position: relative;
-    z-index: 1;
+  padding: 32px;
+  position: relative;
+  z-index: 1;
 
-    position: absolute;
-    top: 100px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+
+  @include up-md {
+    position: inherit;
+  }
+
+  @include down-md {
+    top: inherit;
+    bottom: 35px;
     left: 0px;
+    background: #2020208a;
+    border-radius: 16px;
+  }
 
-    @include up-md {
-        position: inherit;
+  @include down-sm {
+    bottom: inherit;
+    top: 60px;
+    background: none;
+  }
+
+  h1 {
+    font-size: 90px;
+    font-weight: 800;
+    color: var(--g-white);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    @media (max-width: 1440px) {
+      font-size: 80px;
     }
-
-    @include down-md {
-        top: inherit;
-        bottom: 35px;
-        left: 0px;
-        background: #2020208a;
-        border-radius: 16px;
-    }
-
     @include down-sm {
-        bottom: inherit;
-        top: 35px;
-        background: none;
+      font-size: 50px;
+      margin-bottom: 15px;
     }
+    b {
+      font-weight: 800;
+    }
+    span {
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: var(--g-primary);
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+  }
 
-    h1 {
-        font-size: 90px;
-        font-weight: 800;
-        color: var(--g-white);
-        line-height: 0.9;
-        text-transform: uppercase;
-        margin-bottom: 15px;
-        @media(max-width: 1440px){
-            font-size: 80px;
-        }
-        @include down-sm {
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
-        b {
-            font-weight: 800;
-        }
-        span {
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: var(--g-primary);
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-        }
+  .lead {
+    font-size: 32px;
+    color: var(--g-white);
+    margin-bottom: 40px;
+    @include down-sm {
+      font-size: 20px;
+      margin-bottom: 20px;
     }
-
-    .lead {
-        font-size: 32px;
-        color: var(--g-white);
-        margin-bottom: 40px;
-        @include down-sm {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        span {
-            font-weight: 800;
-        }
+    span {
+      font-weight: 800;
     }
-    .info-bar {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 60px;
-        p {
-            margin: 0 40px 0 0;
-            font-weight: 600;
-            color: var(--g-white);
-            font-size: 18px;
-            // @include down-sm {
-            //     font-size: 16px;
-            // }
-            span {
-                padding-left: 8px;
-            }
-        }
+  }
+  .info-bar {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    p {
+      margin: 0 40px 0 0;
+      font-weight: 600;
+      color: var(--g-white);
+      font-size: 18px;
+      // @include down-sm {
+      //     font-size: 16px;
+      // }
+      span {
+        padding-left: 8px;
+      }
     }
+  }
 }
 .social-fix {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  .social-links {
     display: flex;
-    align-items:center;
-    justify-content: center;
-    z-index: 1;
-    .social-links {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        &:after {
-            content: "";
-            position: absolute;
-            bottom: -70px;
-            left: 0;
-            right: 0;
-            width: 1px;
-            height: 60px;
-            background: rgba(var(--g-white-rgb), .2);
-            margin: auto;
-        }
-        a {
-            width: 35px;
-            height: 35px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(var(--g-white-rgb), .2);
-            color: var(--g-white);
-            border-radius: 50%;
-            margin: 5px 0;
-            transition: ease all 0.35s;
-            &:hover {
-                background: var(--g-white);
-                color: var(--g-dark);
-            }
-        }
+    flex-direction: column;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -70px;
+      left: 0;
+      right: 0;
+      width: 1px;
+      height: 60px;
+      background: rgba(var(--g-white-rgb), 0.2);
+      margin: auto;
     }
+    a {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(var(--g-white-rgb), 0.2);
+      color: var(--g-white);
+      border-radius: 50%;
+      margin: 5px 0;
+      transition: ease all 0.35s;
+      &:hover {
+        background: var(--g-white);
+        color: var(--g-dark);
+      }
+    }
+  }
 }
 
 // bubbles
 // https://codepen.io/myroncama12/embed/eQQaQL?default-tab=result&theme-id=light
 // TODO: wHATCH THE LOGIC ON THIS ONE
-// https://codepen.io/marko-zub/embed/ZmGOBe?default-tab=result&theme-id=light 
-.bubbles{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: hidden;
-    top: 0;
-    left: 0;
+// https://codepen.io/marko-zub/embed/ZmGOBe?default-tab=result&theme-id=light
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
 
-.bubble, .bubble-no-bg {
-    position: absolute;
-    bottom: -130px;
-    background: #fff;
-    
-    transform: scale(.1);
-    border-radius: 70%;
-    opacity: 0.5;
-    animation: flying 10s infinite ease-in;
+.bubble,
+.bubble-no-bg {
+  position: absolute;
+  bottom: -130px;
+  background: #fff;
+
+  transform: scale(0.1);
+  border-radius: 70%;
+  opacity: 0.5;
+  animation: flying 10s infinite ease-in;
 }
 @function randomRange($min, $max) {
-    @return random($max - $min + 1) + $min;
+  @return random($max - $min + 1) + $min;
 }
 @mixin randomBubble($image) {
-    background-image: url($image);
-    background-position: center;
-    background-size: cover;
-    left: randomRange(15, 45) + 1%;
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  left: randomRange(15, 45) + 1%;
 }
 
 @for $i from 1 through 12 {
-    .bubble:nth-child(#{$i}) {
+  .bubble:nth-child(#{$i}) {
+    animation-duration: randomRange(3, 8) + 1s;
+    $--size: randomRange(40, 70) + 1px;
+    width: $--size;
+    height: $--size;
 
-        animation-duration: randomRange(3, 8) + 1s;
-        $--size: randomRange(40, 70) + 1px;
-        width: $--size;
-        height: $--size;
-        
-        @include randomBubble(
-            '../../../assets/img/languages/#{$i}.png'
-        )
-    }
+    @include randomBubble("../../../assets/img/languages/#{$i}.png");
+  }
 }
 
 @for $i from 1 through 16 {
-    .bubble-no-bg:nth-child(#{$i}) {
-        animation-duration: randomRange(3, 8) + 1s;
-        $--size: randomRange(20, 70) + 1px;
-        width: $--size;
-        height: $--size;
-        left: randomRange(20, 90) + 1%;
-    }
+  .bubble-no-bg:nth-child(#{$i}) {
+    animation-duration: randomRange(3, 8) + 1s;
+    $--size: randomRange(20, 70) + 1px;
+    width: $--size;
+    height: $--size;
+    left: randomRange(20, 90) + 1%;
+  }
 }
 
-@keyframes flying{
-    0%{
-        transform: scale(.1);
-        bottom: -100px;
-        opacity: .1;
-        transform: translateX(0);
-    }
-    20% {
-        opacity: 1;
-    }
-    50%{
-        transform: scale(1);
-        transform: translateX(100px);
-    }
-    100%{
-        transform: scale(0);
-        opacity: .1;
-        bottom: 1080px;
-        transform: translateX(-200px);
-    }
+@keyframes flying {
+  0% {
+    transform: scale(0.1);
+    bottom: -100px;
+    opacity: 0.1;
+    transform: translateX(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    transform: translateX(100px);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0.1;
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
 }
 
 .hearth {
-    color: var(--g-primary-dark);
+  color: var(--g-primary-dark);
 }
 
 // other bubbles
 // https://codepen.io/GlitchTimes/pen/PoZOOYz/
 .pink-bubbles {
-    position: relative;
-    top: 0;
+  position: relative;
+  top: 0;
 
-    @include down-lg { top: 19%; }
+  @include down-lg {
+    top: 19%;
+  }
 
-    @include down-sm { top: 30%; }
+  @include down-sm {
+    top: 30%;
+  }
 
-    @include down-xsm { top: 43%; }
+  @include down-xsm {
+    top: 43%;
+  }
 
+  svg {
+    width: 100%;
+    overflow: visible;
+    margin-left: 50%;
+    // padding-top: 50%;
+  }
 
-    svg {
-        width:100%;
-        overflow:visible;
-        margin-left: 50%;
-        // padding-top: 50%;
+  .wave {
+    animation: wave 3s linear;
+    animation-iteration-count: infinite;
+    fill: var(--g-primary-dark);
+  }
+  .drop {
+    fill: #fdb1b1;
+    xfill: #fdb1b1;
+    animation: drop 8.2s linear infinite normal;
+    stroke: var(--g-primary);
+    stroke-width: 0.5;
+    transform: translateY(55px) scale(0.1);
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+  }
+  .drop1 {
+  }
+  // .drop2 {
+  //     animation-delay: 3s;
+  //     animation-duration:2s;
+  // }
+  // .drop3 {
+  //     animation-delay: -4s;
+  //     animation-duration:6.4s;
+  // }
+  .drop4 {
+    animation-delay: 2.7s;
+  }
+  .drop5 {
+    animation-delay: 4.7s;
+    animation-duration: 6.1s;
+  }
+  .drop6 {
+    animation-delay: -4.1s;
+    animation-duration: 6.2s;
+  }
+  .gooeff {
+    filter: url(#goo);
+  }
+  #wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: 0.6;
+  }
+  #wave3 {
+    animation-duration: 7s;
+    opacity: 0.3;
+  }
+  @keyframes drop {
+    0% {
+      transform: translateY(55px);
     }
-    
-    .wave {
-        animation: wave 3s linear;
-        animation-iteration-count:infinite;
-        fill: var(--g-primary-dark);;
+    30% {
+      transform: translateY(-10px) scale(0.3);
     }
-    .drop {
-        fill:  #fdb1b1;
-        xfill: #fdb1b1;
-        animation: drop 8.2s linear infinite normal;
-        stroke:  var(--g-primary);
-        stroke-width:0.5;
-        transform: translateY(55px) scale(.1);
-        transform-box: fill-box;
-        transform-origin: 50% 100%;
+    30.001% {
+      transform: translateY(55px) scale(1);
     }
-    .drop1 {
-        
+    70% {
+      transform: translateY(55px);
     }
-    // .drop2 {
-    //     animation-delay: 3s;
-    //     animation-duration:2s;
-    // }
-    // .drop3 {
-    //     animation-delay: -4s;
-    //     animation-duration:6.4s;
-    // }
-    .drop4 {
-        animation-delay: 2.7s;
+    100% {
+      transform: translateY(-10px) scale(0.1);
     }
-    .drop5 {
-        animation-delay: 4.7s;
-        animation-duration:6.1s;
+  }
+  @keyframes wave {
+    to {
+      transform: translateX(-100%);
     }
-    .drop6 {
-        animation-delay: -4.1s;
-        animation-duration:6.2s;
-    }
-    .gooeff {
-        filter: url(#goo);
-    }
-    #wave2 {
-        animation-duration:5s;
-        animation-direction: reverse;
-        opacity: .6
-    }
-    #wave3 {
-        animation-duration: 7s;
-        opacity:.3;
-    }
-    @keyframes drop {
-        0% {
-            transform: translateY(55px); 
-        }
-        30% {
-            transform: translateY(-10px) scale(.3);
-        }
-        30.001% {
-            transform: translateY(55px) scale(1); 
-        }
-        70% {
-            transform: translateY(55px); 
-        }
-        100% { 
-            transform: translateY(-10px) scale(.1);  
-        }
-    }
-    @keyframes wave {
-        to {transform: translateX(-100%);}
-    }
+  }
 }

@@ -1,233 +1,443 @@
-<main class="wrapper" id="scroll-container">
+<main class="wrapper relative" id="scroll-container">
+  <!-- Sections -->
+  <section
+    *ngIf="flagService.hasFlag('Home')"
+    id="home"
+    spyTarget="home"
+    class="spy-section home-section bg-dark"
+  >
+    <app-home />
+  </section>
 
-    <section *ngIf="flagService.hasFlag('Home')" id="home" spyTarget="home"  class="spy-section home-section bg-dark">
-      <app-home/>
-    </section>
+  <section
+    *ngIf="flagService.hasFlag('Work')"
+    id="work"
+    spyTarget="work"
+    class="spy-section section work-section"
+  >
+    <app-work />
+  </section>
 
-    <section *ngIf="flagService.hasFlag('Work')" id="work" spyTarget="work" class="spy-section section work-section">
-      <app-work/>
-    </section>
-    
-    <section *ngIf="flagService.hasFlag('Experience')" id="experience" spyTarget="experience"  class="section experience-section bg-dark-blue">
-      <app-experience/>
-    </section>
+  <section
+    *ngIf="flagService.hasFlag('Experience')"
+    id="experience"
+    spyTarget="experience"
+    class="section experience-section bg-dark-blue"
+  >
+    <app-experience />
+  </section>
 
-    <section *ngIf="flagService.hasFlag('About')" id="about" spyTarget="about" class="spy-section section about-section">
-      <app-about/>
-    </section>
+  <section
+    *ngIf="flagService.hasFlag('About')"
+    id="about"
+    spyTarget="about"
+    class="spy-section section about-section"
+  >
+    <app-about />
+  </section>
 
+  <section
+    *ngIf="flagService.hasFlag('Services')"
+    id="services"
+    spyTarget="services"
+    class="spy-section section services-section bg-dark"
+  >
+    <app-services />
+  </section>
 
-    <section *ngIf="flagService.hasFlag('Services')" id="services" spyTarget="services"  class="spy-section section services-section bg-dark">
-      <app-services/>
-    </section>
-  
-  
-    <section *ngIf="flagService.hasFlag('Testimonials')" id="testimonials" spyTarget="testimonials"  class="section testimonials-section bg-dark-blue">
-      <app-testimonials/>
-    </section>
+  <section
+    *ngIf="flagService.hasFlag('Testimonials')"
+    id="testimonials"
+    spyTarget="testimonials"
+    class="section testimonials-section bg-dark-blue"
+  >
+    <app-testimonials />
+  </section>
 
-    <section *ngIf="flagService.hasFlag('Blog')" id="blog" spyTarget="blog"  class="spy-section section blog-section bg-dark">
-      <app-blog/>
-    </section>
+  <section
+    *ngIf="flagService.hasFlag('Blog')"
+    id="blog"
+    spyTarget="blog"
+    class="spy-section section blog-section bg-dark"
+  >
+    <app-blog />
+  </section>
 
-    <!-- <section id="contact" spyTarget="contact" class="spy-section section contact-section">
+  <!-- <section id="contact" spyTarget="contact" class="spy-section section contact-section">
       <app-contact/>
     </section> -->
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-info">
-                <div class="footer-avatar">
-                    <img src="assets/img/me/me_small.png" title="" alt="">
-                </div>
-                <h6>Romario</h6>
-            </div>
-            <p class="copyright">© 2023 copyright all right reserved</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-avatar">
+          <img src="assets/img/me/me_small.png" title="" alt="" />
         </div>
-    </footer>
-    <a href="#home"  id="return-to-top"><i class="bi-arrow-up-circle-fill"></i></a>
-    <!-- End Footer --> 
+        <h6>Romario</h6>
+      </div>
+      <p class="copyright">© 2023 copyright all right reserved</p>
+    </div>
+  </footer>
+  <a href="#home" id="return-to-top"><i class="bi-arrow-up-circle-fill"></i></a>
+  <!-- End Footer -->
 </main>
 
-  
 <!-- Blog Modal -->
-<div class="modal fade" id="blog_1" tabindex="-1" aria-labelledby="blog_1" aria-hidden="true">
+<div
+  class="modal fade"
+  id="blog_1"
+  tabindex="-1"
+  aria-labelledby="blog_1"
+  aria-hidden="true"
+>
   <div class="modal-dialog px-modal">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
-          <div class="single-blog-box">
-              <div class="single-blog-img">
-                  <img src="assets/img/blog-1.jpg" title="" alt="">
-              </div>
-              <div class="single-blog-content">
-                  <h6>10 July, 2022</h6>
-                  <h2>12 unique example of portfolio websites</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <div class="blog-meta">
-                      <label>Share</label>
-                      <ul class="nav social-link">
-                          <li>
-                              <a href="javascript:"><i class="fab fa-twitter"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-instagram"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-facebook"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-pinterest"></i></a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-      </div>
+        <div class="single-blog-box">
+          <div class="single-blog-img">
+            <img src="assets/img/blog-1.jpg" title="" alt="" />
+          </div>
+          <div class="single-blog-content">
+            <h6>10 July, 2022</h6>
+            <h2>12 unique example of portfolio websites</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="blog-meta">
+              <label>Share</label>
+              <ul class="nav social-link">
+                <li>
+                  <a href="javascript:"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+          Close
+        </button>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="blog_2" tabindex="-1" aria-labelledby="blog_2" aria-hidden="true">
+<div
+  class="modal fade"
+  id="blog_2"
+  tabindex="-1"
+  aria-labelledby="blog_2"
+  aria-hidden="true"
+>
   <div class="modal-dialog px-modal">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
-          <div class="single-blog-box">
-              <div class="single-blog-img">
-                  <img src="assets/img/blog-2.jpg" title="" alt="">
-              </div>
-              <div class="single-blog-content">
-                  <h6>10 July, 2022</h6>
-                  <h2>12 unique example of portfolio websites</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <div class="blog-meta">
-                      <label>Share</label>
-                      <ul class="nav social-link">
-                          <li>
-                              <a href="javascript:"><i class="fab fa-twitter"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-instagram"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-facebook"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-pinterest"></i></a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-      </div>
+        <div class="single-blog-box">
+          <div class="single-blog-img">
+            <img src="assets/img/blog-2.jpg" title="" alt="" />
+          </div>
+          <div class="single-blog-content">
+            <h6>10 July, 2022</h6>
+            <h2>12 unique example of portfolio websites</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="blog-meta">
+              <label>Share</label>
+              <ul class="nav social-link">
+                <li>
+                  <a href="javascript:"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+          Close
+        </button>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="blog_3" tabindex="-1" aria-labelledby="blog_3" aria-hidden="true">
+<div
+  class="modal fade"
+  id="blog_3"
+  tabindex="-1"
+  aria-labelledby="blog_3"
+  aria-hidden="true"
+>
   <div class="modal-dialog px-modal">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
-          <div class="single-blog-box">
-              <div class="single-blog-img">
-                  <img src="assets/img/blog-3.jpg" title="" alt="">
-              </div>
-              <div class="single-blog-content">
-                  <h6>10 July, 2022</h6>
-                  <h2>12 unique example of portfolio websites</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <div class="blog-meta">
-                      <label>Share</label>
-                      <ul class="nav social-link">
-                          <li>
-                              <a href="javascript:"><i class="fab fa-twitter"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-instagram"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-facebook"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-pinterest"></i></a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-      </div>
+        <div class="single-blog-box">
+          <div class="single-blog-img">
+            <img src="assets/img/blog-3.jpg" title="" alt="" />
+          </div>
+          <div class="single-blog-content">
+            <h6>10 July, 2022</h6>
+            <h2>12 unique example of portfolio websites</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="blog-meta">
+              <label>Share</label>
+              <ul class="nav social-link">
+                <li>
+                  <a href="javascript:"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+          Close
+        </button>
       </div>
     </div>
   </div>
 </div>
-<div class="modal fade" id="blog_4" tabindex="-1" aria-labelledby="blog_4" aria-hidden="true">
+<div
+  class="modal fade"
+  id="blog_4"
+  tabindex="-1"
+  aria-labelledby="blog_4"
+  aria-hidden="true"
+>
   <div class="modal-dialog px-modal">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
-          <div class="single-blog-box">
-              <div class="single-blog-img">
-                  <img src="assets/img/blog-4.jpg" title="" alt="">
-              </div>
-              <div class="single-blog-content">
-                  <h6>10 July, 2022</h6>
-                  <h2>12 unique example of portfolio websites</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <div class="blog-meta">
-                      <label>Share</label>
-                      <ul class="nav social-link">
-                          <li>
-                              <a href="javascript:"><i class="fab fa-twitter"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-instagram"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-facebook"></i></a>
-                          </li>
-                          <li>
-                              <a href="javascript:"><i class="fab fa-pinterest"></i></a>
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-      </div>
+        <div class="single-blog-box">
+          <div class="single-blog-img">
+            <img src="assets/img/blog-4.jpg" title="" alt="" />
+          </div>
+          <div class="single-blog-content">
+            <h6>10 July, 2022</h6>
+            <h2>12 unique example of portfolio websites</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="blog-meta">
+              <label>Share</label>
+              <ul class="nav social-link">
+                <li>
+                  <a href="javascript:"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:"><i class="fab fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+          Close
+        </button>
       </div>
     </div>
   </div>
 </div>
 <!-- END blog modal-->
-
-
