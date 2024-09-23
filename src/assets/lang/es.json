@@ -14,12 +14,12 @@
       "gif": "assets/gifs/ufos_fall.gif",
       "img": "assets/gifs/ufos_fall.avif",
       "toShow": "",
-      "description": "2D platformer DEMO inspirado en INSIDE.",
+      "description": "Juego de plataforma 2D inspirado en INSIDE (Work in progress :3).",
       "modal_info": {
         "id": "ufos_fall",
         "title": "Platform 2D game",
         "subtitle": "Unity",
-        "description": "<p>'UFO Fall' is a 2D adventure game that delves into the enigmatic Roswell case, offering a fresh perspective on what happened to the mysterious creatures that crashed in the desert. <br> As the player, you'll step into the shoes of one of these extraterrestrial beings, on a quest to find their ship and rescue their crew. However, there's a twist—the alien protagonist has lost its memory, save for a deep love for plants and hazy recollections of the crash. <br> Explore a captivating 2D world filled with intriguing challenges and puzzles as you uncover the secrets behind the Roswell incident. Traverse the desert landscapes, infiltrate the infamous Area 51, and interact with a variety of unique characters and creatures. <br>'UFO Fall' blends captivating storytelling with creative gameplay, allowing players to utilize the alien plant-loving abilities to navigate the obstacles they encounter on their journey. Discover the truth behind the crash, the alien's mission, and the mysteries of Area 51 as you progress through this work in progress game. <br>Embark on a unique adventure and prepare to unravel the secrets of 'UFO Fall' as you guide the amnesiac alien in their quest to recover their memories and rescue their lost crew.</p>",
+        "description": "<p>'UFO Fall' es un juego de aventuras en 2D que profundiza en el enigmático caso Roswell, ofreciendo una nueva perspectiva sobre lo que pasó con las misteriosas criaturas que se estrellaron en el desierto. <br> Como jugador, te pondrás en la piel de uno de estos seres extraterrestres, en una búsqueda para encontrar su nave y rescatar a su tripulación. Sin embargo, hay un giro: el protagonista alienígena ha perdido la memoria, salvo por un profundo amor por las plantas y confusos recuerdos del accidente. <br> Explora un cautivador mundo 2D lleno de intrigantes desafíos y acertijos mientras descubres los secretos detrás del incidente de Roswell. Atraviesa paisajes desérticos, infíltrate en la infame Área 51 e interactúa con una variedad de personajes y criaturas únicas. <br>'UFO Fall' combina una narración cautivadora con un juego creativo, lo que permite a los jugadores utilizar las habilidades alienígenas y amor a las plantas para sortear los obstáculos que encuentran en su viaje. Descubre la verdad detrás del accidente, la misión del extraterrestre y los misterios del Área 51 a medida que avanzas en este juego que se encuentra en progreso. <br>Embárcate en una aventura única y prepárate para desentrañar los secretos de 'UFO Fall' mientras guías al extraterrestre en su búsqueda para recuperar sus recuerdos y rescatar a su tripulación perdida.</p>",
         "img": "assets/gifs/ufos_fall.avif",
         "social": []
       }
@@ -30,12 +30,12 @@
       "gif": "assets/gifs/jumping_ball_hypercasual.gif",
       "img": "assets/gifs/jumping_ball_hypercasual.avif",
       "toShow": "",
-      "description": "Hypercasual game that loads level blocks while the player advance.",
+      "description": "Juego hipercasual que carga bloques de niveles mientras el jugador avanza.",
       "modal_info": {
         "id": "hypercasual",
         "title": "Platform 2D game",
         "subtitle": "Unity",
-        "description": "<p>This project was developed with Unity version 2021.3.15f1 <br> This project use a level blocks logic to autogenerate blocks when the user advance in the game to achieve a good score. <br> I create the character from scratch, I use some assets that I created before to my indie game. <br> It have a parallax effect in the background.</p>",
+        "description": "<p>Este proyecto fue desarrollado con Unity versión 2021.3.15f1 <br> Utiliza una lógica de bloques de nivel que autogenera bloques cuando el usuario avanza en el juego para lograr una buena puntuación. <br> Cree el personaje desde cero, use algunos recursos que creé antes para mi juego independiente. <br> Tiene un efecto de paralax en el fondo.</p>",
         "img": "assets/gifs/hypercasual.avif",
         "social": []
       }
@@ -46,12 +46,12 @@
       "gif": "assets/gifs/ovni.gif",
       "img": "assets/gifs/ovni.avif",
       "toShow": "",
-      "description": "My first pixel art approach with assets from platzi course.",
+      "description": "Mi primer acercamiento a un videojuego basado en arte de pixeles de un curso que hice en Platzi.",
       "modal_info": {
         "id": "ovni",
         "title": "Platform 2D game",
         "subtitle": "Unity",
-        "description": "<p>I did a 2D platform video game, using some aseets by Platzi, that they shared in the course that I follow. It have 2 levels, the main character have some enemys and coins to collect, so I had to develop the behaviour of every element in the game, also the portal animation, I use a particle system and other things to let pass the main character to the next level.</p>",
+        "description": "<p>Hice un videojuego de plataforma en 2D, utilizando unos aseets de Platzi, que me compartieron en el curso que seguí. Tiene 2 niveles, el personaje principal tiene algunos enemigos y monedas para recolectar, así que tuve que desarrollar el comportamiento de cada elemento en el juego, también la animación del portal, uso un sistema de partículas y otras cosas para dejar pasar al personaje principal al siguiente nivel.</p>",
         "img": "assets/gifs/ovni.avif",
         "social": []
       }
@@ -62,86 +62,86 @@
       "gif": "assets/gifs/roma_pong.gif",
       "img": "assets/gifs/roma_pong.avif",
       "toShow": "",
-      "description": "Using my own assets on a simple but cool copy of pong.",
+      "description": "Usando mis propios assets cree una copia de PONG.",
       "modal_info": {
         "id": "roma_pong",
         "title": "Platform 2D game",
         "subtitle": "Unity",
-        "description": "<p>I did a 2D videogame like the original PONG using Unity 2019.3.0a4 and the good feature is that I used a global variable to let the user choose the side to play. I know, it is not a big deal, but for me was good to learn.</p>",
+        "description": "<p>Hice un videojuego 2D como el PONG original usando Unity 2019.3.0a4 y una buena característica es que usé una variable global para permitir que el usuario elija el lado para jugar. Lo sé, no es gran cosa, pero para mí fue genial de aprender.</p>",
         "img": "assets/gifs/roma_pong.avif",
         "social": []
       }
     }
   ],
-  "Work.artTitle": "Art projects",
+  "Work.artTitle": "Proyectos de arte",
   "Work.art": [
     {
-      "name": "Neil 3D model",
+      "name": "Modelo 3d de Neil",
       "type": "Maya",
       "contentType": "normal",
       "gif": "assets/gifs/maya/ufo_fall_1.gif",
       "img": "assets/gifs/maya/ufo_fall_1.avif",
       "toShow": "",
-      "description": "2D character concept to 3D model.",
+      "description": "Personaje 2D a modelo 3D.",
       "modal_info": {
         "id": "neil_3d",
-        "title": "Neil 3D model",
+        "title": "Modelo 3d de Neil",
         "subtitle": "Maya",
-        "description": "<p>The 3D model character for 'Neil' was meticulously crafted using Maya, a leading 3D modeling software. This alien character features a sleek, otherworldly design that reflects its extraterrestrial origins. The model showcases a unique blend of organic and futuristic elements, with a slender build and elongated limbs, giving it an agile and graceful appearance. </p>",
+        "description": "<p>El modelo de personaje 3D de 'Neil' fue elaborado meticulosamente utilizando Maya, un software líder de modelado 3D. Este personaje alienígena presenta un diseño elegante y de otro mundo que refleja sus orígenes extraterrestres. El modelo presenta una combinación única de elementos orgánicos y futuristas, con una constitución esbelta y extremidades alargadas, lo que le da una apariencia ágil y elegante.</p>",
         "img": "assets/gifs/maya/ufo_fall_1.avif",
         "social": [],
         "parts": [
           {
             "id": "neil_3d_Basic",
-            "type": "Maya and Photoshop",
-            "name": "Basic model",
+            "type": "Maya y Photoshop",
+            "name": "Modelado basico",
             "gif": "assets/gifs/maya/ufo_fall_process.gif",
             "img": "assets/gifs/maya/ufo_fall_process.avif",
             "toShow": "",
-            "description": "The entire 3D model, including the head, body is designed with a low-poly structure, optimized for performance without compromising on visual quality. The mesh is simplified with a focus on maintaining a minimal polygon count while preserving the essential forms and features."
+            "description": "Todo el modelo 3D, incluida la cabeza y el cuerpo, está diseñado con una estructura optimizada para el rendimiento sin comprometer la calidad visual. La malla se simplifica centrándose en mantener un número mínimo de polígonos y al mismo tiempo preservar las formas y características esenciales."
           },
           {
             "id": "neil_3d_head",
             "type": "Maya",
-            "name": "Head model",
+            "name": "Modelado de la cabeza",
             "gif": "assets/gifs/maya/ufo_fall_2.gif",
             "img": "assets/gifs/maya/ufo_fall_2.avif",
             "toShow": "",
-            "description": "The model features well-defined edge loops, particularly around the eyes and mouth, known as mask loops, which enhance the natural flow and realistic expression of the face. These loops provide a clean and efficient mesh structure, crucial for achieving lifelike animations and detailed facial expressions."
+            "description": "El modelo presenta bucles en los bordes bien definidos, particularmente alrededor de los ojos y la boca, conocidos como bucles de máscara, que mejoran el flujo natural y la expresión realista del rostro. Estos bucles proporcionan una estructura de malla limpia y eficiente, crucial para lograr animaciones realistas y expresiones faciales detalladas."
           },
           {
             "id": "neil_3d_body",
             "type": "Maya",
-            "name": "Body model",
+            "name": "Modelado del cuerpo",
             "gif": "assets/gifs/maya/ufo_fall_body.gif",
             "img": "assets/gifs/maya/ufo_fall_body.avif",
             "toShow": "",
-            "description": "The 3D body model is crafted with meticulous attention to topology, prioritizing clean, quads-only geometry to prevent issues with deformation during animation. The model incorporates strategically placed edge loops around key joints and anatomical features, such as the shoulders, elbows, and knees, which facilitate realistic bending and movement."
+            "description": "El modelo de cuerpo 3D está diseñado prestando meticulosa atención a la topología, priorizando una geometría limpia y exclusivamente cuádruple para evitar problemas de deformación durante la animación. El modelo incorpora bucles de borde estratégicamente colocados alrededor de articulaciones clave y características anatómicas, como los hombros, los codos y las rodillas, que facilitan una flexión y un movimiento realistas."
           },
           {
             "id": "neil_3d_clothes",
             "type": "Maya",
-            "name": "Clothes and prop model",
+            "name": "Modelado de la ropa y prop",
             "gif": "assets/gifs/maya/ufo_fall_Clothes.gif",
             "img": "assets/gifs/maya/ufo_fall_Clothes.avif",
             "toShow": "",
-            "description": "The mesh is composed predominantly of quads, avoiding ngons and poles, which ensures smooth deformation during animation and prevents issues such as texture stretching. Edge loops are strategically placed to define the natural folds and creases in the fabric, especially around areas of movement like the joints and waist."
+            "description": "La malla se compone predominantemente de quads, evitando ngons y polos, lo que garantiza una deformación suave durante la animación y evita problemas como el estiramiento de la textura. Los bucles de los bordes están ubicados estratégicamente para definir los pliegues y pliegues naturales de la tela, especialmente alrededor de áreas de movimiento como las articulaciones y la cintura."
           }
         ]
       }
     },
     {
-      "name": "Anatomy draws",
-      "type": "Analog",
+      "name": "Dibujos anatómico",
+      "type": "Análogo",
       "contentType": "slider",
       "gif": "assets/gifs/anatomy/draws.gif",
       "img": "assets/img/anatomy/01.jpg",
       "toShow": "",
-      "description": "Using graphite pencils, rapidographer, watercolor and real human nude model.",
+      "description": "Utilizando lápices de grafito, rapidógrafo, acuarela y modelo de desnudo humano real.",
       "modal_info": {
         "id": "anatomy_slider",
-        "title": "Anatomy",
-        "subtitle": "Draws",
+        "title": "Anatomía",
+        "subtitle": "Dibujos",
         "img": "assets/img/anatomy/01.jpg",
         "slides": [
           {
@@ -324,17 +324,17 @@
       }
     },
     {
-      "name": "Artistic draws",
-      "type": "Analog",
+      "name": "Dibujos artísticos",
+      "type": "Análogo",
       "contentType": "slider",
       "gif": "assets/gifs/artistic_draws/draws.gif",
       "img": "assets/img/artistic_draws/01.jpg",
       "toShow": "",
-      "description": "Using different technics to know contrast, saturation, volume, perspective, sketching, textures, deepness, leak points, etc.",
+      "description": "Utilizar diferentes técnicas para conocer contraste, saturación, volumen, perspectiva, bocetos, texturas, profundidad, puntos de fuga, etc.",
       "modal_info": {
         "id": "artistic_slider",
         "title": "artistic",
-        "subtitle": "Draws",
+        "subtitle": "Dibujos",
         "img": "assets/img/artistic_draws/01.jpg",
         "slides": [
           {
@@ -447,16 +447,16 @@
       }
     },
     {
-      "name": "Digital illustrations",
+      "name": "Ilustraciones digitales",
       "type": "Illustrator - Photoshop",
       "contentType": "slider",
       "gif": "assets/gifs/digital/illustrations.gif",
       "img": "assets/img/digital/0.jpg",
       "toShow": "",
-      "description": "Sketching first and digitalized at the end.",
+      "description": "Bocetado primero y digitalizado al final.",
       "modal_info": {
         "id": "digital_slider",
-        "title": "Digital illustrations",
+        "title": "Ilustraciones digitales",
         "subtitle": "illustrations",
         "img": "assets/img/digital/00.jpg",
         "slides": [
@@ -636,68 +636,68 @@
     }
   ],
 
-  "Work.modalClose": "Close",
-  "Work.sliderPrev": "Previous",
-  "Work.sliderNext": "Next",
+  "Work.modalClose": "Cerrar",
+  "Work.sliderPrev": "Anterior",
+  "Work.sliderNext": "Siguiente",
 
-  "Experience.title": "Experience",
-  "Experience.subtitle": "Work experience",
-  "Experience.description": "Hello there! My name is Romario. Passionate about creating visually appealing and intuitive user interfaces, I am a skilled front-end developer with a dedication to staying up-to-date with the latest industry trends and technologies. With expertise in crafting responsive designs and optimizing website performance, I am committed to making a positive impact on the digital landscape.",
+  "Experience.title": "Experiencia",
+  "Experience.subtitle": "Experiencia de trabajo",
+  "Experience.description": "¡Hola! Mi nombre es Romario. Apasionado por la creación de interfaces de usuario intuitivas y visualmente atractivas, soy un desarrollador front-end capacitado con la dedicación de mantenerme actualizado con las últimas tendencias y tecnologías de la industria. Con experiencia en la elaboración de diseños responsivos y la optimización del rendimiento de sitios web, estoy comprometido a generar un impacto positivo en el panorama digital.",
 
   "Experience.list": [
     {
       "date": "May 2023 - July 2024",
       "company": "Endless Adventures",
-      "position": "Front End Developer",
-      "description": "Senior | Front End Developer",
-      "details": "Creating with Angular the web page of their tool that create video games without code."
+      "position": "Desarrollador Front End",
+      "description": "Senior | Desarrollador Front End",
+      "details": "Creando con Angular la página web de su herramienta que crea videojuegos."
     },
     {
       "date": "Sep 2020 - Sep 2022",
       "company": "COINK",
-      "position": "Front End Developer",
-      "description": "IONIC developer",
-      "details": "I used the IONIC framework with Angular 12 working on the markup and logic of the app, compiling for IOS and sending version to the AppStore."
+      "position": "Desarrollador Front End",
+      "description": "Desarrollador en IONIC",
+      "details": "Utilicé el framework IONIC con Angular 12 trabajando en el marcado y la lógica de la aplicación, compilando para IOS y enviando la versión a la AppStore."
     },
     {
       "date": "Jan 2018 - Nov 2019",
       "company": "El Tiempo",
-      "position": "Front End | Back End | Developer",
-      "description": "Web developer",
-      "details": "Languages like Drupal 8, Drupal 7 and PHP5 in a framework called Codeigniter and other project with NodeJs, LoopBack3 and Angular7. - Go and closure of production in every digital event, like CyberDays and BlackFriday. "
+      "position": "Front End | Back End",
+      "description": "Desarrollador Web",
+      "details": "uso de lenguajes como Drupal 8, Drupal 7 y PHP5 en un framework llamado Codeigniter y otro proyecto con NodeJs, LoopBack3 y Angular7."
     },
     {
       "date": "Oct 2017 - Nov 2017",
       "company": "Cultivando Futuro",
-      "position": "Front End Developer",
-      "description": "Angular developer",
-      "details": "Angular handling, supporting administration processes."
+      "position": "Desarrollador Front End",
+      "description": "Desarrollador Angular",
+      "details": "Manejo de angular, apoyando los procesos de administración."
     },
     {
       "date": "Mar 2017 - Oct 2017",
       "company": "GLOGIC",
-      "position": "Front End Developer",
-      "description": "Angular developer",
-      "details": "Angular handling, supporting administration processes and statistical graphs."
+      "position": "Desarrollador Front End",
+      "description": "Desarrollador Angular",
+      "details": "Manejo de angular, soporte a procesos de administración y gráficos estadísticos."
     },
     {
       "date": "Mar 2014 - Mar 2017",
       "company": "GRIMORUM",
-      "position": "Front End | Back End | Developer",
-      "description": "Web developer",
-      "details": "Manage multiple projects of innovation, supporting web pages and web apps with IONIC."
+      "position": "Front End | Back End",
+      "description": "Desarrolador web",
+      "details": "Gestión de múltiples proyectos de innovación, soportando páginas web y aplicaciones web con IONIC."
     }
   ],
 
-  "About.title": "Nice to meet you!",
-  "About.subTitle": "Welcome to...",
-  "About.roles": ["Developer", "Artist"],
-  "About.button": "Download CV",
+  "About.title": "Un gusto conocerte!",
+  "About.subTitle": "Bienvenido a...",
+  "About.roles": ["Desarrollador", "Artista"],
+  "About.button": "Descargar CV",
   "About.experience1": "10+",
-  "About.experience2": "Years",
-  "About.experience3": "of experience...",
-  "About.quote": "“The video game industry is notoriously difficult to break into, but my passion for it has driven me to develop my own games using C#, Unity, and Photoshop. I thrive on overcoming challenges and am constantly looking for new opportunities to enhance my skills. I'm eager to take my expertise to the next level and make a meaningful impact in the gaming and web world.”",
-  "About.bio": "I have a proven track record of delivering high-quality web applications across various industries, including technology, agriculture, editorial, finance, and gaming. My passion for the gaming industry has inspired me to create personal games using C#, Unity, and Photoshop. I thrive on challenges and am actively seeking opportunities to further enhance my skills and contribute my expertise to the gaming world.",
+  "About.experience2": "Años",
+  "About.experience3": "de experiencia...",
+  "About.quote": "“Es muy difícil entrar en la industria de los videojuegos, pero mi pasión por ella me ha llevado a desarrollar mis propios juegos usando C#, Unity y Photoshop. Disfruto superando desafíos y busco constantemente nuevas oportunidades para mejorar mis habilidades. Estoy ansioso por llevar mi experiencia al siguiente nivel y generar un impacto significativo en el mundo de los juegos y la web.”",
+  "About.bio": "Tengo una trayectoria comprobada en la entrega de aplicaciones web de alta calidad en diversas industrias, incluidas la tecnología, la agricultura, la editorial, las finanzas y los juegos. Mi pasión por la industria del juego me ha inspirado a crear juegos personales usando C#, Unity y Photoshop. Disfruto de los desafíos y busco activamente oportunidades para mejorar aún más mis habilidades y contribuir con mi experiencia al mundo de la web y los videojuegos.",
   "About.email": "romaef23@gmail.com",
   "About.location": "Colombia, Bogotá",
 
