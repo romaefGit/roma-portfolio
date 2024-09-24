@@ -114,7 +114,10 @@ export class WorkComponent implements OnInit {
   }
 
   sliderClosed() {
-    this.slideIndexActive = 0;
+    setTimeout(() => {
+      // wait close transition
+      this.slideIndexActive = 0;
+    }, 500);
   }
 
   setSliderLength(num: number) {
