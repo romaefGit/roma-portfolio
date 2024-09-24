@@ -136,172 +136,172 @@
       "type": "Analog",
       "contentType": "slider",
       "gif": "assets/gifs/anatomy/draws.gif",
-      "img": "assets/img/anatomy/01.jpg",
+      "img": "assets/img/anatomy/01.avif",
       "toShow": "",
       "description": "Using graphite pencils, rapidographer, watercolor and real human nude model.",
       "modal_info": {
         "id": "anatomy_slider",
         "title": "Anatomy",
         "subtitle": "Draws",
-        "img": "assets/img/anatomy/01.jpg",
+        "img": "assets/img/anatomy/01.avif",
         "slides": [
           {
-            "img": "assets/img/anatomy/01.jpg",
+            "img": "assets/img/anatomy/01.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/03.jpg",
+            "img": "assets/img/anatomy/03.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/11.jpg",
+            "img": "assets/img/anatomy/11.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/12.jpg",
+            "img": "assets/img/anatomy/12.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/13.jpg",
+            "img": "assets/img/anatomy/13.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/14.jpg",
+            "img": "assets/img/anatomy/14.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/21.jpg",
+            "img": "assets/img/anatomy/21.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/22.jpg",
+            "img": "assets/img/anatomy/22.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/23.jpg",
+            "img": "assets/img/anatomy/23.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/24.jpg",
+            "img": "assets/img/anatomy/24.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/31.jpg",
+            "img": "assets/img/anatomy/31.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/32.jpg",
+            "img": "assets/img/anatomy/32.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/33.jpg",
+            "img": "assets/img/anatomy/33.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/34.jpg",
+            "img": "assets/img/anatomy/34.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/35.jpg",
+            "img": "assets/img/anatomy/35.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/41.jpg",
+            "img": "assets/img/anatomy/41.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/43.jpg",
+            "img": "assets/img/anatomy/43.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/43-1.jpg",
+            "img": "assets/img/anatomy/43-1.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/44.jpg",
+            "img": "assets/img/anatomy/44.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/45.jpg",
+            "img": "assets/img/anatomy/45.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/46.jpg",
+            "img": "assets/img/anatomy/46.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/47.jpg",
+            "img": "assets/img/anatomy/47.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/48.jpg",
+            "img": "assets/img/anatomy/48.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/49.jpg",
+            "img": "assets/img/anatomy/49.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/51.jpg",
+            "img": "assets/img/anatomy/51.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/52.jpg",
+            "img": "assets/img/anatomy/52.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/53.jpg",
+            "img": "assets/img/anatomy/53.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/61.jpg",
+            "img": "assets/img/anatomy/61.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/62.jpg",
+            "img": "assets/img/anatomy/62.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/63.jpeg",
+            "img": "assets/img/anatomy/63.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/64.jpg",
+            "img": "assets/img/anatomy/64.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/65.jpg",
+            "img": "assets/img/anatomy/65.avif",
             "title": "",
             "description": ""
           },
@@ -311,12 +311,12 @@
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/71.jpg",
+            "img": "assets/img/anatomy/71.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/72.jpg",
+            "img": "assets/img/anatomy/72.avif",
             "title": "",
             "description": ""
           }
@@ -329,47 +329,47 @@
       "type": "Analog",
       "contentType": "slider",
       "gif": "assets/gifs/artistic_draws/draws.gif",
-      "img": "assets/img/artistic_draws/01.jpg",
+      "img": "assets/img/artistic_draws/01.avif",
       "toShow": "",
       "description": "Using different technics to know contrast, saturation, volume, perspective, sketching, textures, deepness, leak points, etc.",
       "modal_info": {
         "id": "artistic_slider",
         "title": "artistic",
         "subtitle": "Draws",
-        "img": "assets/img/artistic_draws/01.jpg",
+        "img": "assets/img/artistic_draws/01.avif",
         "slides": [
           {
-            "img": "assets/img/artistic_draws/01.jpg",
+            "img": "assets/img/artistic_draws/01.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/02-0.jpg",
+            "img": "assets/img/artistic_draws/02-0.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/02-1.jpg",
+            "img": "assets/img/artistic_draws/02-1.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/02-3.jpg",
+            "img": "assets/img/artistic_draws/02-3.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/3.jpg",
+            "img": "assets/img/artistic_draws/3.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/11.jpg",
+            "img": "assets/img/artistic_draws/11.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/12.jpg",
+            "img": "assets/img/artistic_draws/12.avif",
             "title": "",
             "description": ""
           },
@@ -379,67 +379,67 @@
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/22.jpg",
+            "img": "assets/img/artistic_draws/22.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/31.jpg",
+            "img": "assets/img/artistic_draws/31.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/32.jpg",
+            "img": "assets/img/artistic_draws/32.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/33.jpg",
+            "img": "assets/img/artistic_draws/33.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/41.jpg",
+            "img": "assets/img/artistic_draws/41.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/42.jpg",
+            "img": "assets/img/artistic_draws/42.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/43.jpg",
+            "img": "assets/img/artistic_draws/43.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/44.jpeg",
+            "img": "assets/img/artistic_draws/44.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/45.jpeg",
+            "img": "assets/img/artistic_draws/45.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/51.jpg",
+            "img": "assets/img/artistic_draws/51.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/52.jpg",
+            "img": "assets/img/artistic_draws/52.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/53.jpg",
+            "img": "assets/img/artistic_draws/53.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/54.jpg",
+            "img": "assets/img/artistic_draws/54.avif",
             "title": "",
             "description": ""
           }
@@ -452,182 +452,182 @@
       "type": "Illustrator - Photoshop",
       "contentType": "slider",
       "gif": "assets/gifs/digital/illustrations.gif",
-      "img": "assets/img/digital/0.jpg",
+      "img": "assets/img/digital/0.avif",
       "toShow": "",
       "description": "Sketching first and digitalized at the end.",
       "modal_info": {
         "id": "digital_slider",
         "title": "Digital illustrations",
         "subtitle": "illustrations",
-        "img": "assets/img/digital/00.jpg",
+        "img": "assets/img/digital/00.avif",
         "slides": [
           {
-            "img": "assets/img/digital/0.jpg",
+            "img": "assets/img/digital/0.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/00.jpg",
+            "img": "assets/img/digital/00.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/01.jpg",
+            "img": "assets/img/digital/01.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/02.jpg",
+            "img": "assets/img/digital/02.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/02-1.jpg",
+            "img": "assets/img/digital/02-1.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/03.jpg",
+            "img": "assets/img/digital/03.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/04.jpg",
+            "img": "assets/img/digital/04.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/11.jpg",
+            "img": "assets/img/digital/11.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/12.jpg",
+            "img": "assets/img/digital/12.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/21.jpg",
+            "img": "assets/img/digital/21.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/22.jpg",
+            "img": "assets/img/digital/22.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/23.jpg",
+            "img": "assets/img/digital/23.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/24.jpg",
+            "img": "assets/img/digital/24.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/31.jpg",
+            "img": "assets/img/digital/31.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/32.jpg",
+            "img": "assets/img/digital/32.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/33.jpg",
+            "img": "assets/img/digital/33.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/41.jpg",
+            "img": "assets/img/digital/41.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/42.jpg",
+            "img": "assets/img/digital/42.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/43.jpg",
+            "img": "assets/img/digital/43.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/51.jpg",
+            "img": "assets/img/digital/51.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/52.jpg",
+            "img": "assets/img/digital/52.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/61.jpg",
+            "img": "assets/img/digital/61.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/62.jpg",
+            "img": "assets/img/digital/62.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/63.jpg",
+            "img": "assets/img/digital/63.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/64.jpg",
+            "img": "assets/img/digital/64.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/71.jpg",
+            "img": "assets/img/digital/71.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/81.jpg",
+            "img": "assets/img/digital/81.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/91.jpg",
+            "img": "assets/img/digital/91.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/92.jpg",
+            "img": "assets/img/digital/92.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/93.jpg",
+            "img": "assets/img/digital/93.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/94.jpg",
+            "img": "assets/img/digital/94.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/96.jpg",
+            "img": "assets/img/digital/96.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/97.jpg",
+            "img": "assets/img/digital/97.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/98.jpg",
+            "img": "assets/img/digital/98.avif",
             "title": "",
             "description": ""
           }
