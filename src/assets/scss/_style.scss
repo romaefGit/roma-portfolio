@@ -1,150 +1,148 @@
 /* Background
 -------------------------------*/
 body {
-    background-color: var(--g-bg);
-    color: var(--g-text);
-    font-family: $px-font;
-    --bs-body-font-weight: 400;
-    --bs-body-font-size: 1rem;
-    --bs-body-line-height: 1.6;
-    overflow-x: hidden;
+  background-color: var(--g-bg);
+  color: var(--g-text);
+  font-family: $px-font;
+  --bs-body-font-weight: 400;
+  --bs-body-font-size: 1rem;
+  --bs-body-line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* ----------------------
 *   owl 
 ---------------------------*/
 .owl-dots {
-    text-align: center;
-    font-size: 0px;
-    padding-top: 35px;
-    .owl-dot {
-        display: inline-block;
-        vertical-align: top;
-        width: 10px;
-        height: 10px;
-        background: transparent;
-        border: 1px solid var(--g-text);
-        transition: ease all 0.55s;
-        border-radius: 8px;
-        margin: 0 4px;
+  text-align: center;
+  font-size: 0px;
+  padding-top: 35px;
+  .owl-dot {
+    display: inline-block;
+    vertical-align: top;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border: 1px solid var(--g-text);
+    transition: ease all 0.55s;
+    border-radius: 8px;
+    margin: 0 4px;
 
-        &.active {
-            background: var(--g-primary);
-            width: 20px;
-        }
+    &.active {
+      background: var(--g-primary);
+      width: 20px;
     }
-
-
+  }
 }
 
 .owl-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  pointer-events: none;
+
+  .owl-next,
+  .owl-prev {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
     margin: auto;
-    pointer-events: none;
+    width: 35px;
+    height: 35px;
+    background: var(--g-primary);
+    color: var(--g-primary-text);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    pointer-events: auto;
+    transition: ease all 0.35s;
 
-    .owl-next,
-    .owl-prev {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        width: 35px;
-        height: 35px;
-        background: var(--g-primary);
-        color: var(--g-primary-text);
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        pointer-events: auto;
-        transition: ease all 0.35s;
-
-        &:hover {
-            background: var(--g-primary-text);
-            color: var(--g-primary);
-        }
+    &:hover {
+      background: var(--g-primary-text);
+      color: var(--g-primary);
     }
+  }
 
-    .owl-next {
-        right: 0px;
+  .owl-next {
+    right: 0px;
 
-        @include up-lg {
-            right: -50px;
-        }
+    @include up-lg {
+      right: -50px;
     }
+  }
 
-    .owl-prev {
-        left: 0px;
+  .owl-prev {
+    left: 0px;
 
-        @include up-lg {
-            left: -50px;
-        }
+    @include up-lg {
+      left: -50px;
     }
+  }
 }
 
-
 .wrapper {
-    @include up-lg {
-        padding-left: 285px;
-    }
+  @include up-lg {
+    padding-left: 285px;
+  }
 }
 
 .white-text {
-    color: var(--bs-heading-color);
+  color: var(--bs-heading-color);
 }
-
 
 /* ----------------------
 *   Home Banner
 ---------------------------*/
 .home-section {
-    position: relative;
+  position: relative;
 }
-
 
 /* ----------------------
 *  Contact Section
 ---------------------------*/
 .contact-section {
-    @include up-md {
-        .section-heading {
-            margin-bottom: 45px;
-        }
+  @include up-md {
+    .section-heading {
+      margin-bottom: 45px;
     }
+  }
 }
 /* ----------------------
 *  Retutn to Top Section
 ---------------------------*/
 #return-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: block;
+  display: none;
+  z-index: 9;
+  i {
+    color: var(--g-primary);
+    font-size: 40px;
+  }
+}
+
+.fixed-header {
+  #return-to-top {
     display: block;
-    display: none;
-    z-index: 9;
-    i{
-        color: var(--g-primary);
-        font-size: 40px;
-    }
+  }
 }
-
-.fixed-header{
-    #return-to-top{
-        display: block;
-    }
-}
-
 
 // OVERWRITING MODAL
 .modal-content {
-    background-color: none;
-    border: none;
+  background-color: none;
+  border: none;
+}
+
+.pointer {
+  cursor: pointer;
 }

@@ -5,7 +5,10 @@
     *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]"
   ></div>
 </div>
-<div class="container" style="z-index: 1; position: relative">
+<div
+  class="container animate__animated animate__bounceInLeft"
+  style="z-index: 1; position: relative"
+>
   <div class="row min-vh-100 align-items-center">
     <div class="col-lg-7 col-xl-7 col-xxl-6">
       <div class="hb-text">
@@ -30,7 +33,7 @@
 
 <div class="me">
   <!-- cool pink bubbles  -->
-  <div class="hb-me">
+  <div class="hb-me animate__animated animate__fadeIn animate__delay-1s">
     <div class="pink-bubbles">
       <svg viewBox="0 0 120 200">
         <defs>
@@ -88,12 +91,15 @@
 
   <!-- Pink circle -->
   <div
-    class="hb-me"
+    class="hb-me hb-me animate__animated animate__fadeIn"
     style="background-image: url(assets/img/me/bg-pink.png)"
   ></div>
 
   <!-- Portrait -->
-  <div class="hb-me" style="background-image: url(assets/img/me/me.avif)"></div>
+  <div
+    class="hb-me animate__animated animate__fadeInUp"
+    style="background-image: url(assets/img/me/me.avif)"
+  ></div>
 
   <!-- Social buttons -->
   <div class="social-fix">

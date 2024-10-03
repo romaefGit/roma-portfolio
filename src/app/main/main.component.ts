@@ -8,4 +8,11 @@ import { FeatureFlagService } from 'src/app/core/services/feature-flag/feature-f
 })
 export class MainComponent {
   constructor(public flagService: FeatureFlagService) {}
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
 }
