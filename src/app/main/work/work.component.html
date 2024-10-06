@@ -27,7 +27,9 @@
                 [attr.data-bs-target]="'#' + project.modal_info.id"
               >
                 <img
-                  [src]="!project.toShow ? project.img : project.toShow"
+                  [ngSrc]="!project.toShow ? project.img : project.toShow"
+                  width="318"
+                  height="194"
                   [alt]="project.name"
                 />
               </a>
@@ -85,7 +87,9 @@
                 [attr.data-bs-target]="'#' + project.modal_info.id"
               >
                 <img
-                  [src]="!project.toShow ? project.img : project.toShow"
+                  [ngSrc]="!project.toShow ? project.img : project.toShow"
+                  width="318"
+                  height="194"
                   [alt]="project.name"
                 />
               </a>
@@ -140,7 +144,13 @@
           <div class="modal-body">
             <div class="single-blog-box">
               <div class="single-blog-img">
-                <img [src]="project.gif" title="" alt="" />
+                <img
+                  [ngSrc]="project.gif"
+                  title=""
+                  alt=""
+                  width="318"
+                  height="194"
+                />
               </div>
               <div class="single-blog-content">
                 <h6>{{ project.modal_info.subtitle }}</h6>
@@ -208,7 +218,13 @@
             <div class="modal-body">
               <div class="single-blog-box">
                 <div class="single-blog-img">
-                  <img [src]="project.gif" title="" alt="" />
+                  <img
+                    [ngSrc]="project.gif"
+                    title=""
+                    alt=""
+                    width="318"
+                    height="194"
+                  />
                 </div>
                 <div class="single-blog-content">
                   <h6>{{ project.modal_info.subtitle }}</h6>
@@ -232,7 +248,9 @@
                       >
                         <div class="work-img">
                           <img
-                            [src]="!part.toShow ? part.img : part.toShow"
+                            [ngSrc]="!part.toShow ? part.img : part.toShow"
+                            width="318"
+                            height="194"
                             [alt]="part.name"
                           />
                         </div>
@@ -340,7 +358,13 @@
                     [ngClass]="{ active: i == slideIndexActive }"
                     class="carousel-item"
                   >
-                    <img [src]="slide.img" class="d-block w-100" alt="..." />
+                    <img
+                      [ngSrc]="slide.img"
+                      class="d-block w-100"
+                      alt="..."
+                      width="318"
+                      height="194"
+                    />
                     <div
                       *ngIf="
                         slide.title &&
