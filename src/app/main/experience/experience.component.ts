@@ -6,8 +6,12 @@ import {
   LanguageService,
   LanguagesTypes,
 } from 'src/app/core/services/language/language.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
+  imports: [TranslateModule, CommonModule],
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss'],

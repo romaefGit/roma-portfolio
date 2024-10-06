@@ -6,17 +6,19 @@ import {
   inject,
 } from '@angular/core';
 import { fromEvent, Subscription } from 'rxjs';
-
 import { throttleTime } from 'rxjs/operators';
-import {
-  LanguageService,
-  LanguagesTypes,
-} from './core/services/language/language.service';
+import { CommonModule } from '@angular/common';
+import { LanguageService } from './core/services/language/language.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { HeaderComponent } from './components/header/header.component';
+import { MainComponent } from './main/main.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [CommonModule, TranslateModule, HeaderComponent, MainComponent], // Add other necessary modules
 })
 export class AppComponent implements OnInit, AfterViewInit {
   public fixedHeader: boolean = false;
@@ -42,7 +44,6 @@ export class AppComponent implements OnInit, AfterViewInit {
   }
 
   onScroll() {
-    //code to fix header on scroll
     if (
       document.documentElement.scrollTop >= 100 ||
       document.body.scrollTop >= 100
@@ -59,17 +60,11 @@ export class AppComponent implements OnInit, AfterViewInit {
     ) as HTMLInputElement;
 
     if (toggle) {
-      // Toggle the checked state
       if (language) toggle.checked = !toggle.checked;
 
-      // Optionally, do something based on the state
       if (!toggle.checked) {
-        // EN
-        console.log('Switch is ON (EN)');
         this.languageService.changeLanguage('en');
       } else {
-        // ES
-        console.log('Switch is on (ES)');
         this.languageService.changeLanguage('es');
       }
     }

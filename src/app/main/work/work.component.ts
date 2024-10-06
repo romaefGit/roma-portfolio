@@ -2,15 +2,18 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { options, options2 } from '../constant';
 import { inject } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import {
   LanguageService,
   LanguagesTypes,
 } from 'src/app/core/services/language/language.service';
 import { Subscription } from 'rxjs';
+import { NgOptimizedImage, CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-work',
+  standalone: true,
+  imports: [TranslateModule, NgOptimizedImage, CommonModule],
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
 })

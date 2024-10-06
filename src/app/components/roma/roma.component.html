@@ -1,0 +1,53 @@
+<div class="bubbles" style="z-index: 0">
+  <!-- <div class="bubble" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"></div> -->
+  <div
+    class="bubble-no-bg"
+    *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]"
+  ></div>
+</div>
+
+<div
+  class="container animate__animated animate__bounceInLeft"
+  style="z-index: 1; position: relative"
+>
+  <div class="row min-vh-100 align-items-center">
+    <div class="col-lg-7 col-xl-7 col-xxl-6">
+      <div class="hb-text">
+        <h1>{{ "Home.title" | translate }} <b></b> <span> Romario...</span></h1>
+        <p class="lead">
+          <span
+            >{{ "Home.work" | translate }} <br />
+            {{ "Home.work2" | translate }} <span class="hearth">❤</span>
+            <br /><br
+          /></span>
+          {{ "Home.work3" | translate }} <span>Colombia</span>
+        </p>
+        <div class="btn-bar">
+          <a class="px-btn" href="#about">
+            {{ "Home.work4" | translate }} <i class="bi-arrow-down-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="me">
+  <app-roma />
+  <!-- Social buttons -->
+  <div class="social-fix">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/raef26/"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://www.behance.net/romarioestrada/services" target="_blank"
+        ><i class="fab fa-behance"></i
+      ></a>
+      <a href="https://www.fiverr.com/romarioestrada" target="_blank"
+        ><i class="fa-solid fa-briefcase"></i
+      ></a>
+      <a href="https://github.com/romaefGit" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+    </div>
+  </div>
+</div>

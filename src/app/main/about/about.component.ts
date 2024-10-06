@@ -5,8 +5,12 @@ import {
   LanguageService,
   LanguagesTypes,
 } from 'src/app/core/services/language/language.service';
+import { TranslateModule } from '@ngx-translate/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
+  standalone: true,
+  imports: [TranslateModule, CommonModule],
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],

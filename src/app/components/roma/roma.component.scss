@@ -1,0 +1,180 @@
+@import "../../../assets/scss/variable";
+@import "../../../assets/scss/mixin";
+// bubbles
+// https://codepen.io/myroncama12/embed/eQQaQL?default-tab=result&theme-id=light
+// TODO: wHATCH THE LOGIC ON THIS ONE
+// https://codepen.io/marko-zub/embed/ZmGOBe?default-tab=result&theme-id=light
+.bubbles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.bubble,
+.bubble-no-bg {
+  position: absolute;
+  bottom: -130px;
+  background: #fff;
+
+  transform: scale(0.1);
+  border-radius: 70%;
+  opacity: 0.5;
+  animation: flying 10s infinite ease-in;
+}
+@function randomRange($min, $max) {
+  @return random($max - $min + 1) + $min;
+}
+@mixin randomBubble($image) {
+  background-image: url($image);
+  background-position: center;
+  background-size: cover;
+  left: randomRange(15, 45) + 1%;
+}
+
+@for $i from 1 through 12 {
+  .bubble:nth-child(#{$i}) {
+    animation-duration: randomRange(3, 8) + 1s;
+    $--size: randomRange(40, 70) + 1px;
+    width: $--size;
+    height: $--size;
+
+    @include randomBubble("../../../assets/img/languages/#{$i}.png");
+  }
+}
+
+@for $i from 1 through 16 {
+  .bubble-no-bg:nth-child(#{$i}) {
+    animation-duration: randomRange(3, 8) + 1s;
+    $--size: randomRange(20, 70) + 1px;
+    width: $--size;
+    height: $--size;
+    left: randomRange(20, 90) + 1%;
+  }
+}
+
+@keyframes flying {
+  0% {
+    transform: scale(0.1);
+    bottom: -100px;
+    opacity: 0.1;
+    transform: translateX(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    transform: translateX(100px);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0.1;
+    bottom: 1080px;
+    transform: translateX(-200px);
+  }
+}
+
+.hearth {
+  color: var(--g-primary-dark);
+}
+
+// other bubbles
+// https://codepen.io/GlitchTimes/pen/PoZOOYz/
+.pink-bubbles {
+  position: relative;
+  top: 0;
+
+  @include down-lg {
+    top: 19%;
+  }
+
+  @include down-sm {
+    top: 30%;
+  }
+
+  @include down-xsm {
+    top: 43%;
+  }
+
+  svg {
+    width: 100%;
+    overflow: visible;
+    margin-left: 50%;
+    // padding-top: 50%;
+  }
+
+  .wave {
+    animation: wave 3s linear;
+    animation-iteration-count: infinite;
+    fill: var(--g-primary-dark);
+  }
+  .drop {
+    fill: #fdb1b1;
+    xfill: #fdb1b1;
+    animation: drop 8.2s linear infinite normal;
+    stroke: var(--g-primary);
+    stroke-width: 0.5;
+    transform: translateY(55px) scale(0.1);
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+  }
+  .drop1 {
+  }
+  // .drop2 {
+  //     animation-delay: 3s;
+  //     animation-duration:2s;
+  // }
+  // .drop3 {
+  //     animation-delay: -4s;
+  //     animation-duration:6.4s;
+  // }
+  .drop4 {
+    animation-delay: 2.7s;
+  }
+  .drop5 {
+    animation-delay: 4.7s;
+    animation-duration: 6.1s;
+  }
+  .drop6 {
+    animation-delay: -4.1s;
+    animation-duration: 6.2s;
+  }
+  .gooeff {
+    filter: url(#goo);
+  }
+  #wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: 0.6;
+  }
+  #wave3 {
+    animation-duration: 7s;
+    opacity: 0.3;
+  }
+  @keyframes drop {
+    0% {
+      transform: translateY(55px);
+    }
+    30% {
+      transform: translateY(-10px) scale(0.3);
+    }
+    30.001% {
+      transform: translateY(55px) scale(1);
+    }
+    70% {
+      transform: translateY(55px);
+    }
+    100% {
+      transform: translateY(-10px) scale(0.1);
+    }
+  }
+  @keyframes wave {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}

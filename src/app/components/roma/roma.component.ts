@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 @Component({
   standalone: true,
   imports: [TranslateModule, CommonModule],
-  selector: 'app-modal-dafault',
-  templateUrl: './modal-dafault.component.html',
-  styleUrls: ['./modal-dafault.component.scss'],
+  selector: 'app-roma',
+  templateUrl: './roma.component.html',
+  styleUrl: './roma.component.scss',
 })
-export class ModalDafaultComponent {}
+export class RomaComponent {}
