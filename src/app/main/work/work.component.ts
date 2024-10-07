@@ -9,11 +9,12 @@ import {
 } from 'src/app/core/services/language/language.service';
 import { Subscription } from 'rxjs';
 import { NgOptimizedImage, CommonModule } from '@angular/common';
+import { DirectivesModule } from 'src/app/core/directives/directives.module';
 
 @Component({
   selector: 'app-work',
   standalone: true,
-  imports: [TranslateModule, NgOptimizedImage, CommonModule],
+  imports: [TranslateModule, NgOptimizedImage, CommonModule, DirectivesModule],
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
 })

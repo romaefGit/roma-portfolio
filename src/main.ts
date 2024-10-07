@@ -12,9 +12,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AppComponent } from './app/app.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { IMAGE_CONFIG } from '@angular/common';
 
 bootstrapApplication(AppComponent, {
   providers: [
+    {
+      // disabling warnings of unoptimized images hehe
+      provide: IMAGE_CONFIG,
+      useValue: {
+        disableImageSizeWarning: true,
+        disableImageLazyLoadWarning: true,
+      },
+    },
     provideHttpClient(),
     provideRouter([]),
     importProvidersFrom(
