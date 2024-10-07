@@ -32,16 +32,18 @@
 
   <!-- menu options -->
   <ul class="main-menu" *ngIf="sections">
-    <li *ngFor="let section of sections; let f = first">
-      <a
-        *ngIf="section.show"
-        class="menu-item"
-        [href]="'#' + section.id.toLowerCase()"
-        (click)="fullPageScroll(section.id)"
-      >
-        {{ section.name }}
-      </a>
-    </li>
+    @for (section of sections; track $index; let f = $first) {
+      <li>
+        <a
+          *ngIf="section.show"
+          class="menu-item"
+          [href]="'#' + section.id.toLowerCase()"
+          (click)="scrollToSection(section.id.toLowerCase())"
+        >
+          {{ section.name }}
+        </a>
+      </li>
+    }
   </ul>
 
   <ul class="nav social-link">

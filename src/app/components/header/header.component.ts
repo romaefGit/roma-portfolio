@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, ElementRef, OnInit, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 import { MenuOptions } from 'src/app/core/models/menu-options.model';
@@ -9,6 +9,7 @@ import {
 } from 'src/app/core/services/language/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
+import { ScrollService } from 'src/app/core/services/scroll/scroll.service';
 
 @Component({
   standalone: true,
@@ -26,7 +27,10 @@ export class HeaderComponent implements OnInit {
   private languageService = inject(LanguageService);
   private languageSubscription!: Subscription; // To store the subscription
 
-  constructor(public flagService: FeatureFlagService) {
+  constructor(
+    public flagService: FeatureFlagService,
+    public scrollService: ScrollService,
+  ) {
     // console.log(
     //   "this.flagService.hasFlag('Services'), > ",
     //   this.flagService.hasFlag('Services'),
@@ -66,6 +70,10 @@ export class HeaderComponent implements OnInit {
 
   onClickedOutside(e: Event) {
     if (this.sidebarOpen) this.sidebarOpen = false;
+  }
+
+  scrollToSection(sectionId: string): void {
+    this.scrollService.scrollTo(sectionId);
   }
 
   ngOnDestroy(): void {
