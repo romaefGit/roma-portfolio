@@ -8,4 +8,8 @@ import { RomaComponent } from 'src/app/components/roma/roma.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {}
+export class HomeComponent {
+  scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+}

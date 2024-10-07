@@ -24,7 +24,7 @@
           {{ "Home.work3" | translate }} <span>Colombia</span>
         </p>
         <div class="btn-bar">
-          <a class="px-btn" href="#about">
+          <a class="px-btn pointer" (click)="scrollToBottom()">
             {{ "Home.work4" | translate }} <i class="fa fa-angle-down"></i>
           </a>
         </div>
@@ -106,7 +106,7 @@
   <!-- Social buttons -->
   <div class="social-fix">
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/raef26/"
+      <a href="https://www.linkedin.com/in/raef26/" target="_blank"
         ><i class="fab fa-linkedin"></i
       ></a>
       <a href="https://www.behance.net/romarioestrada/services" target="_blank"
