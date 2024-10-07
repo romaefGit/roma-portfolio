@@ -1,9 +1,11 @@
 <div class="bubbles" style="z-index: 0">
   <!-- <div class="bubble" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"></div> -->
-  <div
-    class="bubble-no-bg"
-    *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]"
-  ></div>
+  @for (
+    item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+    track $index
+  ) {
+    <div class="bubble-no-bg"></div>
+  }
 </div>
 <div
   class="container animate__animated animate__bounceInLeft"
@@ -23,7 +25,7 @@
         </p>
         <div class="btn-bar">
           <a class="px-btn" href="#about">
-            {{ "Home.work4" | translate }} <i class="bi-arrow-down-right"></i>
+            {{ "Home.work4" | translate }} <i class="fa fa-angle-down"></i>
           </a>
         </div>
       </div>
@@ -97,7 +99,7 @@
 
   <!-- Portrait -->
   <div
-    class="hb-me animate__animated animate__fadeInUp"
+    class="hb-me animate__animated animate__fadeInRight"
     style="background-image: url(assets/img/me/me.avif)"
   ></div>
 
