@@ -10,6 +10,7 @@ import {
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { ScrollService } from 'src/app/core/services/scroll/scroll.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   standalone: true,
@@ -26,10 +27,14 @@ export class HeaderComponent implements OnInit {
   private translateService = inject(TranslateService);
   private languageService = inject(LanguageService);
   private languageSubscription!: Subscription; // To store the subscription
+  private scrollSubscription!: Subscription; // To store the subscription
+
+  activeSection!: string;
 
   constructor(
     public flagService: FeatureFlagService,
     public scrollService: ScrollService,
+    private route: ActivatedRoute,
   ) {
     // console.log(
     //   "this.flagService.hasFlag('Services'), > ",
@@ -68,12 +73,13 @@ export class HeaderComponent implements OnInit {
     this.sidebarOpen = !this.sidebarOpen;
   }
 
-  onClickedOutside(e: Event) {
+  onClickedOutside() {
     if (this.sidebarOpen) this.sidebarOpen = false;
   }
 
   scrollToSection(sectionId: string): void {
     this.scrollService.scrollTo(sectionId);
+    this.onClickedOutside();
   }
 
   ngOnDestroy(): void {
@@ -81,7 +87,9 @@ export class HeaderComponent implements OnInit {
     //Add 'implements OnDestroy' to the class.
     if (this.languageSubscription) {
       this.languageSubscription.unsubscribe();
-      // console.log('Unsubscribed from language observable');
+    }
+    if (this.scrollSubscription) {
+      this.scrollSubscription.unsubscribe();
     }
   }
 }

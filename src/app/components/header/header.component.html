@@ -6,7 +6,7 @@
             <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg"> -->
     </a>
   </div>
-  <div class="mob-h-right" (clickOutside)="onClickedOutside($event)">
+  <div class="mob-h-right" (clickOutside)="onClickedOutside()">
     <button
       class="toggler-menu"
       [ngClass]="{ open: sidebarOpen }"
@@ -34,14 +34,15 @@
   <ul class="main-menu" *ngIf="sections">
     @for (section of sections; track $index; let f = $first) {
       <li>
-        <a
-          *ngIf="section.show"
-          class="menu-item"
-          [href]="'#' + section.id.toLowerCase()"
-          (click)="scrollToSection(section.id.toLowerCase())"
-        >
-          {{ section.name }}
-        </a>
+        @if (section.show) {
+          <a
+            class="menu-item"
+            [href]="'#' + section.id.toLowerCase()"
+            (click)="scrollToSection(section.id.toLowerCase())"
+          >
+            {{ section.name }}
+          </a>
+        }
       </li>
     }
   </ul>
