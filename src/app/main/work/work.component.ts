@@ -10,11 +10,21 @@ import {
 import { Subscription } from 'rxjs';
 import { NgOptimizedImage, CommonModule } from '@angular/common';
 import { DirectivesModule } from 'src/app/core/directives/directives.module';
+import {
+  Gallery,
+  GalleryComponent,
+} from 'src/app/components/user-interface/gallery/gallery.component';
 
 @Component({
   selector: 'app-work',
   standalone: true,
-  imports: [TranslateModule, NgOptimizedImage, CommonModule, DirectivesModule],
+  imports: [
+    TranslateModule,
+    NgOptimizedImage,
+    CommonModule,
+    DirectivesModule,
+    GalleryComponent,
+  ],
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
 })
@@ -33,6 +43,17 @@ export class WorkComponent implements OnInit {
   // Carousel slides
   slideIndexActive = 0;
   slidesLengthActiveSlider = 0;
+
+  imagesGallery: Gallery[] = [
+    {
+      url: 'https://images.pexels.com/photos/70862/pexels-photo-70862.jpeg',
+      active: false,
+    },
+    {
+      url: 'https://images.pexels.com/photos/775998/pexels-photo-775998.jpeg',
+      active: false,
+    },
+  ];
   // @HostListener('document:keypress', ['$event'])
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(e: KeyboardEvent) {

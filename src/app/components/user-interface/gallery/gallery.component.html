@@ -1,0 +1,41 @@
+<div class="image-thumbnail-carousel">
+  <section class="image-display">
+    <div
+      class="screen"
+      [style.background-image]="'url(' + imageSelected.url + ')'"
+    >
+      <img loading="lazy" src="{{ imageSelected.url }}" alt="" />
+    </div>
+  </section>
+  <section class="thumbnail-carousel">
+    <button
+      type="button"
+      class="carousel__btn prev"
+      aria-label="Previous slide"
+      (click)="prevImage()"
+    >
+      <i class="fa fa-chevron-left"></i>
+    </button>
+    <ul class="carousel__slider">
+      @for (image of images; track $index) {
+        <li
+          class="carousel__slide"
+          [class.active]="imageSelected.url == image.url"
+          (click)="imageSelected = image"
+        >
+          <div class="thumbnail">
+            <img loading="lazy" src="{{ image.url }}" alt="" />
+          </div>
+        </li>
+      }
+    </ul>
+    <button
+      type="button"
+      class="carousel__btn next"
+      aria-label="Next slide"
+      (click)="nextImage()"
+    >
+      <i class="fa fa-chevron-right"></i>
+    </button>
+  </section>
+</div>
