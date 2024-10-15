@@ -1,4 +1,4 @@
-@import "../../../assets/scss/variable";
+@import "../../../assets/scss/root";
 @import "../../../assets/scss/mixin";
 /* ----------------------
 * Work Section
@@ -46,7 +46,7 @@
         font-size: 24px;
       }
       a {
-        color: var(--g-white);
+        color: var(--c-white);
       }
     }
 
@@ -57,7 +57,7 @@
         font-size: 24px;
       }
       a {
-        color: var(--g-white);
+        color: var(--c-white);
       }
     }
     & .btn-bar {
@@ -65,7 +65,7 @@
       a {
         width: 35px;
         height: 35px;
-        color: var(--g-white);
+        color: var(--c-white);
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -73,7 +73,7 @@
         line-height: 1;
         cursor: pointer;
         &:hover {
-          color: var(--g-primary);
+          color: var(--c-primary-light);
         }
       }
     }

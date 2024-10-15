@@ -11,6 +11,12 @@ img {
   outline: none !important;
 }
 
+p,
+label,
+span {
+  color: var(--c-white);
+}
+
 /* ----------------------
 *   Loading
 ---------------------------*/
@@ -20,7 +26,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  //background: $g-primary;
+  //background: $c-primary-light;
   z-index: 99999;
 }
 
@@ -126,7 +132,7 @@ img {
   max-width: 1000px;
   margin: 30px auto;
   padding: 30px;
-  background-color: var(--g-dark);
+  background-color: var(--c-bg-dark);
   position: relative;
   border: 4px solid rgba(var(--g-white-rgb), 0.1);
   @include down-lg {
@@ -149,11 +155,11 @@ img {
     }
   }
   .modal-body {
-    background-color: var(--g-dark);
+    background-color: var(--c-bg-dark);
     padding: 0px 0px 15px 0px;
   }
   .modal-footer {
-    background-color: var(--g-dark);
+    background-color: var(--c-bg-dark);
     padding: 10px 0px 0px 0px;
     border-top: 1px solid rgba(var(--g-white-rgb), 0.2);
   }
@@ -204,10 +210,10 @@ img {
     .social-link {
       a {
         margin-left: 15px;
-        color: var(--g-white);
+        color: var(--c-white);
         font-size: 17px;
         &:hover {
-          color: var(--g-primary);
+          color: var(--c-primary-light);
         }
       }
     }

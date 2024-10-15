@@ -1,32 +1,32 @@
-@import "../../../assets/scss/variable";
+@import "../../../assets/scss/root";
 @import "../../../assets/scss/mixin";
 /* ----------------------
 * Testimonial Section
 ---------------------------*/
 .testimonials-box {
   .t-text {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      p {
-          font-size: 27px;
-          font-weight: 600;
-          line-height: 1.4;
-          margin-bottom: 40px;
-          @include down-sm {
-              font-size: 24px;
-          }
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    p {
+      font-size: 27px;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 40px;
+      @include down-sm {
+        font-size: 24px;
       }
-      .t-lead {
-          margin-top: auto;
-          h6 {
-              margin: 0 0 4px;
-          }
-          span {
-              font-weight: 14px;
-              opacity: 0.75;
-          }
+    }
+    .t-lead {
+      margin-top: auto;
+      h6 {
+        margin: 0 0 4px;
       }
+      span {
+        font-weight: 14px;
+        opacity: 0.75;
+      }
+    }
   }
 }
 

@@ -13,8 +13,8 @@
 }
 
 .toggler-menu {
-  background-color: var(--g-primary-dark);
-  color: var(--g-heading);
+  background-color: var(--c-primary-dark);
+  color: var(--c-heading-light);
   border: 1px solid var(--g-gray) !important;
   border-radius: var(--g-rounded);
   padding: 10px 25px;
@@ -53,7 +53,7 @@
   z-index: 111;
   transition: all 0s ease;
   .fixed-header & {
-    background: var(--g-dark);
+    background: var(--c-bg-dark);
     transition: all 0s ease;
   }
   @include up-lg {
@@ -67,7 +67,7 @@
   left: 0;
   bottom: 0;
   width: 285px;
-  background-color: var(--g-dark);
+  background-color: var(--c-bg-dark);
   z-index: 11;
   display: flex;
   flex-direction: column;
@@ -96,7 +96,7 @@
       font-size: 18px;
       text-transform: uppercase;
       font-weight: 600;
-      color: var(--g-white);
+      color: var(--c-white);
       opacity: 0.85;
       @include down-lg {
         padding: 10px 20px;
@@ -112,7 +112,7 @@
         height: 3px;
         background: linear-gradient(
           270.16deg,
-          var(--g-primary) 33.61%,
+          var(--c-primary-light) 33.61%,
           rgba(175, 38, 118, 0) 92.05%
         );
         transition: ease all 0.35s;
@@ -136,14 +136,14 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      color: var(--g-dark);
-      background-color: var(--g-white);
+      color: var(--c-bg-dark);
+      background-color: var(--c-white);
       border-radius: 50%;
       transition: ease all 0.35s;
       border: none;
       &:hover {
-        color: var(--g-white);
-        background-color: var(--g-primary-dark);
+        color: var(--c-white);
+        background-color: var(--c-primary-dark);
       }
     }
   }

@@ -12,13 +12,20 @@ import { LanguageService } from './core/services/language/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './main/main.component';
+import { LanguageSwitchComponent } from './components/language-switch/language-switch.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [CommonModule, TranslateModule, HeaderComponent, MainComponent], // Add other necessary modules
+  imports: [
+    CommonModule,
+    TranslateModule,
+    HeaderComponent,
+    MainComponent,
+    LanguageSwitchComponent,
+  ], // Add other necessary modules
 })
 export class AppComponent implements OnInit, AfterViewInit {
   public fixedHeader: boolean = false;
@@ -51,22 +58,6 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.fixedHeader = true;
     } else {
       this.fixedHeader = false;
-    }
-  }
-
-  toggleSwitch(language: any = null): void {
-    const toggle = document.getElementById(
-      'language-toggle',
-    ) as HTMLInputElement;
-
-    if (toggle) {
-      if (language) toggle.checked = !toggle.checked;
-
-      if (!toggle.checked) {
-        this.languageService.changeLanguage('en');
-      } else {
-        this.languageService.changeLanguage('es');
-      }
     }
   }
 }

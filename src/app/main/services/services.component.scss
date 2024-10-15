@@ -1,125 +1,129 @@
-@import "../../../assets/scss/variable";
+@import "../../../assets/scss/root";
 @import "../../../assets/scss/mixin";
 /* ----------------------
 * Service Section
 ---------------------------*/
 .accordion {
-    .accordion-item {
-        background: none;
-        border: none;
-        padding: 0;
-        margin: 0;
-        color: #adb5bd;
-        .accordion-button {
-            border: none;
-            box-shadow: none;
-            outline: none !important;
-            background: none;
-            padding: 20px 50px 20px 0px;
-            position: relative;
-            display: flex;
-            color: var(--g-white);
-            border-bottom: 1px solid rgba(var(--g-white-rgb), .1);
-            &:after {
-                display: none;
-            }
-            .accordion-icon {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                width: 35px;
-                height: 35px;
-                margin: auto;
-                &:before,
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
-                    background: var(--g-white);
-                }
-                &:before {
-                    width: 30px;
-                    height: 2px;
-                }
-                &:after {
-                    width: 2px;
-                    height: 30px;
-                }
-            }
-            &:not(.collapsed) {
-                .accordion-icon {
-                    &:after {
-                        height: 0;
-                    }
-                }
-                .services-title {
-                    background: linear-gradient(270.16deg, var(--g-dark) 5.74%, var(--g-secondary-dark) 92.05%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    &:after {
-                        background: var(--g-dark);
-                    }
-                }
-                .services-small-desc {
-                    opacity: 0;
-                }
-            }
+  .accordion-item {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: #adb5bd;
+    .accordion-button {
+      border: none;
+      box-shadow: none;
+      outline: none !important;
+      background: none;
+      padding: 20px 50px 20px 0px;
+      position: relative;
+      display: flex;
+      color: var(--c-white);
+      border-bottom: 1px solid rgba(var(--g-white-rgb), 0.1);
+      &:after {
+        display: none;
+      }
+      .accordion-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 35px;
+        height: 35px;
+        margin: auto;
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          background: var(--c-white);
+        }
+        &:before {
+          width: 30px;
+          height: 2px;
+        }
+        &:after {
+          width: 2px;
+          height: 30px;
+        }
+      }
+      &:not(.collapsed) {
+        .accordion-icon {
+          &:after {
+            height: 0;
+          }
+        }
+        .services-title {
+          background: linear-gradient(
+            270.16deg,
+            var(--c-bg-dark) 5.74%,
+            var(--c-secondary-dark) 92.05%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          &:after {
+            background: var(--c-bg-dark);
+          }
+        }
+        .services-small-desc {
+          opacity: 0;
+        }
+      }
 
-            .services-title {
-                flex: 0 0 33.3333%;
-                width: 33.3333%;
-                font-size: 32px;
-                font-weight: 800;
-                text-transform: uppercase;
-                line-height: 1.2;
-                position: relative;
-                padding-left: 30px;
-                @include down-md {
-                    flex: 0 0 100%;
-                    width: 100%;
-                }
-                @include down-sm {
-                    flex: 0 0 100%;
-                    width: 100%;
-                    font-size: 22px;
-                }
-                &:after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    margin: auto;
-                    border-radius: 50%;
-                    background: var(--g-white);
-                    width: 8px;
-                    height: 8px;
-                }
-            }
-            .services-small-desc {
-                flex: 1;
-                padding-left: 30px;
-                @include down-md {
-                    display: none;
-                }
-            }
+      .services-title {
+        flex: 0 0 33.3333%;
+        width: 33.3333%;
+        font-size: 32px;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 1.2;
+        position: relative;
+        padding-left: 30px;
+        @include down-md {
+          flex: 0 0 100%;
+          width: 100%;
         }
-        .accordion-body {
-            padding: 40px 0;
-            border-bottom: 1px solid rgba(var(--g-white-rgb), .1);
-            @include down-sm {
-                padding: 20px 0 25px;
-            }
-            h3 {
-                font-weight: 700;
-                margin-bottom: 20px;
-            }
+        @include down-sm {
+          flex: 0 0 100%;
+          width: 100%;
+          font-size: 22px;
         }
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+          border-radius: 50%;
+          background: var(--c-white);
+          width: 8px;
+          height: 8px;
+        }
+      }
+      .services-small-desc {
+        flex: 1;
+        padding-left: 30px;
+        @include down-md {
+          display: none;
+        }
+      }
     }
+    .accordion-body {
+      padding: 40px 0;
+      border-bottom: 1px solid rgba(var(--g-white-rgb), 0.1);
+      @include down-sm {
+        padding: 20px 0 25px;
+      }
+      h3 {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }

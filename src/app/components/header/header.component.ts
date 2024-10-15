@@ -11,10 +11,11 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { ScrollService } from 'src/app/core/services/scroll/scroll.service';
 import { ActivatedRoute } from '@angular/router';
+import { SwitchThemeComponent } from '../switch-theme/switch-theme.component';
 
 @Component({
   standalone: true,
-  imports: [TranslateModule, CommonModule],
+  imports: [TranslateModule, CommonModule, SwitchThemeComponent],
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],

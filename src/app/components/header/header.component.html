@@ -1,6 +1,7 @@
-<!-- Mob header -->
+<!-- Mobile header -->
 <div class="mob-header">
   <div class="mob-h-left">
+    <app-switch-theme selectTheme="light" />
     <a class="navbar-brand" href="javascript:">
       <!-- <img class="logo-dark" title="" alt="" src="assets/img/logo.svg">
             <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg"> -->
@@ -17,13 +18,14 @@
   </div>
 </div>
 <!-- End -->
-<!-- Header Top -->
+<!-- Desktop Header Top -->
 <div
   class="header-left-fixed one-page-nav"
   [ngClass]="{ 'menu-open menu-open-desk': sidebarOpen }"
 >
   <!-- Brand -->
   <div class="logo">
+    <app-switch-theme selectTheme="light" />
     <a class="navbar-brand" href="javascript:">
       <!-- <img class="logo-dark" title="" alt="" src="assets/img/logo.svg">
             <img class="logo-light" title="" alt="" src="assets/img/logo-light.svg"> -->

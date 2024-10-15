@@ -1,4 +1,4 @@
-@import "../../../assets/scss/variable";
+@import "../../../assets/scss/root";
 @import "../../../assets/scss/mixin";
 
 /* ----------------------
@@ -7,75 +7,79 @@
 .contact-form {
   padding: 50px;
   @include down-sm {
-      padding: 30px;
+    padding: 30px;
   }
   .contact-head {
-      margin-bottom: 35px;
-      h4 {
-          font-size: 40px;
-          font-weight: 700;
-          line-height: 1.1;
-          margin-bottom: 15px;
-          @include down-sm {
-              font-size: 32px;
-          }
+    margin-bottom: 35px;
+    h4 {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 15px;
+      @include down-sm {
+        font-size: 32px;
       }
+    }
   }
   .form-label {
-      font-weight: 500;
-      text-transform: uppercase;
-      font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 12px;
   }
   .form-control {
-      background: rgba(var(--g-white-rgb),.05);
-      border-radius: 0;
-      padding: 0.675rem 0.75rem;
-      border: 1px solid rgba(var(--g-white-rgb),.3);
-      color: var(--g-white);
-      box-shadow: none;
-      @include placeholder {
-          color: rgba(var(--g-white-rgb), .5);
-      }
+    background: rgba(var(--g-white-rgb), 0.05);
+    border-radius: 0;
+    padding: 0.675rem 0.75rem;
+    border: 1px solid rgba(var(--g-white-rgb), 0.3);
+    color: var(--c-white);
+    box-shadow: none;
+    @include placeholder {
+      color: rgba(var(--g-white-rgb), 0.5);
+    }
   }
 }
 
 .contact-info {
   ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
   li {
-      display: flex;
-      border: 1px solid rgba(var(--g-white-rgb), .1);
-      padding: 20px;
-      background: var(--g-bg);
-      .icon {
-          width: 60px;
-          height: 60px;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          background: linear-gradient(270.16deg, var(--g-primary-dark) 5.74%, var(--g-primary) 92.05%);
-          color: var(--g-white);
-          font-size: 20px;
+    display: flex;
+    border: 1px solid rgba(var(--g-white-rgb), 0.1);
+    padding: 20px;
+    background: var(--c-bg-light);
+    .icon {
+      width: 60px;
+      height: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(
+        270.16deg,
+        var(--c-primary-dark) 5.74%,
+        var(--c-primary-light) 92.05%
+      );
+      color: var(--c-white);
+      font-size: 20px;
+    }
+    .text {
+      padding-left: 20px;
+      flex: 1;
+      label {
+        font-weight: 700;
+        font-size: 18px;
       }
-      .text {
-          padding-left: 20px;
-          flex: 1;
-          label {
-              font-weight: 700;
-              font-size: 18px;
-          }
-          p {
-              font-size: 15px;
-              margin: 0;
-              opacity: .75;
-          }
+      p {
+        font-size: 15px;
+        margin: 0;
+        opacity: 0.75;
       }
-      + li {
-          margin-top: 20px;
-      }
+    }
+    + li {
+      margin-top: 20px;
+    }
   }
 }
 
