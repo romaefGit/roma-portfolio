@@ -26,7 +26,7 @@ export class SwitchThemeComponent {
   toggleSwitch(theme: any = null): void {
     const newTheme: themeType =
       this.currentTheme === 'light' ? 'halloween' : 'light';
-    console.log('newTheme > ', newTheme);
+    // console.log('newTheme > ', newTheme);
     this.changeTheme(newTheme);
   }
 }
