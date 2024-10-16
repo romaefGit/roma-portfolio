@@ -152,11 +152,11 @@
   }
 }
 
-// bubbles
+// bubbles-back
 // https://codepen.io/myroncama12/embed/eQQaQL?default-tab=result&theme-id=light
 // TODO: wHATCH THE LOGIC ON THIS ONE
 // https://codepen.io/marko-zub/embed/ZmGOBe?default-tab=result&theme-id=light
-.bubbles {
+.bubbles-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -234,9 +234,16 @@
   color: var(--c-primary-dark);
 }
 
+.bg-circle {
+  transition: background-image 0.1s ease-in-out; /* Adjust duration and timing as needed */
+}
+.bg-me {
+  transition: background-image 0.5s ease-in-out; /* Adjust duration and timing as needed */
+}
+
 // other bubbles
 // https://codepen.io/GlitchTimes/pen/PoZOOYz/
-.pink-bubbles {
+.bubbles {
   position: relative;
   top: 0;
 
@@ -264,15 +271,28 @@
     animation-iteration-count: infinite;
     fill: var(--c-primary-dark);
   }
+
   .drop {
-    fill: #fdb1b1;
-    xfill: #fdb1b1;
     animation: drop 8.2s linear infinite normal;
     stroke: var(--c-primary-light);
     stroke-width: 0.5;
     transform: translateY(55px) scale(0.1);
     transform-box: fill-box;
     transform-origin: 50% 100%;
+  }
+
+  &--pink {
+    & .drop {
+      fill: #fdb1b1;
+      xfill: #fdb1b1;
+    }
+  }
+
+  &--red {
+    & .drop {
+      fill: #ff635f;
+      xfill: #ff635f;
+    }
   }
   .drop1 {
   }

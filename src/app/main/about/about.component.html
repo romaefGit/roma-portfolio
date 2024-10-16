@@ -11,7 +11,14 @@
         <div class="about--left">
           <div class="about--avatar">
             <div class="about--img">
-              <img src="assets/img/me/not-looking.avif" title="" alt="" />
+              <img
+                src="assets/img/me/{{
+                  currentTheme === 'light' ? 'not-looking' : 'not-looking-dark'
+                }}.avif"
+                title="Romario"
+                alt="Romario"
+              />
+              <!-- not-looking-dark -->
             </div>
           </div>
           <h3>Romario</h3>

@@ -44,6 +44,8 @@ $px-media-lg: 1200px !default;
 
   --c-bg-light: #{$c-bg-light};
   --c-bg-dark: #{$c-bg-dark};
+
+  --c-button-theme: #1c282e;
 }
 
 [data-bs-theme="halloween"] {
@@ -60,4 +62,6 @@ $px-media-lg: 1200px !default;
 
   --c-bg-light: #435964;
   --c-bg-dark: #1c282e;
+
+  --c-button-theme: #39ada7;
 }

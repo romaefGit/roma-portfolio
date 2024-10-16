@@ -1,11 +1,22 @@
-<div class="switch">
-  <input
-    (click)="toggleSwitch()"
-    id="theme-toggle"
-    class="check-toggle check-toggle-round-flat"
-    type="checkbox"
-  />
-  <label for="theme-toggle"></label>
-  <span class="on">Light</span>
-  <span class="off">Dark</span>
-</div>
+<button
+  appAnimateHover
+  animationHover="rubberBand"
+  class="px-btn p-2 btn-dark"
+  (click)="toggleSwitch()"
+>
+  <!-- Change theme -->
+  <!-- <a href="https://www.flaticon.com/free-icons/tooth" title="tooth icons"
+    >Tooth icons created by Freepik - Flaticon</a
+  > -->
+  @if (currentTheme != "none") {
+    <img
+      [src]="
+        'assets/img/icons/' +
+        (currentTheme === 'halloween' ? 'light.svg' : 'halloween.svg')
+      "
+      width="32px"
+      height="32px"
+      [class]="currentTheme"
+    />
+  }
+</button>

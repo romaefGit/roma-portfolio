@@ -36,7 +36,7 @@
         var(--c-secondary-dark) 5.74%,
         var(--c-secondary-light) 92.05%
       );
-      // background: rgba(var(--g-white-rgb), .9);
+      // background: rgba(var(--c-white-rgb), .9);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -149,8 +149,8 @@
     }
 
     blockquote {
-      // background: rgba(var(--g-white-rgb), 0.05);
-      background: rgba(var(--g-white-rgb), 0.3);
+      // background: rgba(var(--c-white-rgb), 0.05);
+      background: rgba(var(--c-white-rgb), 0.3);
       padding: 30px;
       border-radius: 10px;
       position: relative;
@@ -163,7 +163,7 @@
       & i {
         font-size: 80px;
         line-height: 0.9;
-        color: rgba(var(--g-white-rgb), 0.5);
+        color: rgba(var(--c-white-rgb), 0.5);
         @include down-sm {
           font-size: 40px;
         }
@@ -185,7 +185,7 @@
   }
 
   & .separator {
-    border-top: 1px solid rgba(var(--g-white-rgb), 0.1);
+    border-top: 1px solid rgba(var(--c-white-rgb), 0.1);
     margin-top: 30px;
     padding-top: 16px;
   }
