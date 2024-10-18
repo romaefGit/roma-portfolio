@@ -12,7 +12,6 @@
     {
       "name": "Ufo fall",
       "type": "Unity",
-      "gif": "assets/gifs/ufos_fall.avif",
       "img": "assets/gifs/ufos_fall.avif",
       "toShow": "",
       "description": "Juego de plataforma 2D inspirado en INSIDE (Work in progress :3).",
@@ -21,14 +20,13 @@
         "title": "Juego de plataforma 2D",
         "subtitle": "Unity",
         "description": "<p>'UFO Fall' es un juego de aventuras en 2D que profundiza en el enigmático caso Roswell, ofreciendo una nueva perspectiva sobre lo que pasó con las misteriosas criaturas que se estrellaron en el desierto. <br> Como jugador, te pondrás en la piel de uno de estos seres extraterrestres, en una búsqueda para encontrar su nave y rescatar a su tripulación. Sin embargo, hay un giro: el protagonista alienígena ha perdido la memoria, salvo por un profundo amor por las plantas y confusos recuerdos del accidente. <br> Explora un cautivador mundo 2D lleno de intrigantes desafíos y acertijos mientras descubres los secretos detrás del incidente de Roswell. Atraviesa paisajes desérticos, infíltrate en la infame Área 51 e interactúa con una variedad de personajes y criaturas únicas. <br>'UFO Fall' combina una narración cautivadora con un juego creativo, lo que permite a los jugadores utilizar las habilidades alienígenas y amor a las plantas para sortear los obstáculos que encuentran en su viaje. Descubre la verdad detrás del accidente, la misión del extraterrestre y los misterios del Área 51 a medida que avanzas en este juego que se encuentra en progreso. <br>Embárcate en una aventura única y prepárate para desentrañar los secretos de 'UFO Fall' mientras guías al extraterrestre en su búsqueda para recuperar sus recuerdos y rescatar a su tripulación perdida.</p>",
-        "img": "assets/gifs/ufos_fall.gif",
+        "video": "assets/videos/ufos_fall.webm",
         "social": []
       }
     },
     {
       "name": "Hypercasual Ball",
       "type": "Unity",
-      "gif": "assets/gifs/jumping_ball_hypercasual.avif",
       "img": "assets/gifs/jumping_ball_hypercasual.avif",
       "toShow": "",
       "description": "Juego hipercasual que carga bloques de niveles mientras el jugador avanza.",
@@ -37,14 +35,13 @@
         "title": "Juego de plataforma 2D",
         "subtitle": "Unity",
         "description": "<p>Este proyecto fue desarrollado con Unity versión 2021.3.15f1 <br> Utiliza una lógica de bloques de nivel que autogenera bloques cuando el usuario avanza en el juego para lograr una buena puntuación. <br> Cree el personaje desde cero, use algunos recursos que creé antes para mi juego independiente. <br> Tiene un efecto de paralax en el fondo.</p>",
-        "img": "assets/gifs/hypercasual.gif",
+        "video": "assets/videos/jumping_ball_hypercasual.webm",
         "social": []
       }
     },
     {
       "name": "Lost In Space",
       "type": "Unity",
-      "gif": "assets/gifs/ovni.avif",
       "img": "assets/gifs/ovni.avif",
       "toShow": "",
       "description": "Mi primer acercamiento a un videojuego basado en arte de pixeles de un curso que hice en Platzi.",
@@ -53,14 +50,14 @@
         "title": "Juego de plataforma 2D",
         "subtitle": "Unity",
         "description": "<p>Hice un videojuego de plataforma en 2D, utilizando unos arhivos de imagenes de Platzi, que me compartieron en el curso que seguí. Tiene 2 niveles, el personaje principal tiene algunos enemigos y monedas para recolectar, así que tuve que desarrollar el comportamiento de cada elemento en el juego, también la animación del portal, uso un sistema de partículas y otras cosas para dejar pasar al personaje principal al siguiente nivel.</p>",
-        "img": "assets/gifs/ovni.gif",
+        "video": "assets/videos/ovni.webm",
         "social": []
       }
     },
     {
       "name": "Roma Pong",
       "type": "Unity",
-      "gif": "assets/gifs/roma_pong.avif",
+      "video": "assets/gifs/roma_pong.webm",
       "img": "assets/gifs/roma_pong.avif",
       "toShow": "",
       "description": "Usando mis propios archivos de imagenes, cree una copia de PONG.",
@@ -69,7 +66,7 @@
         "title": "Juego de plataforma 2D",
         "subtitle": "Unity",
         "description": "<p>Hice un videojuego 2D como el PONG original usando Unity 2019.3.0a4 y una buena característica es que usé una variable global para permitir que el usuario elija el lado para jugar. Lo sé, no es gran cosa, pero para mí fue genial de aprender.</p>",
-        "img": "assets/gifs/roma_pong.gif",
+        "video": "assets/videos/roma_pong.webm",
         "social": []
       }
     }

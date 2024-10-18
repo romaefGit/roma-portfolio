@@ -1,0 +1,8 @@
+<app-base-modal [showCloseButton]="false" #dialog [messageInfoType]="true">
+  <div class="message message-box-{{ type }}">
+    <p class="message--text">
+      <i class="fa {{ iconName }} fa-2x"></i>
+      {{ message }}
+    </p>
+  </div>
+</app-base-modal>

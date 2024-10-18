@@ -4,8 +4,9 @@ import {
   HostListener,
   AfterViewInit,
   inject,
+  Injectable,
 } from '@angular/core';
-import { fromEvent, Subscription } from 'rxjs';
+import { fromEvent, Subscription, Subject } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from './core/services/language/language.service';
@@ -13,6 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './main/main.component';
 import { LanguageSwitchComponent } from './components/language-switch/language-switch.component';
+import { ProjectModalComponent } from './components/base-modal/project-modal/project-modal.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +27,7 @@ import { LanguageSwitchComponent } from './components/language-switch/language-s
     HeaderComponent,
     MainComponent,
     LanguageSwitchComponent,
+    ProjectModalComponent,
   ], // Add other necessary modules
 })
 export class AppComponent implements OnInit, AfterViewInit {
@@ -60,4 +63,9 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.fixedHeader = false;
     }
   }
+}
+
+@Injectable({ providedIn: 'root' })
+export class ClickListenerService {
+  documentClickedTarget: Subject<HTMLElement> = new Subject<HTMLElement>();
 }

@@ -1,0 +1,19 @@
+@if (showVideo && type && url) {
+  <div class="video-container">
+    <video
+      #videoPlayer
+      class="video"
+      autoplay
+      muted
+      loop
+      playsinline
+      controls
+      (loadedmetadata)="onVideoLoad()"
+      (play)="onPlay()"
+      (pause)="onPause()"
+    >
+      <source [src]="url" [type]="'video/' + type" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+}
