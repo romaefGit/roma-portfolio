@@ -1,29 +1,36 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { ProjectType } from 'src/app/components/base-modal/project-modal/project-modal.component';
+import { Slide, contentType } from '../../models/project/project.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ModalService {
-  private modalOpenSubject = new BehaviorSubject<boolean>(false);
-  modalOpen$ = this.modalOpenSubject.asObservable();
+  private modalProjectOpenSubject = new BehaviorSubject<boolean>(false);
+  modalOpen$ = this.modalProjectOpenSubject.asObservable();
 
   showProjectModal = new EventEmitter<ProjectData>();
+  showGalleryModal = new EventEmitter<Slide[]>();
 
   constructor() {}
 
   openProjectModal(projectData: ProjectData) {
     this.showProjectModal.emit(projectData);
-    this.modalOpenSubject.next(true);
+    this.modalProjectOpenSubject.next(true);
+  }
+
+  openGalleryModal(images: Slide[]) {
+    console.log('images > ', images);
+
+    this.showGalleryModal.emit(images);
   }
 
   closeModal() {
-    this.modalOpenSubject.next(false);
+    this.modalProjectOpenSubject.next(false);
   }
 }
 
 export interface ProjectData {
   info: any;
-  type: ProjectType;
+  type: contentType;
 }

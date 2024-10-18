@@ -12,7 +12,11 @@ import { NgOptimizedImage, CommonModule } from '@angular/common';
 import { DirectivesModule } from 'src/app/core/directives/directives.module';
 import { VideoComponent } from 'src/app/components/video/video.component';
 import { ModalService } from 'src/app/core/services/modal/modal.service';
-import { ProjectType } from 'src/app/components/base-modal/project-modal/project-modal.component';
+import {
+  Project,
+  Slide,
+  contentType,
+} from 'src/app/core/models/project/project.model';
 
 @Component({
   selector: 'app-work',
@@ -65,8 +69,25 @@ export class WorkComponent implements OnInit {
     });
   }
 
-  openProject(project: any, type: ProjectType) {
+  openProject(project: Project, type: contentType) {
     this.modalService.openProjectModal({ info: project, type: type });
+  }
+
+  openArtProject(project: Project) {
+    console.log('project > ', project);
+
+    if (project.contentType == 'artSlides') {
+      console.log('project.modal_info.slides > ', project.modal_info.slides);
+
+      this.modalService.openGalleryModal(project.modal_info.slides);
+    }
+    if (project.contentType == 'art') {
+      console.log('project.contentType > ', project.contentType);
+      this.modalService.openProjectModal({
+        info: project,
+        type: project.contentType,
+      });
+    }
   }
 
   // Unsubscribe when the component is destroyed

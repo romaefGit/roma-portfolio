@@ -1,0 +1,29 @@
+<app-base-modal #dialog>
+  <div class="modal-container" aria-label="Image carousel">
+    <div class="image-container">
+      <img [src]="activeImageUrl" alt="Active Image" class="image-full" />
+    </div>
+    <ul class="thumbnail-list smooth-scroll" #thumbnails>
+      @for (image of images; track $index; let i = $index) {
+        <li>
+          <button
+            class="thumbnail-button"
+            [ngClass]="{
+              'active-thumbnail': i == activeImageIndex,
+              'inactive-thumbnail': i != activeImageIndex,
+            }"
+            (click)="goToImage(i)"
+          >
+            <img
+              width="96"
+              height="79"
+              [ngSrc]="image.img"
+              alt="{{ 'Image ' + i.toString() }}"
+              class="thumbnail-image"
+            />
+          </button>
+        </li>
+      }
+    </ul>
+  </div>
+</app-base-modal>

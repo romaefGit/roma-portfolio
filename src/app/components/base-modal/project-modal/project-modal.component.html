@@ -44,7 +44,7 @@
     <!-- Art Project -->
     @if (typeOfProject == "art") {
       <!-- Normal  -->
-      @if (project.contentType == "normal") {
+      @if (project.contentType == "art") {
         <ng-container>
           <div class="container">
             <div class="row">
@@ -52,7 +52,7 @@
                 <div class="single-blog-img">
                   <img [src]="project.gif" title="" alt="" />
                 </div>
-                <div class="single-blog-content">
+                <div class="single-blog-content pt-6">
                   <h6>{{ project.modal_info.subtitle }}</h6>
                   <h2>{{ project.modal_info.title }}</h2>
                   <div [innerHTML]="project.modal_info.description"></div>
@@ -122,99 +122,6 @@
       }
 
       <!-- Slider -->
-      @if (project.contentType == "slider") {
-        <ng-container>
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div [id]="project.modal_info.id" class="carousel slide">
-                  <div class="carousel-indicators">
-                    @for (
-                      slide of project.modal_info.slides;
-                      track $index;
-                      let i = $index;
-                      let isFirst = $first
-                    ) {
-                      <button
-                        type="button"
-                        [ngClass]="{ active: i == slideIndexActive }"
-                        [attr.data-bs-target]="'#' + project.modal_info.id"
-                        [attr.data-bs-slide-to]="i"
-                        [attr.aria-label]="'Slide ' + (i + 1)"
-                        aria-current="true"
-                        (click)="setActiveSlide(i)"
-                      ></button>
-                    }
-                  </div>
-                  <div class="carousel-inner">
-                    @for (
-                      slide of project.modal_info.slides;
-                      track $index;
-                      let i = $index;
-                      let isFirst = $first
-                    ) {
-                      <div
-                        [ngClass]="{ active: i == slideIndexActive }"
-                        class="carousel-item"
-                      >
-                        <img
-                          [src]="slide.img"
-                          class="d-block w-100"
-                          alt="..."
-                          loading="eager"
-                        />
-                        @if (
-                          slide.title &&
-                          slide.description &&
-                          slide.title != "" &&
-                          slide.description != ""
-                        ) {
-                          <div class="carousel-caption d-none d-md-block">
-                            <h5>{{ slide.title }}</h5>
-                            <p>
-                              {{ slide.description }}
-                            </p>
-                          </div>
-                        }
-                      </div>
-                    }
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    [attr.data-bs-target]="'#' + project.modal_info.id"
-                    data-bs-slide="prev"
-                    (click)="prev(project.modal_info.slides.length)"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">{{
-                      "Work.sliderPrev" | translate
-                    }}</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    [attr.data-bs-target]="'#' + project.modal_info.id"
-                    data-bs-slide="next"
-                    (click)="next(project.modal_info.slides.length)"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">{{
-                      "Work.sliderNext" | translate
-                    }}</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ng-container>
-      }
     }
     <div class="container">
       <div class="modal-footer">

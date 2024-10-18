@@ -1,0 +1,60 @@
+$--max-width: 1000px;
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* gap-4 = 1rem = 16px */
+  // margin-top: 40px; /* mt-10 = 2.5rem = 40px */
+  width: 100%; /* Full width */
+  max-width: $--max-width;
+}
+
+.image-container {
+  position: relative; /* *relative */
+  aspect-ratio: 724 / 402; /* aspect-[724/402] */
+  border-radius: 8px; /* rounded */
+  overflow: hidden;
+}
+
+.image-full {
+  object-fit: contain; /* object-contain */
+  height: 100%;
+  width: 100%;
+}
+
+.thumbnail-list {
+  padding-left: 16px;
+  display: flex;
+  gap: 8px; /* gap-1 */
+  max-width: $--max-width - 32px;
+  overflow: auto;
+  scroll-behavior: smooth; /* scroll-smooth */
+  list-style-type: none;
+  padding-bottom: 12px;
+}
+
+.thumbnail-button {
+  background: transparent;
+  width: 96px;
+  height: 79px;
+  min-width: 96px;
+  border: 2px solid transparent;
+  border-radius: 10px; /* rounded */
+  transition: border-color 0.3s ease; /* transition-colors */
+  padding: 0;
+}
+
+.active-thumbnail {
+  border-color: var(--c-secondary-light);
+}
+
+.inactive-thumbnail {
+  border-color: transparent;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* object-cover */
+  border-radius: 8px; /* rounded */
+  overflow: hidden;
+}

@@ -15,6 +15,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './main/main.component';
 import { LanguageSwitchComponent } from './components/language-switch/language-switch.component';
 import { ProjectModalComponent } from './components/base-modal/project-modal/project-modal.component';
+import { ImageGalleryComponent } from './components/base-modal/image-gallery/image-gallery.component';
 
 @Component({
   selector: 'app-root',
@@ -28,6 +29,7 @@ import { ProjectModalComponent } from './components/base-modal/project-modal/pro
     MainComponent,
     LanguageSwitchComponent,
     ProjectModalComponent,
+    ImageGalleryComponent,
   ], // Add other necessary modules
 })
 export class AppComponent implements OnInit, AfterViewInit {

@@ -76,7 +76,7 @@
     {
       "name": "Modelo 3d de Neil",
       "type": "Maya",
-      "contentType": "normal",
+      "contentType": "art",
       "gif": "assets/gifs/maya/ufo_fall_1.avif",
       "img": "assets/gifs/maya/ufo_fall_1.avif",
       "toShow": "",
@@ -131,7 +131,7 @@
     {
       "name": "Dibujos anatómico",
       "type": "Análogo",
-      "contentType": "slider",
+      "contentType": "artSlides",
       "gif": "assets/img/anatomy/01.avif",
       "img": "assets/img/anatomy/01.avif",
       "toShow": "",
@@ -334,7 +334,7 @@
     {
       "name": "Dibujos artísticos",
       "type": "Análogo",
-      "contentType": "slider",
+      "contentType": "artSlides",
       "gif": "assets/img/artistic_draws/01.avif",
       "img": "assets/img/artistic_draws/01.avif",
       "toShow": "",
@@ -457,7 +457,7 @@
     {
       "name": "Ilustraciones digitales",
       "type": "Illustrator - Photoshop",
-      "contentType": "slider",
+      "contentType": "artSlides",
       "gif": "assets/img/digital/0.avif",
       "img": "assets/img/digital/0.avif",
       "toShow": "",

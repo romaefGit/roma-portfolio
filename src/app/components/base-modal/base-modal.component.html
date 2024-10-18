@@ -1,7 +1,10 @@
 <dialog
   #baseDialog
   [@openClose]="isOpen ? 'open' : 'closed'"
-  [ngClass]="{ dialog: !messageInfoType, 'info-message-type': messageInfoType }"
+  [ngClass]="{
+    'dialog body-scroll': !messageInfoType,
+    'info-message-type': messageInfoType,
+  }"
   [style.max-width]="maxWidth"
 >
   <div #dialogContent>

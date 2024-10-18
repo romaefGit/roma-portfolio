@@ -13,6 +13,7 @@ import {
   ModalService,
   ProjectData,
 } from 'src/app/core/services/modal/modal.service';
+import { contentType } from 'src/app/core/models/project/project.model';
 
 @Component({
   selector: 'app-project-modal',
@@ -32,7 +33,7 @@ export class ProjectModalComponent implements AfterViewInit {
   dialogOpened!: boolean;
 
   project!: any;
-  typeOfProject!: ProjectType;
+  typeOfProject!: contentType;
 
   // Carousel slides
   slideIndexActive = 0;
@@ -110,5 +111,3 @@ export class ProjectModalComponent implements AfterViewInit {
     this.dialog.closeDialog();
   }
 }
-
-export type ProjectType = 'game' | 'art';

@@ -146,3 +146,11 @@ a {
 .pointer {
   cursor: pointer;
 }
+
+.smooth-scroll {
+  @include scroll-style(6px);
+}
+
+.body-scroll {
+  @include scroll-style(10px);
+}
