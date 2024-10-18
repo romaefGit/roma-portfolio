@@ -77,12 +77,12 @@ export class WorkComponent implements OnInit {
     console.log('project > ', project);
 
     if (project.contentType == 'artSlides') {
-      console.log('project.modal_info.slides > ', project.modal_info.slides);
+      // console.log('project.modal_info.slides > ', project.modal_info.slides);
 
       this.modalService.openGalleryModal(project.modal_info.slides);
     }
     if (project.contentType == 'art') {
-      console.log('project.contentType > ', project.contentType);
+      // console.log('project.contentType > ', project.contentType);
       this.modalService.openProjectModal({
         info: project,
         type: project.contentType,
