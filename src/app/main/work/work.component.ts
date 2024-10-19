@@ -10,10 +10,13 @@ import {
 import { Subscription } from 'rxjs';
 import { NgOptimizedImage, CommonModule } from '@angular/common';
 import { DirectivesModule } from 'src/app/core/directives/directives.module';
+import { VideoComponent } from 'src/app/components/video/video.component';
+import { ModalService } from 'src/app/core/services/modal/modal.service';
 import {
-  Gallery,
-  GalleryComponent,
-} from 'src/app/components/user-interface/gallery/gallery.component';
+  Project,
+  Slide,
+  contentType,
+} from 'src/app/core/models/project/project.model';
 
 @Component({
   selector: 'app-work',
@@ -23,7 +26,7 @@ import {
     NgOptimizedImage,
     CommonModule,
     DirectivesModule,
-    GalleryComponent,
+    VideoComponent,
   ],
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
@@ -33,6 +36,7 @@ export class WorkComponent implements OnInit {
   public customOptions2: OwlOptions = options2;
 
   private translateService = inject(TranslateService);
+  private modalService = inject(ModalService);
 
   private languageSubscription!: Subscription; // To store the subscription
 
@@ -40,34 +44,6 @@ export class WorkComponent implements OnInit {
 
   artProjects: any[] = [];
 
-  // Carousel slides
-  slideIndexActive = 0;
-  slidesLengthActiveSlider = 0;
-
-  imagesGallery: Gallery[] = [
-    {
-      url: 'https://images.pexels.com/photos/70862/pexels-photo-70862.jpeg',
-      active: false,
-    },
-    {
-      url: 'https://images.pexels.com/photos/775998/pexels-photo-775998.jpeg',
-      active: false,
-    },
-  ];
-  // @HostListener('document:keypress', ['$event'])
-  @HostListener('document:keydown', ['$event'])
-  handleKeyboardEvent(e: KeyboardEvent) {
-    // console.log('e > ', e);
-
-    switch (e.key) {
-      case 'ArrowRight':
-        this.next(this.slidesLengthActiveSlider);
-        break;
-      case 'ArrowLeft':
-        this.prev(this.slidesLengthActiveSlider);
-        break;
-    }
-  }
   constructor(private languageService: LanguageService) {}
 
   ngOnInit() {
@@ -93,60 +69,25 @@ export class WorkComponent implements OnInit {
     });
   }
 
-  showGif(type: string, index: number, indexChild: any) {
-    // console.log('lego');
-    // console.log(type, index, indexChild);
+  openProject(project: Project, type: contentType) {
+    this.modalService.openProjectModal({ info: project, type: type });
+  }
 
-    if (type == 'game')
-      this.gameProjects[index].toShow = this.gameProjects[index].gif;
-    if (type == 'art')
-      this.artProjects[index].toShow = this.artProjects[index].gif;
-    if (type == 'art_part' && indexChild >= 0) {
-      this.artProjects[index].modal_info.parts[indexChild].toShow =
-        this.artProjects[index].modal_info.parts[indexChild].gif;
+  openArtProject(project: Project) {
+    console.log('project > ', project);
+
+    if (project.contentType == 'artSlides') {
+      // console.log('project.modal_info.slides > ', project.modal_info.slides);
+
+      this.modalService.openGalleryModal(project.modal_info.slides);
     }
-  }
-
-  hideGif(type: string, index: number, indexChild: any) {
-    if (type == 'game')
-      this.gameProjects[index].toShow = this.gameProjects[index].img;
-    if (type == 'art')
-      this.artProjects[index].toShow = this.artProjects[index].img;
-    if (type == 'art_part' && indexChild >= 0) {
-      this.artProjects[index].modal_info.parts[indexChild].toShow =
-        this.artProjects[index].modal_info.parts[indexChild].img;
+    if (project.contentType == 'art') {
+      // console.log('project.contentType > ', project.contentType);
+      this.modalService.openProjectModal({
+        info: project,
+        type: project.contentType,
+      });
     }
-  }
-
-  next(slidesLength: number) {
-    if (this.slideIndexActive < slidesLength - 1) {
-      this.setActiveSlide(this.slideIndexActive + 1);
-    } else {
-      this.setActiveSlide(0);
-    }
-  }
-
-  prev(slidesLength: number) {
-    if (this.slideIndexActive > 0) {
-      this.setActiveSlide(this.slideIndexActive - 1);
-    } else {
-      this.setActiveSlide(slidesLength - 1);
-    }
-  }
-
-  setActiveSlide(num: number) {
-    this.slideIndexActive = num;
-  }
-
-  sliderClosed() {
-    setTimeout(() => {
-      // wait close transition
-      this.slideIndexActive = 0;
-    }, 500);
-  }
-
-  setSliderLength(num: number) {
-    this.slidesLengthActiveSlider = num;
   }
 
   // Unsubscribe when the component is destroyed

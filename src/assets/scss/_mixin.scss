@@ -1,4 +1,4 @@
-@import "../../assets/scss/variable";
+@import "../../assets/scss/root";
 // Media Responsive
 @mixin up-xsm {
   @media (min-width: $px-media-xsm + 1) {
@@ -87,5 +87,29 @@
   }
   &:-ms-input-placeholder {
     @content;
+  }
+}
+
+@mixin scroll-style($scrollbarWidthVar) {
+  /* Width */
+  &::-webkit-scrollbar {
+    width: #{$scrollbarWidthVar};
+    border-radius: 50%;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    // background-color: var(--c-secondary-dark);
+    background-color: transparent;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer !important;
+    background-clip: padding-box;
+    background-color: var(--c-secondary-light);
+    border-radius: #{$scrollbarWidthVar};
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: var(--c-white);
   }
 }

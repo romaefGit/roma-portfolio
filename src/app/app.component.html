@@ -1,17 +1,10 @@
-<section [ngClass]="{ 'fixed-header': fixedHeader }">
+<div [ngClass]="{ 'fixed-header': fixedHeader }">
   <!-- Language section -->
-  <div class="switch">
-    <input
-      (click)="toggleSwitch()"
-      id="language-toggle"
-      class="check-toggle check-toggle-round-flat"
-      type="checkbox"
-    />
-    <label for="language-toggle"></label>
-    <span class="on">EN</span>
-    <span class="off">ES</span>
-  </div>
+  <app-language-switch />
   <!-- Header -->
   <app-header></app-header>
   <app-main></app-main>
-</section>
+</div>
+<!-- modals -->
+<app-project-modal />
+<app-image-gallery />

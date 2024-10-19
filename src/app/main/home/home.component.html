@@ -1,4 +1,4 @@
-<div class="bubbles" style="z-index: 0">
+<div class="bubbles-back" style="z-index: 0">
   <!-- <div class="bubble" *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]"></div> -->
   @for (
     item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
@@ -8,8 +8,8 @@
   }
 </div>
 <div
-  class="container animate__animated animate__bounceInLeft"
-  style="z-index: 1; position: relative"
+  class="container animate__animated animate__bounceInLeft relative"
+  style="z-index: 1"
 >
   <div class="row min-vh-100 align-items-center">
     <div class="col-lg-7 col-xl-7 col-xxl-6">
@@ -24,9 +24,40 @@
           {{ "Home.work3" | translate }} <span>Colombia</span>
         </p>
         <div class="btn-bar">
-          <a class="px-btn pointer" (click)="scrollToBottom()">
+          <!-- <button class="px-btn pointer" (click)="scrollToBottom()">
             {{ "Home.work4" | translate }} <i class="fa fa-angle-down"></i>
-          </a>
+            @if (currentTheme) {
+              <app-switch-theme
+                class="absolute top-0 right-4"
+                [currentTheme]="currentTheme"
+              />
+            }
+          </button> -->
+          <div class="container">
+            <div class="row">
+              <div class="col-8 col-sm-8 col-lg-5 col-xl-5 pl-0">
+                <div class="btn-bar w-full">
+                  <button
+                    appAnimateHover
+                    animationHover="pulse"
+                    class="px-btn p-3 pointer w-full"
+                    (click)="scrollToBottom()"
+                  >
+                    {{ "Home.work4" | translate }}
+                    <i class="fa fa-angle-down"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col relative">
+                @if (currentTheme) {
+                  <app-switch-theme
+                    class="absolute top-0 left-0"
+                    [currentTheme]="currentTheme"
+                  />
+                }
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -36,7 +67,9 @@
 <div class="me">
   <!-- cool pink bubbles  -->
   <div class="hb-me animate__animated animate__fadeIn animate__delay-1s">
-    <div class="pink-bubbles">
+    <div
+      class="bubbles bubbles--{{ currentTheme === 'light' ? 'pink' : 'red' }}"
+    >
       <svg viewBox="0 0 120 200">
         <defs>
           <filter id="goo">
@@ -93,14 +126,22 @@
 
   <!-- Pink circle -->
   <div
-    class="hb-me hb-me animate__animated animate__fadeIn"
-    style="background-image: url(assets/img/me/bg-pink.avif)"
+    class="hb-me hb-me animate__animated animate__fadeIn bg-circle"
+    [style.backgroundImage]="
+      'url(assets/img/me/' +
+      (currentTheme === 'light' ? 'bg-pink' : 'bg-red') +
+      '.avif)'
+    "
   ></div>
 
   <!-- Portrait -->
   <div
-    class="hb-me animate__animated animate__fadeInRight"
-    style="background-image: url(assets/img/me/me.avif)"
+    class="hb-me animate__animated animate__fadeInRight bg-me"
+    [style.backgroundImage]="
+      'url(assets/img/me/' +
+      (currentTheme === 'light' ? 'me' : 'me-dark') +
+      '.avif)'
+    "
   ></div>
 
   <!-- Social buttons -->

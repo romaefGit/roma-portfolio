@@ -1,21 +1,19 @@
-@import "../../../assets/scss/variable";
+@import "../../../assets/scss/root";
 @import "../../../assets/scss/mixin";
 
 /* ----------------------
 * About Section
 ---------------------------*/
 .about {
-
-	&--left {
-
-		max-width: 400px;
-		text-align: center;
-
-		max-width: 400px;
+  &--left {
+    max-width: 400px;
     text-align: center;
 
-		/*Center vertically*/
-		display: flex;
+    max-width: 400px;
+    text-align: center;
+
+    /*Center vertically*/
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     min-height: 100%;
@@ -23,165 +21,172 @@
     justify-content: center;
     align-items: center;
 
-		@include down-lg {
-			margin: 0 auto;
-		}
+    @include down-lg {
+      margin: 0 auto;
+    }
 
-		& h3 {
-			font-weight: 700;
-			font-size: 48px;
-			line-height: 1;
-			letter-spacing: -0.05em;
-			text-transform: uppercase;
-			background: linear-gradient(270.16deg, var(--g-secondary-dark) 5.74%, var(--g-secondary) 92.05%);
-			// background: rgba(var(--g-white-rgb), .9);
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			background-clip: text;
-			margin: 0 0 10px;
-			@include down-sm {
-					font-size: 35px;
-			}
-		}
+    & h3 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      background: linear-gradient(
+        270.16deg,
+        var(--c-secondary-dark) 5.74%,
+        var(--c-secondary-light) 92.05%
+      );
+      // background: rgba(var(--c-white-rgb), .9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0 0 10px;
+      @include down-sm {
+        font-size: 35px;
+      }
+    }
 
-		& p {
-			font-size: 24px;
-			margin: 0;
-			letter-spacing: -0.03em;
-			color: var(--g-white);
-			font-weight: 700;
-			@include down-sm {
-					font-size: 20px;
-			}
+    & p {
+      font-size: 24px;
+      margin: 0;
+      letter-spacing: -0.03em;
+      color: var(--c-white);
+      font-weight: 700;
+      @include down-sm {
+        font-size: 20px;
+      }
 
-			& span {
-					font-weight: 400;
-					font-style: normal;
-			}
-		}
-	
-		& .btn-bar {
-			margin: 18px 0 0;
-		}
-	}
+      & span {
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
 
-	&--avatar {
+    & .btn-bar {
+      margin: 18px 0 0;
+    }
+  }
+
+  &--avatar {
     margin-bottom: 32px;
   }
 
-	&--img {
+  &--img {
     border: 6px solid var(--g-pr);
   }
 
-	&--bio {
-		max-width: 600px;
-		margin-bottom: 25px;
-	
-		& p {
-			font-size: 18px;
-			color: var(--g-white);
-		}
-	}
+  &--bio {
+    max-width: 600px;
+    margin-bottom: 25px;
 
-	&--contact {
-		& p {
-				margin: 0 0 15px;
-				font-size: 18px;
-				font-weight: 700;
-				@include down-sm {
-						font-size: 16px;
-				}
-				span {
-						padding-left: 15px;
-				}
-		}
-	}
+    & p {
+      font-size: 18px;
+      color: var(--c-white);
+    }
+  }
 
-	&--exp {
-		.years {
-			margin: inherit;
-			@include down-sm {
-					margin: 0 auto;
-			}
-		}
-	
-		& .a-number {
-			display: flex;
-			padding-bottom: 16px;
-	
-			h6 {
-					font-weight: 800;
-					font-size: 48px;
-					line-height: 1;
-					letter-spacing: -0.05em;
-					text-transform: uppercase;
-					background: linear-gradient(270.16deg, var(--g-secondary-dark) 5.74%, var(--g-secondary) 92.05%);
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
-					background-clip: text;
-			}
-	
-			span {
-					flex: 1;
-					font-size: 18px;
-					font-weight: 700;
-					line-height: 1.2;
-					padding-left: 15px;
-			}
-	
-			@include down-md() {
-					text-align: center; // Center content on screens below medium breakpoint
-			}
-		}	
-		
-		& .lead {
-			font-size: 18px;
-			span {
-					font-weight: bold;
-					color: var(--g-dark);
-			}
-		}
-	
-		blockquote {
-			// background: rgba(var(--g-white-rgb), 0.05);
-			background: rgba(var(--g-white-rgb), 0.3);
-			padding: 30px;
-			border-radius: 10px;
-			position: relative;
-			display: flex;
-			margin: 15px 0 0;
-			@include down-sm {
-				padding: 20px;
-			}
+  &--contact {
+    & p {
+      margin: 0 0 15px;
+      font-size: 18px;
+      font-weight: 700;
+      @include down-sm {
+        font-size: 16px;
+      }
+      span {
+        padding-left: 15px;
+      }
+    }
+  }
 
-			& i {
-				font-size: 80px;
-				line-height: 0.9;
-				color: rgba(var(--g-white-rgb), 0.5);
-				@include down-sm {
-						font-size: 40px;
-				}
-			}
+  &--exp {
+    .years {
+      margin: inherit;
+      @include down-sm {
+        margin: 0 auto;
+      }
+    }
 
-			& p {
-				margin: 0;
-				flex: 1;
-				padding: 0 0 0 30px;
-				font-size: 20px;
-				font-weight: 600;
-				color: var(--g-dark);
-				opacity: .6;
-				@include down-sm {
-						font-size: 18px;
-				}
-			}
-		}
-	}
+    & .a-number {
+      display: flex;
+      padding-bottom: 16px;
 
-	& .separator {
-		border-top: 1px solid rgba(var(--g-white-rgb), .1);
-		margin-top: 30px;
-		padding-top: 16px;
-	}
+      h6 {
+        font-weight: 800;
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -0.05em;
+        text-transform: uppercase;
+        background: linear-gradient(
+          270.16deg,
+          var(--c-secondary-dark) 5.74%,
+          var(--c-secondary-light) 92.05%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
 
+      span {
+        flex: 1;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.2;
+        padding-left: 15px;
+      }
+
+      @include down-md() {
+        text-align: center; // Center content on screens below medium breakpoint
+      }
+    }
+
+    & .lead {
+      font-size: 18px;
+      span {
+        font-weight: bold;
+        color: var(--c-bg-dark);
+      }
+    }
+
+    blockquote {
+      // background: rgba(var(--c-white-rgb), 0.05);
+      background: rgba(var(--c-white-rgb), 0.3);
+      padding: 30px;
+      border-radius: 10px;
+      position: relative;
+      display: flex;
+      margin: 15px 0 0;
+      @include down-sm {
+        padding: 20px;
+      }
+
+      & i {
+        font-size: 80px;
+        line-height: 0.9;
+        color: rgba(var(--c-white-rgb), 0.5);
+        @include down-sm {
+          font-size: 40px;
+        }
+      }
+
+      & p {
+        margin: 0;
+        flex: 1;
+        padding: 0 0 0 30px;
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--c-bg-dark);
+        opacity: 0.6;
+        @include down-sm {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  & .separator {
+    border-top: 1px solid rgba(var(--c-white-rgb), 0.1);
+    margin-top: 30px;
+    padding-top: 16px;
+  }
 }

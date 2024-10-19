@@ -1,4 +1,4 @@
-@import "../../../assets/scss/variable";
+@import "../../../assets/scss/root";
 @import "../../../assets/scss/mixin";
 // bubbles
 // https://codepen.io/myroncama12/embed/eQQaQL?default-tab=result&theme-id=light
@@ -79,7 +79,7 @@
 }
 
 .hearth {
-  color: var(--g-primary-dark);
+  color: var(--c-primary-dark);
 }
 
 // other bubbles
@@ -110,13 +110,13 @@
   .wave {
     animation: wave 3s linear;
     animation-iteration-count: infinite;
-    fill: var(--g-primary-dark);
+    fill: var(--c-primary-dark);
   }
   .drop {
     fill: #fdb1b1;
     xfill: #fdb1b1;
     animation: drop 8.2s linear infinite normal;
-    stroke: var(--g-primary);
+    stroke: var(--c-primary-light);
     stroke-width: 0.5;
     transform: translateY(55px) scale(0.1);
     transform-box: fill-box;

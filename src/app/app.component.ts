@@ -4,21 +4,33 @@ import {
   HostListener,
   AfterViewInit,
   inject,
+  Injectable,
 } from '@angular/core';
-import { fromEvent, Subscription } from 'rxjs';
+import { fromEvent, Subscription, Subject } from 'rxjs';
 import { throttleTime } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from './core/services/language/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
 import { MainComponent } from './main/main.component';
+import { LanguageSwitchComponent } from './components/language-switch/language-switch.component';
+import { ProjectModalComponent } from './components/base-modal/project-modal/project-modal.component';
+import { ImageGalleryComponent } from './components/base-modal/image-gallery/image-gallery.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [CommonModule, TranslateModule, HeaderComponent, MainComponent], // Add other necessary modules
+  imports: [
+    CommonModule,
+    TranslateModule,
+    HeaderComponent,
+    MainComponent,
+    LanguageSwitchComponent,
+    ProjectModalComponent,
+    ImageGalleryComponent,
+  ], // Add other necessary modules
 })
 export class AppComponent implements OnInit, AfterViewInit {
   public fixedHeader: boolean = false;
@@ -53,20 +65,9 @@ export class AppComponent implements OnInit, AfterViewInit {
       this.fixedHeader = false;
     }
   }
+}
 
-  toggleSwitch(language: any = null): void {
-    const toggle = document.getElementById(
-      'language-toggle',
-    ) as HTMLInputElement;
-
-    if (toggle) {
-      if (language) toggle.checked = !toggle.checked;
-
-      if (!toggle.checked) {
-        this.languageService.changeLanguage('en');
-      } else {
-        this.languageService.changeLanguage('es');
-      }
-    }
-  }
+@Injectable({ providedIn: 'root' })
+export class ClickListenerService {
+  documentClickedTarget: Subject<HTMLElement> = new Subject<HTMLElement>();
 }

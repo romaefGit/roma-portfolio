@@ -1,14 +1,22 @@
 .bg-blue {
-	// background: linear-gradient(270.16deg, var(--g-primary-dark) 5.74%, var(--g-primary) 92.05%);
-	background: linear-gradient(270.16deg, var(--g-primary-dark) 5.74%, var(--g-primary) 92.05%);
+  // background: linear-gradient(270.16deg, var(--c-primary-dark) 5.74%, var(--c-primary-light) 92.05%);
+  background: linear-gradient(
+    270.16deg,
+    var(--c-primary-dark) 5.74%,
+    var(--c-primary-light) 92.05%
+  );
 }
 
 .bg-dark {
-	// background: linear-gradient(177deg, #100E24 0%, #030211 190%);
-	background: linear-gradient(177deg, var(--g-bg) 0%, var(--g-dark) 190%);
+  // background: linear-gradient(177deg, #100E24 0%, #030211 190%);
+  background: linear-gradient(
+    177deg,
+    var(--c-bg-light) 0%,
+    var(--c-bg-dark) 190%
+  );
 }
 
 .bg-dark-blue {
-	background: var(--g-dark);
-	border-left: 2px solid var(--g-primary-dark);
+  background: var(--c-bg-dark);
+  border-left: 2px solid var(--c-primary-dark);
 }

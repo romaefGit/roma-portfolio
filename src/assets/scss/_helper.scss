@@ -1,0 +1,127 @@
+@mixin generate-space-classes($alias, $property, $negative: false) {
+  @for $i from 0 through 20 {
+    $value: if($negative, -$i * 4px, $i * 4px);
+    $suffix: if($negative, "-", "");
+
+    .#{$alias}-#{$i}#{$suffix} {
+      #{$property}: #{$value} !important;
+    }
+  }
+}
+
+@mixin line-clamp-generator() {
+  @for $i from 1 through 10 {
+    .limit-line-#{$i} {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: #{$i};
+    }
+  }
+}
+
+// margin
+@include generate-space-classes(
+  "mb",
+  "margin-bottom"
+); // Generates .mb-1 to .mb-10
+@include generate-space-classes(
+  "mt",
+  "margin-top"
+); // Generates .mt-1 to .mt-10
+@include generate-space-classes(
+  "ml",
+  "margin-left"
+); // Generates .ml-1 to .ml-10
+@include generate-space-classes(
+  "mr",
+  "margin-right"
+); // Generates .mr-1 to .mr-10
+@include generate-space-classes("m", "margin"); // Generates .m-1 to .m-10
+
+@include generate-space-classes("top", "top");
+@include generate-space-classes("bottom", "bottom");
+@include generate-space-classes("left", "left");
+@include generate-space-classes("right", "right");
+
+@include generate-space-classes("top", "top", true);
+@include generate-space-classes("bottom", "bottom", true);
+@include generate-space-classes("left", "left", true);
+@include generate-space-classes("right", "right", true);
+// Padding
+@include generate-space-classes(
+  "pb",
+  "padding-bottom"
+); // Generates .pb-1 to .pb-10
+@include generate-space-classes(
+  "pt",
+  "padding-top"
+); // Generates .pt-1 to .pt-10
+@include generate-space-classes(
+  "pl",
+  "padding-left"
+); // Generates .pl-1 to .pl-10
+@include generate-space-classes(
+  "pr",
+  "padding-right"
+); // Generates .pr-1 to .pr-10
+@include generate-space-classes("p", "padding"); // Generates .p-1 to .p-10
+
+@include line-clamp-generator();
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.w-full {
+  width: 100%;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xs {
+  font-size: 8px !important;
+}
+.text-sm {
+  font-size: 12px !important;
+}
+.text-md {
+  font-size: 16px !important;
+}
+.text-lg {
+  font-size: 24px !important;
+}
+.text-xl {
+  font-size: 32px !important;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.error {
+  color: var(--error-color);
+}

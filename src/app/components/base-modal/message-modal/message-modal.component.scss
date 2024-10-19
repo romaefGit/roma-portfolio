@@ -1,0 +1,42 @@
+$info: #cde8f6;
+$info-text: #447eaf;
+$warn: #f8f4d5;
+$warn-text: #96722e;
+$error: #ecc8c5;
+$error-text: #b83c37;
+$success: #ddf3d5;
+$success-text: #597151;
+
+.message {
+  display: flex;
+  align-items: center; // Center the icon and text vertically if needed
+  border-radius: 8px;
+
+  &--text {
+    display: flex;
+    align-items: center;
+    gap: 16px; // Gap between the icon and the text
+    margin: 16px;
+    margin-right: 20px;
+  }
+}
+.message-box-info {
+  background-color: $info;
+  border: darken($info, 40%) 2px solid;
+  color: $info-text;
+}
+.message-box-warning {
+  background-color: $warn;
+  border: darken($warn, 20%) 2px solid;
+  color: $warn-text;
+}
+.message-box-error {
+  background-color: $error;
+  border: darken($error, 20%) 2px solid;
+  color: $error-text;
+}
+.message-box-success {
+  background-color: $success;
+  border: darken($success, 20%) 2px solid;
+  color: $success-text;
+}

@@ -1,9 +1,9 @@
 /* Background
 -------------------------------*/
 body {
-  background-color: var(--g-bg);
+  background-color: var(--c-bg-light);
   color: var(--g-text);
-  font-family: $px-font;
+  font-family: $font-primary;
   --bs-body-font-weight: 400;
   --bs-body-font-size: 1rem;
   --bs-body-line-height: 1.6;
@@ -33,7 +33,7 @@ a {
     margin: 0 4px;
 
     &.active {
-      background: var(--g-primary);
+      background: var(--c-primary-light);
       width: 20px;
     }
   }
@@ -56,7 +56,7 @@ a {
     margin: auto;
     width: 35px;
     height: 35px;
-    background: var(--g-primary);
+    background: var(--c-primary-light);
     color: var(--g-primary-text);
     display: inline-flex;
     align-items: center;
@@ -67,7 +67,7 @@ a {
 
     &:hover {
       background: var(--g-primary-text);
-      color: var(--g-primary);
+      color: var(--c-primary-light);
     }
   }
 
@@ -126,7 +126,7 @@ a {
   display: none;
   z-index: 9;
   i {
-    color: var(--g-primary);
+    color: var(--c-primary-light);
     font-size: 40px;
   }
 }
@@ -145,4 +145,12 @@ a {
 
 .pointer {
   cursor: pointer;
+}
+
+.smooth-scroll {
+  @include scroll-style(6px);
+}
+
+.body-scroll {
+  @include scroll-style(10px);
 }

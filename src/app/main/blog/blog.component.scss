@@ -1,48 +1,48 @@
-@import "../../../assets/scss/variable";
+@import "../../../assets/scss/root";
 @import "../../../assets/scss/mixin";
 /* ----------------------
 * Blog  Section
 ---------------------------*/
 .blog-post {
   a {
-      cursor: pointer;
+    cursor: pointer;
   }
   .blog-post-img {
-      overflow: hidden;
-      img {
-          transition: ease all 0.34s;
-          transform: scale(1);
-      }
+    overflow: hidden;
+    img {
+      transition: ease all 0.34s;
+      transform: scale(1);
+    }
   }
   .blog-post-info {
-      padding-top: 25px;
-      padding-bottom: 25px;
-      border-bottom: 1px solid rgba(var(--g-white-rgb), .1);
-      h6 {
-          font-weight: 15px;
-          margin: 0 0 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(var(--g-white-rgb), 0.1);
+    h6 {
+      font-weight: 15px;
+      margin: 0 0 10px;
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 22px;
+      margin: 0;
+      a {
+        color: inherit;
       }
-      h2 {
-          font-weight: 700;
-          font-size: 22px;
-          margin: 0;
-          a {
-              color: inherit;
-          }
-      }
+    }
   }
   &:hover {
-      .blog-post-img {
-          img {
-              transform: scale(1.50);
-          }
+    .blog-post-img {
+      img {
+        transform: scale(1.5);
       }
-      .blog-post-info{
-          h2 {
-              a {
-                  color:var(--g-primary);
-              }
-          }
+    }
+    .blog-post-info {
+      h2 {
+        a {
+          color: var(--c-primary-light);
+        }
       }
+    }
   }
 }
