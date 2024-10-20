@@ -1,3 +1,4 @@
+@import "../../../../assets/scss/mixin";
 $--max-width: 1000px;
 .modal-container {
   display: flex;
@@ -6,6 +7,9 @@ $--max-width: 1000px;
   // margin-top: 40px; /* mt-10 = 2.5rem = 40px */
   width: 100%; /* Full width */
   max-width: $--max-width;
+  @include up-lg {
+    max-width: $--max-width + 300px;
+  }
 }
 
 .image-container {
@@ -26,6 +30,9 @@ $--max-width: 1000px;
   display: flex;
   gap: 8px; /* gap-1 */
   max-width: $--max-width - 32px;
+  @include up-lg {
+    max-width: $--max-width + 300px - 32px;
+  }
   overflow: auto;
   scroll-behavior: smooth; /* scroll-smooth */
   list-style-type: none;
