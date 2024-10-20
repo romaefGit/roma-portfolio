@@ -1,6 +1,7 @@
 import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
+import { ChestPainComponent } from 'src/app/components/chest-pain/chest-pain.component';
 import { RomaComponent } from 'src/app/components/roma/roma.component';
 import {
   SwitchThemeComponent,
@@ -16,6 +17,7 @@ import { ThemeService } from 'src/app/core/services/theme/theme.service';
     RomaComponent,
     SwitchThemeComponent,
     DirectivesModule,
+    ChestPainComponent,
   ],
   selector: 'app-home',
   templateUrl: './home.component.html',

@@ -17,6 +17,8 @@ import {
   Slide,
   contentType,
 } from 'src/app/core/models/project/project.model';
+import { ChestPainComponent } from 'src/app/components/chest-pain/chest-pain.component';
+import { CanvasPlatformerComponent } from 'src/app/components/canvas-platformer/canvas-platformer.component';
 
 @Component({
   selector: 'app-work',
@@ -27,6 +29,8 @@ import {
     CommonModule,
     DirectivesModule,
     VideoComponent,
+    ChestPainComponent,
+    CanvasPlatformerComponent,
   ],
   templateUrl: './work.component.html',
   styleUrls: ['./work.component.scss'],
