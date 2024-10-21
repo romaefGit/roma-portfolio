@@ -13,7 +13,6 @@ import {
 } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { IMAGE_CONFIG } from '@angular/common';
 import { routes } from './app.routes';
@@ -36,7 +35,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes, withComponentInputBinding(), withViewTransitions()),
     importProvidersFrom(
       BrowserAnimationsModule,
-      CarouselModule,
+      // CarouselModule,
       TranslateModule.forRoot({
         loader: {
           provide: TranslateLoader,

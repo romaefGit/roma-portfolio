@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import {
   Component,
   ElementRef,
@@ -5,15 +6,17 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-// https://chatgpt.com/c/67153df4-d34c-800e-9bb5-cdc97f386bbc
+import { HeaderComponent } from 'src/app/components/header/header.component';
+import { LanguageSwitchComponent } from 'src/app/components/language-switch/language-switch.component';
+
 @Component({
-  selector: 'app-canvas-platformer',
+  selector: 'app-platform-game',
   standalone: true,
-  imports: [],
-  templateUrl: './canvas-platformer.component.html',
-  styleUrl: './canvas-platformer.component.scss',
+  imports: [LanguageSwitchComponent, HeaderComponent, NgClass],
+  templateUrl: './platform-game.component.html',
+  styleUrl: './platform-game.component.scss',
 })
-export class CanvasPlatformerComponent implements OnInit {
+export class PlatformGameComponent implements OnInit {
   @ViewChild('canvas', { static: true })
   canvasRef!: ElementRef<HTMLCanvasElement>;
   ctx!: CanvasRenderingContext2D;

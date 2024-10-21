@@ -11,11 +11,11 @@ import { CommonModule } from '@angular/common';
 import { LanguageService } from './core/services/language/language.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './components/header/header.component';
-import { MainComponent } from './main/main.component';
 import { LanguageSwitchComponent } from './components/language-switch/language-switch.component';
 import { ProjectModalComponent } from './components/base-modal/project-modal/project-modal.component';
 import { ImageGalleryComponent } from './components/base-modal/image-gallery/image-gallery.component';
 import { RouterOutlet } from '@angular/router';
+import { MainComponent } from './pages/main/main.component';
 
 @Component({
   selector: 'app-root',

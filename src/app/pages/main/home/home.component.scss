@@ -1,5 +1,5 @@
-@import "../../../assets/scss/root";
-@import "../../../assets/scss/mixin";
+@import "../../../../assets/scss/root";
+@import "../../../../assets/scss/mixin";
 
 /* ----------------------
 *   Home Banner
@@ -194,7 +194,7 @@
     width: $--size;
     height: $--size;
 
-    @include randomBubble("../../../assets/img/languages/#{$i}.png");
+    @include randomBubble("../../../../assets/img/languages/#{$i}.png");
   }
 }
 

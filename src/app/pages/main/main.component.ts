@@ -19,9 +19,9 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BlogComponent } from './blog/blog.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { ScrollService } from '../core/services/scroll/scroll.service';
-import { HeaderComponent } from '../components/header/header.component';
-import { LanguageSwitchComponent } from '../components/language-switch/language-switch.component';
+import { HeaderComponent } from 'src/app/components/header/header.component';
+import { LanguageSwitchComponent } from 'src/app/components/language-switch/language-switch.component';
+import { ScrollService } from 'src/app/core/services/scroll/scroll.service';
 
 @Component({
   selector: 'app-main',

@@ -4,14 +4,14 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./app/main/main.component').then((c) => c.MainComponent),
+      import('./pages/main/main.component').then((c) => c.MainComponent),
   },
   {
     path: 'angular-game',
     loadComponent: () =>
-      import(
-        './app/components/canvas-platformer/canvas-platformer.component'
-      ).then((c) => c.CanvasPlatformerComponent),
+      import('./pages/canvas/platform-game/platform-game.component').then(
+        (c) => c.PlatformGameComponent,
+      ),
   },
   // {
   //   path: 'auth',
