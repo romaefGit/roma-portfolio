@@ -132,8 +132,8 @@
       "name": "Dibujo anatómico",
       "type": "Análogo",
       "contentType": "artSlides",
-      "gif": "assets/img/anatomy/01.avif",
-      "img": "assets/img/anatomy/01.avif",
+      "gif": "assets/img/anatomy/1.avif",
+      "img": "assets/img/anatomy/1.avif",
       "toShow": "",
       "description": "Utilizando lápices de grafito, rapidógrafo, acuarela y modelo de desnudo humano real.",
       "modal_info": {
@@ -305,8 +305,8 @@
       "name": "Dibujos",
       "type": "Análogos",
       "contentType": "artSlides",
-      "gif": "assets/img/artistic_draws/01.avif",
-      "img": "assets/img/artistic_draws/01.avif",
+      "gif": "assets/img/artistic_draws/1.avif",
+      "img": "assets/img/artistic_draws/1.avif",
       "toShow": "",
       "description": "Utilizar diferentes técnicas para conocer contraste, saturación, volumen, perspectiva, bocetos, texturas, profundidad, puntos de fuga, etc.",
       "modal_info": {
@@ -403,8 +403,8 @@
       "name": "Digital",
       "type": "Illustrator | Photoshop",
       "contentType": "artSlides",
-      "gif": "assets/img/digital/0.avif",
-      "img": "assets/img/digital/0.avif",
+      "gif": "assets/img/digital/23.avif",
+      "img": "assets/img/digital/23.avif",
       "toShow": "",
       "description": "Bocetado primero y digitalizado al final.",
       "modal_info": {
