@@ -19,7 +19,7 @@
         "id": "ufos_fall",
         "title": "Juego de plataforma 2D",
         "subtitle": "Unity",
-        "description": "<p>'UFO Fall' es un juego de aventuras en 2D que profundiza en el enigmático caso Roswell, ofreciendo una nueva perspectiva sobre lo que pasó con las misteriosas criaturas que se estrellaron en el desierto. <br> Como jugador, te pondrás en la piel de uno de estos seres extraterrestres, en una búsqueda para encontrar su nave y rescatar a su tripulación. Sin embargo, hay un giro: el protagonista alienígena ha perdido la memoria, salvo por un profundo amor por las plantas y confusos recuerdos del accidente. <br> Explora un cautivador mundo 2D lleno de intrigantes desafíos y acertijos mientras descubres los secretos detrás del incidente de Roswell. Atraviesa paisajes desérticos, infíltrate en la infame Área 51 e interactúa con una variedad de personajes y criaturas únicas. <br>'UFO Fall' combina una narración cautivadora con un juego creativo, lo que permite a los jugadores utilizar las habilidades alienígenas y amor a las plantas para sortear los obstáculos que encuentran en su viaje. Descubre la verdad detrás del accidente, la misión del extraterrestre y los misterios del Área 51 a medida que avanzas en este juego que se encuentra en progreso. <br>Embárcate en una aventura única y prepárate para desentrañar los secretos de 'UFO Fall' mientras guías al extraterrestre en su búsqueda para recuperar sus recuerdos y rescatar a su tripulación perdida.</p>",
+        "description": "<p>En UFO Fall, te convertirás en un sobreviviente extraterrestre del misterioso accidente de Roswell, en una misión para recuperar tu nave y a tu tripulación, pero con recuerdos fragmentados. Solo tu conexión con las plantas permanece clara. Mientras viajas por inquietantes paisajes desérticos y las profundidades protegidas del Área 51, resolverás acertijos y enfrentarás desafíos, usando tus habilidades alienígenas para interactuar con el entorno. Poco a poco, la verdad detrás de tu accidente, tu misión y el extraño mundo que te rodea se revela, lo que conduce a una revelación más profunda. Tu pasado y tu futuro están en juego: ¿qué descubrirás?</p>",
         "video": "assets/videos/ufos_fall.webm",
         "social": []
       }
@@ -129,7 +129,7 @@
       }
     },
     {
-      "name": "Dibujos anatómico",
+      "name": "Dibujo anatómico",
       "type": "Análogo",
       "contentType": "artSlides",
       "gif": "assets/img/anatomy/01.avif",
@@ -143,12 +143,52 @@
         "img": "assets/img/anatomy/01.avif",
         "slides": [
           {
-            "img": "assets/img/anatomy/01.avif",
+            "img": "assets/img/anatomy/1.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/anatomy/03.avif",
+            "img": "assets/img/anatomy/2.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/3.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/4.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/5.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/6.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/7.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/8.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/9.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/10.avif",
             "title": "",
             "description": ""
           },
@@ -173,6 +213,36 @@
             "description": ""
           },
           {
+            "img": "assets/img/anatomy/15.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/16.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/17.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/18.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/19.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/20.avif",
+            "title": "",
+            "description": ""
+          },
+          {
             "img": "assets/img/anatomy/21.avif",
             "title": "",
             "description": ""
@@ -193,137 +263,37 @@
             "description": ""
           },
           {
+            "img": "assets/img/anatomy/25.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/26.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/27.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/28.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/29.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/anatomy/30.avif",
+            "title": "",
+            "description": ""
+          },
+          {
             "img": "assets/img/anatomy/31.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/32.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/33.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/34.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/35.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/41.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/43.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/43-1.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/44.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/45.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/46.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/47.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/48.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/49.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/51.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/52.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/53.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/61.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/62.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/63.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/64.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/65.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/71-2.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/71.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/72.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/81.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/anatomy/91.avif",
             "title": "",
             "description": ""
           }
@@ -332,8 +302,8 @@
       }
     },
     {
-      "name": "Dibujos artísticos",
-      "type": "Análogo",
+      "name": "Dibujos",
+      "type": "Análogos",
       "contentType": "artSlides",
       "gif": "assets/img/artistic_draws/01.avif",
       "img": "assets/img/artistic_draws/01.avif",
@@ -341,32 +311,52 @@
       "description": "Utilizar diferentes técnicas para conocer contraste, saturación, volumen, perspectiva, bocetos, texturas, profundidad, puntos de fuga, etc.",
       "modal_info": {
         "id": "artistic_slider",
-        "title": "artistic",
-        "subtitle": "Dibujos",
+        "title": "Dibujos",
+        "subtitle": "",
         "img": "assets/img/artistic_draws/01.avif",
         "slides": [
           {
-            "img": "assets/img/artistic_draws/01.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/02-0.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/02-1.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/02-3.avif",
+            "img": "assets/img/artistic_draws/1.avif",
             "title": "",
             "description": ""
           },
           {
             "img": "assets/img/artistic_draws/3.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/artistic_draws/4.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/artistic_draws/5.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/artistic_draws/6.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/artistic_draws/7.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/artistic_draws/8.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/artistic_draws/9.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/artistic_draws/10.avif",
             "title": "",
             "description": ""
           },
@@ -381,72 +371,27 @@
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/21.avif",
+            "img": "assets/img/artistic_draws/13.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/22.avif",
+            "img": "assets/img/artistic_draws/14.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/31.avif",
+            "img": "assets/img/artistic_draws/15.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/32.avif",
+            "img": "assets/img/artistic_draws/16.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/artistic_draws/33.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/41.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/42.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/43.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/44.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/45.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/51.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/52.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/53.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/artistic_draws/54.avif",
+            "img": "assets/img/artistic_draws/17.avif",
             "title": "",
             "description": ""
           }
@@ -455,8 +400,8 @@
       }
     },
     {
-      "name": "Ilustraciones digitales",
-      "type": "Illustrator - Photoshop",
+      "name": "Digital",
+      "type": "Illustrator | Photoshop",
       "contentType": "artSlides",
       "gif": "assets/img/digital/0.avif",
       "img": "assets/img/digital/0.avif",
@@ -464,42 +409,57 @@
       "description": "Bocetado primero y digitalizado al final.",
       "modal_info": {
         "id": "digital_slider",
-        "title": "Ilustraciones digitales",
-        "subtitle": "illustrations",
+        "title": "Digital",
+        "subtitle": "",
         "img": "assets/img/digital/00.avif",
         "slides": [
           {
-            "img": "assets/img/digital/0.avif",
+            "img": "assets/img/digital/1.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/00.avif",
+            "img": "assets/img/digital/2.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/01.avif",
+            "img": "assets/img/digital/3.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/02.avif",
+            "img": "assets/img/digital/4.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/02-1.avif",
+            "img": "assets/img/digital/5.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/03.avif",
+            "img": "assets/img/digital/6.avif",
             "title": "",
             "description": ""
           },
           {
-            "img": "assets/img/digital/04.avif",
+            "img": "assets/img/digital/7.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/8.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/9.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/10.avif",
             "title": "",
             "description": ""
           },
@@ -510,6 +470,41 @@
           },
           {
             "img": "assets/img/digital/12.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/13.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/14.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/15.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/16.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/18.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/19.avif",
+            "title": "",
+            "description": ""
+          },
+          {
+            "img": "assets/img/digital/20.avif",
             "title": "",
             "description": ""
           },
@@ -525,116 +520,6 @@
           },
           {
             "img": "assets/img/digital/23.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/24.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/31.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/32.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/33.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/41.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/42.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/43.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/51.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/52.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/61.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/62.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/63.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/64.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/71.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/81.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/91.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/92.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/93.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/94.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/96.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/97.avif",
-            "title": "",
-            "description": ""
-          },
-          {
-            "img": "assets/img/digital/98.avif",
             "title": "",
             "description": ""
           }
