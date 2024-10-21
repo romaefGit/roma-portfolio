@@ -1,29 +1,34 @@
-<main class="wrapper relative" id="scroll-container">
-  <!-- Sections -->
-  <!-- @if (flagService.hasFlag("Home")) { -->
-  <section id="home" class="home-section bg-dark">
-    <app-home />
-  </section>
-  <!-- } -->
+<div [ngClass]="{ 'fixed-header': fixedHeader }">
+  <!-- Language section -->
+  <app-language-switch />
+  <!-- Header -->
+  <app-header></app-header>
+  <main class="wrapper relative" id="scroll-container">
+    <!-- Sections -->
+    <!-- @if (flagService.hasFlag("Home")) { -->
+    <section id="home" class="home-section bg-dark">
+      <app-home />
+    </section>
+    <!-- } -->
 
-  <!-- @if (flagService.hasFlag("Work")) { -->
-  <section id="work" class="section work-section">
-    <app-work />
-  </section>
-  <!-- } -->
+    <!-- @if (flagService.hasFlag("Work")) { -->
+    <section id="work" class="section work-section">
+      <app-work />
+    </section>
+    <!-- } -->
 
-  <!-- @if (flagService.hasFlag("Experience")) { -->
-  <section id="experience" class="section experience-section bg-dark-blue">
-    <app-experience />
-  </section>
-  <!-- } -->
+    <!-- @if (flagService.hasFlag("Experience")) { -->
+    <section id="experience" class="section experience-section bg-dark-blue">
+      <app-experience />
+    </section>
+    <!-- } -->
 
-  <!-- @if (flagService.hasFlag("About")) { -->
-  <section id="about" class="section about-section">
-    <app-about />
-  </section>
-  <!-- } -->
-  <!-- 
+    <!-- @if (flagService.hasFlag("About")) { -->
+    <section id="about" class="section about-section">
+      <app-about />
+    </section>
+    <!-- } -->
+    <!-- 
   @if (flagService.hasFlag("Services")) {
     <section id="services" class="section services-section bg-dark">
       <app-services />
@@ -45,27 +50,28 @@
     </section>
   } -->
 
-  <!-- <section id="contact" class="section contact-section">
+    <!-- <section id="contact" class="section contact-section">
       <app-contact/>
     </section> -->
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-info">
-        <div class="footer-avatar">
-          <img src="assets/img/me/me_small.avif" title="" alt="" />
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-info">
+          <div class="footer-avatar">
+            <img src="assets/img/me/me_small.avif" title="" alt="" />
+          </div>
+          <h6>Romario</h6>
         </div>
-        <h6>Romario</h6>
+        <p class="copyright">{{ "Main.copyright" | translate }}</p>
       </div>
-      <p class="copyright">{{ "Main.copyright" | translate }}</p>
-    </div>
-  </footer>
-  <a class="pointer" (click)="scrollToTop()" id="return-to-top"
-    ><i class="fa fa-angle-up"></i
-  ></a>
-  <!-- End Footer -->
-</main>
+    </footer>
+    <a class="pointer" (click)="scrollToTop()" id="return-to-top"
+      ><i class="fa fa-angle-up"></i
+    ></a>
+    <!-- End Footer -->
+  </main>
+</div>
 
 @if (flagService.hasFlag("Blog")) {
   <!-- Blog Modal -->

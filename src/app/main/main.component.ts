@@ -7,6 +7,8 @@ import {
   QueryList,
   ViewChildren,
 } from '@angular/core';
+import { fromEvent, Subscription } from 'rxjs';
+import { throttleTime } from 'rxjs/operators';
 import { FeatureFlagService } from 'src/app/core/services/feature-flag/feature-flag.service';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
@@ -18,7 +20,8 @@ import { BlogComponent } from './blog/blog.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { ScrollService } from '../core/services/scroll/scroll.service';
-import { Subscription } from 'rxjs';
+import { HeaderComponent } from '../components/header/header.component';
+import { LanguageSwitchComponent } from '../components/language-switch/language-switch.component';
 
 @Component({
   selector: 'app-main',
@@ -35,9 +38,13 @@ import { Subscription } from 'rxjs';
     BlogComponent,
     TranslateModule,
     CommonModule,
+    HeaderComponent,
+    LanguageSwitchComponent,
   ],
 })
 export class MainComponent implements AfterViewInit, OnDestroy {
+  public fixedHeader: boolean = false;
+  private windowScroll$: Subscription = Subscription.EMPTY;
   private scrollSubscription!: Subscription; // To store the subscription
 
   @ViewChildren('section') sections!: QueryList<ElementRef>;
@@ -50,7 +57,11 @@ export class MainComponent implements AfterViewInit, OnDestroy {
     private scrollService: ScrollService,
   ) {}
 
-  ngAfterViewInit(): void {}
+  ngAfterViewInit(): void {
+    this.windowScroll$ = fromEvent(window, 'scroll')
+      .pipe(throttleTime(30))
+      .subscribe(() => this.onScroll());
+  }
 
   scrollToSection(sectionId: string): void {
     this.waitForElement(`#${sectionId}`, (section) => {
@@ -84,7 +95,19 @@ export class MainComponent implements AfterViewInit, OnDestroy {
     });
   }
 
+  onScroll() {
+    if (
+      document.documentElement.scrollTop >= 100 ||
+      document.body.scrollTop >= 100
+    ) {
+      this.fixedHeader = true;
+    } else {
+      this.fixedHeader = false;
+    }
+  }
+
   ngOnDestroy(): void {
+    this.windowScroll$.unsubscribe();
     //Called once, before the instance is destroyed.
     //Add 'implements OnDestroy' to the class.
     if (this.scrollSubscription) {

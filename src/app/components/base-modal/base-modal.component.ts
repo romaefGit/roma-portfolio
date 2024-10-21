@@ -107,7 +107,7 @@ export class BaseModalComponent {
 
   ngOnInit(): void {
     this.subscription =
-      this.clickListenerService.documentClickedTarget.subscribe((target) =>
+      this.clickListenerService.documentClickedTarget.subscribe((target: any) =>
         this.documentClickListener(target),
       );
   }
