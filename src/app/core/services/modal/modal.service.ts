@@ -20,7 +20,7 @@ export class ModalService {
   }
 
   openGalleryModal(images: Slide[]) {
-    console.log('images > ', images);
+    // console.log('images > ', images);
 
     this.showGalleryModal.emit(images);
   }

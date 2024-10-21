@@ -78,7 +78,7 @@ export class WorkComponent implements OnInit {
   }
 
   openArtProject(project: Project) {
-    console.log('project > ', project);
+    // console.log('project > ', project);
 
     if (project.contentType == 'artSlides') {
       // console.log('project.modal_info.slides > ', project.modal_info.slides);
