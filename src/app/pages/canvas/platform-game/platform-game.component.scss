@@ -1,6 +1,29 @@
-body {
-  background: #5eaec5;
-  font-family: "Press Start 2P", cursive;
+#canvas {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.title {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--c-primary-dark);
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 110px;
+  text-align: center;
+}
+
+.score {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--c-primary-light);
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: left;
+  span {
+    -webkit-text-fill-color: var(--c-primary-dark);
+    -webkit-text-stroke-color: #fff;
+  }
 }
 
 .controller-cord {
