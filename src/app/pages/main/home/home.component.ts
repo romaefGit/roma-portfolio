@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { Component, inject, OnInit, OnDestroy } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
@@ -18,6 +19,7 @@ import { ThemeService } from 'src/app/core/services/theme/theme.service';
     SwitchThemeComponent,
     DirectivesModule,
     ChestPainComponent,
+    NgClass,
   ],
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -27,6 +29,16 @@ export class HomeComponent implements OnInit, OnDestroy {
   private themeService = inject(ThemeService);
   currentTheme!: themeType; // Default theme
   themeSubscription: Subscription = new Subscription(); // Holds the subscription
+
+  showEyes = false;
+
+  onMouseEnter() {
+    this.showEyes = true;
+  }
+
+  onMouseLeave() {
+    this.showEyes = false;
+  }
 
   ngOnInit(): void {
     // Subscribe to the theme observable and store the subscription

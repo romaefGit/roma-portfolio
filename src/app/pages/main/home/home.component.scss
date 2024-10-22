@@ -241,6 +241,15 @@
   transition: background-image 0.5s ease-in-out; /* Adjust duration and timing as needed */
 }
 
+.eyes {
+  opacity: 0 !important;
+  transition: opacity 0.5s ease-in-out !important; /* Smooth fade-in/out effect */
+}
+
+.eyes.show {
+  opacity: 1 !important;
+}
+
 // other bubbles
 // https://codepen.io/GlitchTimes/pen/PoZOOYz/
 .bubbles {

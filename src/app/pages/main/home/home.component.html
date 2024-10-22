@@ -42,6 +42,8 @@
                     animationHover="pulse"
                     class="px-btn p-3 pointer w-full"
                     (click)="scrollToBottom()"
+                    (mouseenter)="onMouseEnter()"
+                    (mouseleave)="onMouseLeave()"
                   >
                     {{ "Home.work4" | translate }}
                     <i class="fa fa-angle-down"></i>
@@ -53,6 +55,8 @@
                   <app-switch-theme
                     class="absolute top-0 left-0"
                     [currentTheme]="currentTheme"
+                    (mouseenter)="onMouseEnter()"
+                    (mouseleave)="onMouseLeave()"
                   />
                 }
               </div>
@@ -133,6 +137,7 @@
       '.avif)'
     "
   ></div>
+
   <!-- Portrait -->
   <div
     class="hb-me animate__animated animate__fadeInRight bg-me"
@@ -142,6 +147,19 @@
       '.avif)'
     "
   ></div>
+
+  <!-- eyes -->
+  @if (currentTheme == "halloween") {
+    <div
+      class="hb-me bg-me eyes"
+      [ngClass]="{ show: showEyes }"
+      [style.backgroundImage]="
+        'url(assets/img/me/' +
+        (currentTheme === 'halloween' ? 'eyes-red' : '') +
+        '.avif)'
+      "
+    ></div>
+  }
   <!-- <app-chest-pain class="chest-pain" /> -->
 
   <!-- Social buttons -->
