@@ -28,7 +28,9 @@ export class PlatformGameComponent implements OnInit {
   themeSubscription: Subscription = new Subscription(); // Holds the subscription
 
   // Looking elements
-  @ViewChild('coinSound', { static: false }) soundComponent!: SoundComponent;
+  @ViewChild('scene', { static: false }) scene!: HTMLElement;
+  @ViewChild('coinSound', { static: false })
+  soundComponent!: SoundComponent;
   @ViewChild('jumpSound', { static: false }) jumpSound!: SoundComponent;
   @ViewChild('canvas', { static: true })
 

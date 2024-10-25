@@ -1,80 +1,48 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <p class="title">COIN COLLECTOR</p>
+<div #scene class="scene relative">
+  <!-- Title -->
+  <div class="container absolute top-0 z-3">
+    <div class="row">
+      <div class="col-12">
+        <p class="title">COIN COLLECTOR</p>
+      </div>
+    </div>
+    <div class="score">
+      Score: <span>{{ coinCount }}</span>
     </div>
   </div>
-  <div class="score">
-    Score: <span>{{ coinCount }}</span>
-  </div>
-</div>
-<div class="container">
-  <!-- Language section -->
-  <app-language-switch />
-  <div class="row">
-    <div class="col-12">
-      <canvas #canvas></canvas>
 
-      @if (false) {
-        <div class="control">
-          <div class="controller-cord"></div>
-          <div class="controller-outer-box">
-            <div class="controller-cord-connection"></div>
-            <div class="controller-inner-box">
-              <div class="left-inner-box">
-                <div class="up-down-outer-box"></div>
-                <div class="left-right-outer-box"></div>
-                <div class="up-down-inner-shadow"></div>
-                <div class="left-right-inner-shadow"></div>
-                <div class="up-down-inner-box">
-                  <div class="up-arrow"></div>
-                  <div class="down-arrow"></div>
-                </div>
-                <div class="left-right-inner-box">
-                  <div class="left-arrow"></div>
-                  <div class="center-circle"></div>
-                  <div class="right-arrow"></div>
-                </div>
-              </div>
-              <div class="center-inner-box">
-                <div class="center-decorative-box" id="one"></div>
-                <br />
-                <div class="center-decorative-box" id="two"></div>
-                <br />
-                <div class="center-decorative-box" id="three">
-                  <div class="select-start-text">SELECT START</div>
-                </div>
-                <div class="center-button-box">
-                  <div class="center-button-box-inner-border">
-                    <div class="left-button"></div>
-                    <div class="right-button"></div>
-                  </div>
-                </div>
-                <br />
-                <div class="center-decorative-box" id="four"></div>
-              </div>
-              <div class="right-inner-box">
-                <div class="system-text">Funtendo</div>
-                <br />
-                <div class="b-a-buttons-container">
-                  <div class="b-button-container">
-                    <div class="b-button-outer-box">
-                      <div class="b-button"></div>
-                    </div>
-                    <div class="b-button-text">B</div>
-                  </div>
-                  <div class="a-button-container">
-                    <div class="a-button-outer-box">
-                      <div class="a-button"></div>
-                    </div>
-                    <div class="a-button-text">A</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      }
+  <!--  -->
+  <div class="container absolute top-0 z-2">
+    <!-- Language section -->
+    <app-language-switch />
+    <div class="row">
+      <div class="col-12">
+        <canvas #canvas></canvas>
+      </div>
+    </div>
+  </div>
+
+  <div class="container z-0">
+    <div data-depth="0.2" class="absolute top-0">
+      <img src="assets/img/game/bg-01-01.png" alt="" srcset="" />
+    </div>
+    <div data-depth="0.3" class="absolute top-0">
+      <img src="assets/img/game/bg_m1-01.png" alt="" srcset="" />
+    </div>
+    <div data-depth="0.4" class="absolute top-0">
+      <img src="assets/img/game/bg_l1-01.png" alt="" srcset="" />
+    </div>
+    <div data-depth="0.5" class="absolute top-0">
+      <img src="assets/img/game/bg_l2-01.png" alt="" srcset="" />
+    </div>
+    <div data-depth="0.6" class="absolute top-0">
+      <img src="assets/img/game/bg_l3-01.png" alt="" srcset="" />
+    </div>
+    <div data-depth="0.7" class="absolute top-0">
+      <img src="assets/img/game/bg_l4-01.png" alt="" srcset="" />
+    </div>
+    <div data-depth="0.8" class="absolute top-0">
+      <img src="assets/img/game/bg_l5-01.png" alt="" srcset="" />
     </div>
   </div>
 </div>
